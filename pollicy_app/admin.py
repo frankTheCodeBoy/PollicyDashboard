@@ -2,6 +2,7 @@ from django.contrib import admin
 import datetime
 from .models import StatsPeriod, GenderCategory, SocialPlatform, PlatformUse
 from .models import CommentStats, Party, AgeBracket
+from .models import GenderOvawp, PartyOvawp, AgeOvawp
 
 class StatsPeriodAdmin(admin.ModelAdmin):
     list_display = ('year',)
@@ -44,12 +45,36 @@ admin.site.register(CommentStats, CommentStatsAdmin)
 class PartyAdmin(admin.ModelAdmin):
     list_display= ('name',)
     search_fields = ('name',)
+    prepopulated_fields = {'slug': ("name",),}
 
 admin.site.register(Party, PartyAdmin)
 
 class AgeBracketAdmin(admin.ModelAdmin):
-    list_display = ('agebracket',)
-    search_fields = ('agebracket',)
+    list_display = ('agegroup',)
+    search_fields = ('agegroup',)
+    prepopulated_fields = {'slug': ("agegroup",),}
 
 admin.site.register(AgeBracket, AgeBracketAdmin)
 
+
+# Ovawp Model Registration
+class GenderOvawpAdmin(admin.ModelAdmin):
+    list_display = ('gendercategory','ovawp','percentage')
+    search_fields = ('ovawp',)
+    autocomplete_fields = ('gendercategory',)
+
+admin.site.register(GenderOvawp, GenderOvawpAdmin)
+
+class PartyOvawpAdmin(admin.ModelAdmin):
+    list_display = ('partyname','ovawp','percentage')
+    search_fields = ('ovawp',)
+    autocomplete_fields = ('partyname',)
+
+admin.site.register(PartyOvawp, PartyOvawpAdmin)
+
+class AgeOvawpAdmin(admin.ModelAdmin):
+    list_display = ('agegroup','ovawp','percentage')
+    search_fields = ('ovawp',)
+    autocomplete_fields = ('agegroup',)
+
+admin.site.register(AgeOvawp, AgeOvawpAdmin)
