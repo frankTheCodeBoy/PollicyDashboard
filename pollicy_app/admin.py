@@ -2,7 +2,7 @@ from django.contrib import admin
 import datetime
 from .models import StatsPeriod, GenderCategory, SocialPlatform, PlatformUse
 from .models import CommentStats, Party, AgeBracket
-from .models import GenderOvawp, PartyOvawp, AgeOvawp
+from .models import GenderOvawp, PartyOvawp, AgeOvawp, SocialMediaOvawp
 
 class StatsPeriodAdmin(admin.ModelAdmin):
     list_display = ('year',)
@@ -78,3 +78,10 @@ class AgeOvawpAdmin(admin.ModelAdmin):
     autocomplete_fields = ('agegroup',)
 
 admin.site.register(AgeOvawp, AgeOvawpAdmin)
+
+class SocialMediaOvawpAdmin(admin.ModelAdmin):
+    list_display = ('platformuse','ovawp','percentage')
+    search_fields = ('ovawp',)
+    autocomplete_fields = ('platformuse',)
+
+admin.site.register(SocialMediaOvawp, SocialMediaOvawpAdmin)

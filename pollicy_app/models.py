@@ -146,4 +146,14 @@ class AgeOvawp(models.Model):
 	def __str__(self):
 		return self.ovawp
 	
+class SocialMediaOvawp(models.Model):
+	platformuse = models.ForeignKey(PlatformUse, on_delete=models.CASCADE)
+	ovawp = models.CharField(max_length=128)
+	percentage = models.IntegerField(default=0)
 
+	class Meta:
+		verbose_name_plural = "Social Media ovawp"
+		unique_together = ('platformuse','ovawp')
+
+	def __str__(self):
+		return self.ovawp
