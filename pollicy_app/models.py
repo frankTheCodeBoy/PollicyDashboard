@@ -59,7 +59,7 @@ class PlatformUse(models.Model):
 
 	class Meta:
 		verbose_name_plural = "Platform Use"
-		unique_together = ('socialplatform','frequency')
+		unique_together = ('gendercategory','socialplatform','frequency')
 
 	def save(self, *args, **kwargs):
 		self.slug = slugify(self.frequency)

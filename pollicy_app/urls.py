@@ -6,6 +6,8 @@ app_name = "pollicy_app"
 
 urlpatterns = [
 	path(
-		
+		"", 
+		views.index, 
+		name='index',
 	),
 ]

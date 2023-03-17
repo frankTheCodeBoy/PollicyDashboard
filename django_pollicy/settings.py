@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     # My Apps,
     'pollicy_app',
     # Third-Party Apps,
+    'bootstrap4',
     # Django-Default Apps,
     'django.contrib.admin',
     'django.contrib.auth',
