@@ -12,12 +12,11 @@ nav {
 div.res-ob {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
-    background-color: lightgray;
+    background-color: rgb(255, 215, 215);
 }
 
 .res-ob h4 {
     color: darkcyan;
-    background-color: wheat;
+    background-color: rgb(255, 225, 170);
     padding: 2px;
-    border-left: 1px solid red;
 }
