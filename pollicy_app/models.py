@@ -70,13 +70,14 @@ class PlatformUse(models.Model):
 
 # Model for classing of comments (Pos or Neg)
 class CommentStats(models.Model):
+	socialplatform = models.ForeignKey(SocialPlatform,on_delete=models.CASCADE)
 	gendercategory = models.ForeignKey(GenderCategory, on_delete=models.CASCADE)
 	commentcategory = models.CharField(max_length=12)
 	percentage = models.IntegerField(default=0)
 
 	class Meta:
 		verbose_name_plural = "Comment stats"
-		unique_together = ('gendercategory','commentcategory')
+		unique_together = ('gendercategory','socialplatform','commentcategory')
 
 	def __str__(self):
 		return self.commentcategory

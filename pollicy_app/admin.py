@@ -36,9 +36,9 @@ class PlatformUseAdmin(admin.ModelAdmin):
 admin.site.register(PlatformUse, PlatformUseAdmin)
 
 class CommentStatsAdmin(admin.ModelAdmin):
-    list_display = ('gendercategory','commentcategory','percentage',)
+    list_display = ('gendercategory','socialplatform','commentcategory','percentage',)
     search_fields = ('commentcategory',)
-    autocomplete_fields = ('gendercategory',)
+    autocomplete_fields = ('gendercategory','socialplatform')
 
 admin.site.register(CommentStats, CommentStatsAdmin)
 

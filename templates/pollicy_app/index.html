@@ -1,9 +1,26 @@
 {% extends 'pollicy_app/base.html' %}
+{% load static %}
 {% block title_block %}
+ Index
 {% endblock %}
 
 {% block body_block %}
-<div class="container-fluid">
-
+<div class="typo-div container-fluid">
+    <div class="logo container">
+        <img src="{% static 'images/logo.png' %}" 
+            width="125px" height="60px" alt="logo image">
+    </div>
+    <div class="output container" id="output">
+        <h1 class="typo-header"></h1>
+        <p class="typo"></p>
+        <span class="typo"></span>
+    </div>
+    <div class="scroll-div text-center container">
+        <img class="scroll-img" src="{% static 'images/Scroll_icon.png' %}"
+            width="60px">
+    </div>
+</div>
+<div class="index-content container-fluid">
+    
 </div>
 {% endblock %}
