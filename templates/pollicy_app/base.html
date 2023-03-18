@@ -14,6 +14,7 @@
         {% endblock %}
         </title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/typingeffect.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/animechart.css' %}">
         {% load bootstrap4 %}
         {% bootstrap_css %}
         {% bootstrap_javascript jquery='full' %}
@@ -22,5 +23,6 @@
         {% block body_block %}
         {% endblock %}
         <script src="{% static 'js/typingscript.js' %}"></script>
+        <script src="{% static 'js/animescript.js' %}"></script>
     </body>
 </html>

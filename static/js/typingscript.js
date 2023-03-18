@@ -7,8 +7,8 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  " Amplified Abuse  |  Understanding Violence against Women in Politics and Leadership.", 
-  " %    An in-depth study of Uganda's 2021 National General Elections...",  
+  " Amplified Abuse | Understanding Violence against Women in Politics and Leadership.", 
+  " %  An in-depth study of Uganda's 2021 National General Elections...",  
 ];
 
 // Speed (in milliseconds) of typing.

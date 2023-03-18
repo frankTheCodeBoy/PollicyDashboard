@@ -1,0 +1,123 @@
+/* Animated Data Graphs Responsive Design.
+        CSS rules.*/
+  .box-piesite {
+    text-align: center;
+    font-size: 22px;
+  }
+  .piesite {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    font-size: 10em;
+    cursor: default;
+  }
+  .piesite .percent {
+    position: absolute;
+    top: 1.1em;
+    left: 0.1em;
+    width: 100%;
+    font-size: 0.3em;
+    text-align: center;
+    z-index: 2;
+  }
+  .piesite .percent .symbol {
+    font-size: 0.5em;
+    vertical-align: top;
+    opacity: 0.5;
+  }
+  .piesite > #slice {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0px, 1em, 1em, 0.5em);
+  }
+  .piesite > #slice.gt50 {
+    clip: rect(auto, auto, auto, auto);
+  }
+  .piesite > #slice > .pie {
+    position: absolute;
+    border: 0.1em solid #444;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 0.5em, 1em, 0em);
+    border-radius: 0.5em;
+  }
+  li.design .piesite > #slice > .pie {
+    border-color: #49E;
+  }
+  li.usability .piesite > #slice > .pie {
+    border-color: #FFA500;
+  }
+  li.creativity .piesite > #slice > .pie {
+    border-color: #6B8E23;
+  }
+  li.adaptability .piesite > #slice > .pie {
+    border-color: palevioletred;
+  }
+  .piesite > #slice > .pie.fill {
+    transform: rotate(180deg) !important;
+  }
+  .piesite.fill > .percent {
+    display: none;
+  }
+  .piesite:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    width: 0.8em;
+    height: 0.8em;
+    background: #30303A;
+    border-radius: 100%;
+    z-index: 1;
+  }
+  .piesite:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .piesite:before {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .box-piesite ul {
+    padding: 0;
+  }
+  .box-piesite ul li {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  .chartBarsHorizontal .chartBars .bars {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 600px) {
+    .bar:before {
+      font-size: 2em !important;
+    }
+    .chartBars3 .bar:before {
+      font-size: 1.5em !important;
+    }
+  }
+  
+  .index-content {
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 4%;
+    border: 1px solid lightgray;
+  }
+
+  .anime-charts {
+    background: rgb(12, 20, 20);
+    font-family: "Source Code Pro", monospace;
+    color: darkgrey;
+  }
+  
+  .metrics-desc {
+    margin-top: 2px;
+    color: white;
+  }
