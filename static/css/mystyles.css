@@ -8,3 +8,16 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
+
+div.res-ob {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+.res-ob h4 {
+    color: darkcyan;
+    background-color: wheat;
+    padding: 2px;
+    border-left: 1px solid red;
+}

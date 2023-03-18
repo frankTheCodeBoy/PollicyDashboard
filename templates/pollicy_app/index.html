@@ -70,26 +70,42 @@
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 83, 109);
             border: 2px solid rgb(0, 83, 109);">
+    <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
+        Dashboard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    Dashboard Sections<span class="sr-only">
-                        (current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
-            </li>
-        </ul>
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+            Navigate Sections
+            <span class="badge" style="color: red;">8</span></a>
+        <div class="dropdown-menu" style="background-color: rgb(241, 219, 21);">
+            <a class="dropdown-item" href="#">Introduction</a>
+            <a class="dropdown-item" href="#">Research Questions</a>
+            <a class="dropdown-item" href="#">Key Findings</a>
+            <a class="dropdown-item" href="#">Women Using Social Media</a>
+            <a class="dropdown-item" href="#">Social Media Response</a>
+            <a class="dropdown-item" href="#">Evidence of OVAW-P</a>
+            <a class="dropdown-item" href="#">OVAW-P vs Other Factors</a>
+            <a class="dropdown-item" href="#">Apparent Relationships</a>
+        </div>
+    </li>
+    </ul>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+        <a class="nav-link" href="#">Hate Speech Classification</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Translation</a>
+        </li>
+    </ul>
 </nav>
-<div class="container-fluid p-3 intro lead">
+<div class="container-fluid p-4 intro lead">
     <p class="mb-1">
         The growth of internet users has brought about social and economic benefits on a global scale. 
         However, significant harms such as online violence, disinformation, and hate speech have also 
@@ -120,5 +136,34 @@
         and development of a Machine Learning (ML) model to identify and tag instances of OVAWP in 
         both English and Luganda.
     </p>
+</div>
+<div class="container-fluid row res-ob p-4">
+    <div class="col-sm">
+        <h4>RESEARCH QUESTIONS USED TO GUIDE TOWARDS ACHIEVING THE RESEARCH OBJECTIVE.</h4>
+        <ul>
+            <li>
+                How do women politicians in Uganda use social media platforms for campaigning 
+                during the scientific general elections?
+            </li>
+            <li>
+                How does the use of social media platforms differ amongst men and women candidates?
+            </li>
+            <li>
+                How does online violence against women candidates differ from that experienced 
+                by men in regards to factors such as the form of violence experienced and frequency 
+                across platforms?
+            </li>
+            <li>   
+                What evidence of OVAW-P exists on social media platforms and how does it manifest?
+            </li>
+            <li>
+                What is the association between OVAW-P and factors such as their age, political party 
+                affiliation, frequency of social media use and electoral results?
+            </li>
+        </ul>  
+    </div>
+    <div class="col-sm">
+
+    </div>
 </div>
 {% endblock %}
