@@ -12,7 +12,7 @@ var textArray = [
 ];
 
 // Speed (in milliseconds) of typing.
-var speedForward = 95, //Typing Speed
+var speedForward = 80, //Typing Speed
     speedBetweenLines = 1000;//Wait between first and second lines
 
 //Run the loop
