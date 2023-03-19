@@ -9,14 +9,32 @@ nav {
     font-size: 16px;
 }
 
-div.res-ob {
+div.res-obj {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     background-color: rgb(255, 215, 215);
 }
 
-.res-ob h4 {
+.res-obj h4 {
     color: darkcyan;
-    background-color: rgb(255, 225, 170);
+    background-color: rgb(255, 225, 169);
     padding: 2px;
 }
+
+div.key-finding {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+.key-finding h4 {
+    color: white;
+    background-color: darkgray;
+    padding: 2px;
+}
+
+.women-sm h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
