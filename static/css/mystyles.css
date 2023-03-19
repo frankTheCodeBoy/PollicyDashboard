@@ -12,12 +12,12 @@ nav {
 div.res-obj {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
-    background-color: rgb(255, 215, 215);
+    background-color: rgb(252, 211, 211);
 }
 
 .res-obj h4 {
-    color: darkcyan;
-    background-color: rgb(255, 225, 169);
+    color: maroon;
+    background-color: lightsteelblue;
     padding: 2px;
 }
 
@@ -35,6 +35,8 @@ div.key-finding {
 
 .women-sm h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(9, 133, 46);
+    text-transform: capitalize;
 }
 
 .card-hstyle {
@@ -47,4 +49,8 @@ div.key-finding {
 
 .geek-img:hover {
     transform: scale(1.05);
+}
+
+.women-sm div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
