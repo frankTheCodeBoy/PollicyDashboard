@@ -54,3 +54,14 @@ div.key-finding {
 .women-sm div {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+div.social-response {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: azure;
+}
+
+.social-response h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: rgb(3, 24, 82);
+}
