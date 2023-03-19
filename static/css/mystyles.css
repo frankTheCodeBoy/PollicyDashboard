@@ -37,4 +37,11 @@ div.key-finding {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.card-hstyle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(152, 156, 155);
+    padding: 1px;
+    font-size: 15px;
+    font-style: oblique;
+}
 
