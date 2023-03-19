@@ -13,4 +13,27 @@ $(document).ready(function() {
             tooltipChartTitle: "Men-Pie",
             sliceColors: ["green", "yellow"],
     });
+
+    $('#scroll-img').hover(
+        function() {
+            $(this).css(
+                {
+                    'background-color':'darkred',
+                    'border': '2px solid darkorange',
+                    'border-radius': '3px',
+                });
+        },
+        function() {
+            $(this).css(
+                {
+                    'background-color':'transparent',
+                    'border':'none',
+                });
+        },
+    );
+
+    $('#scroll-img').on('click',function() {
+        window.scrollBy(0,100);
+    })
+
 })

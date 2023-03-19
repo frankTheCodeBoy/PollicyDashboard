@@ -45,3 +45,6 @@ div.key-finding {
     font-style: oblique;
 }
 
+.geek-img:hover {
+    transform: scale(1.05);
+}

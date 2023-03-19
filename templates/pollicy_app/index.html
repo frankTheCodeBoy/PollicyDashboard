@@ -7,7 +7,7 @@
 {% block body_block %}
 <div class="typo-div container-fluid">
     <div class="logo container">
-        <img src="{% static 'images/logo.png' %}" 
+        <img class="geek-img" src="{% static 'images/logo.png' %}" 
             width="125px" height="60px" alt="logo image">
     </div>
     <div class="output container" id="output">
@@ -16,7 +16,8 @@
         <span class="typo"></span>
     </div>
     <div class="scroll-div text-center container">
-        <img class="scroll-img" src="{% static 'images/Scroll_icon.png' %}"
+        <img id="scroll-img" class="scroll-img" 
+            src="{% static 'images/Scroll_icon.png' %}"
             width="60px">
     </div>
 </div>
@@ -164,12 +165,12 @@
         </ul>  
     </div>
     <div class="col-sm text-center">
-        <img src="{% static 'images/qn-md.png' %}" width="80%">
+        <img class="geek-img" src="{% static 'images/qn-md.png' %}" width="80%">
     </div>
 </div>
 <div class="container-fluid row key-finding p-4 mx-auto">
     <div class="col-sm">
-        <img src="{% static 'images/fnd-md.png' %}" width="95%">
+        <img class="geek-img" src="{% static 'images/fnd-md.png' %}" width="95%">
     </div>
     <div class="col-sm">
         <h4 class="card card-title mt-2">FINDINGS FROM THE STUDY REVEALED THE FOLLOWING.</h4>
