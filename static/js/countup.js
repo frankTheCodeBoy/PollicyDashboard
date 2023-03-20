@@ -38,7 +38,7 @@ let valDisplays = document.querySelectorAll(".mynewnum");
 let valInterval = 4000;
 
 valDisplays.forEach((valDisplay) => {
-  let startValue = 297300;
+  let startValue = 297500;
   let endValue = parseInt(valDisplay.getAttribute("data-val"));
   let duration = Math.floor(valInterval / endValue);
   let counter = setInterval(function () {
