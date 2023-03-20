@@ -21,7 +21,7 @@ let newValueDisplays = document.querySelectorAll(".newnum");
 let newInterval = 4000;
 
 newValueDisplays.forEach((newValueDisplay) => {
-  let startValue = 69000;
+  let startValue = 69500;
   let endValue = parseInt(newValueDisplay.getAttribute("data-val"));
   let duration = Math.floor(newInterval / endValue);
   let counter = setInterval(function () {
@@ -38,7 +38,7 @@ let valDisplays = document.querySelectorAll(".mynewnum");
 let valInterval = 4000;
 
 valDisplays.forEach((valDisplay) => {
-  let startValue = 297500;
+  let startValue = 297900;
   let endValue = parseInt(valDisplay.getAttribute("data-val"));
   let duration = Math.floor(valInterval / endValue);
   let counter = setInterval(function () {
