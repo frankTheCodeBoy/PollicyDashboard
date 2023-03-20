@@ -35,7 +35,7 @@ div.key-finding {
 
 .women-sm h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(9, 133, 46);
+    color: rgb(12, 25, 218);
     text-transform: capitalize;
 }
 
@@ -63,5 +63,8 @@ div.social-response {
 .social-response h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
-    color: rgb(3, 24, 82);
+}
+
+.chart-btn {
+    font-family: 'Source Pro Code, monospace';
 }
