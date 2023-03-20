@@ -249,9 +249,17 @@
         these sentiments distributed? 
     </h4>
     <div class="row container-fluid">
-        <div class="col-sm"></div>
-        <div class="col-sm card p-3 mt-2" 
-            style="background-color: wheat;">
+        <div class="col-sm text-center">
+            <canvas id="doughnutChart"></canvas>
+            <span class="p-2">
+                <button class="btn btn-sm btn-primary chart-btn">
+                    <i class='fas fa-sync'></i>
+                    Switch</button>
+            </span>
+        </div>
+        <div class="col-sm jumbotron p-5 mt-2" 
+            style="background-color: wheat; 
+            border: 1px solid white;">
             <p>
                 Using sentiment analysis, the sentiment of the comments and replies 
                 from social media users to the candidates was analysed. 
@@ -265,7 +273,41 @@
                 men candidates received 85.7% of negative replies.
             </p>
         </div>
-        <div class="col-sm"></div>
+        <div class="col-sm text-center">
+            <canvas id="doughnut"></canvas>
+            <span class="p-2">
+                <button class="btn btn-sm btn-success chart-btn">
+                    <i class='fas fa-sync'></i>
+                    Switch</button>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ovawp-proof p-3">
+    <h4 class="text-center">
+        Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?
+    </h4>
+    <div class="container-fluid">
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen"></i>
+            Women candidates were more likely to experience trolling, sexual violence and 
+            body shaming compared to their male counterparts. 
+        </p>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen;"></i>
+            Men candidates were more likely to experience hate speech and satirical 
+            speech as compared to women candidates.
+        </p>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen;"></i>
+        The trend was witnessed across both social media platforms monitored.<br>
+        <i class='fas fa-check-circle' style="color: lightseagreen;"></i> 
+        However, overall, across almost all categories, violence experienced by both women 
+        and men candidates on Twitter was higher than that on Facebook.
+        </p>
+    </div>
+    <div class="container p-3">
+        <div class="p-2" 
+        style="width:100%;max-width:700px;margin:auto;background-color:rgb(3, 3, 24);">
+            <canvas id="horizontalcxt"></canvas>
+        </div>
     </div>
 </div>
 {% endblock %}
