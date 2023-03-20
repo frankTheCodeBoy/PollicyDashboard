@@ -24,7 +24,10 @@ $(document).ready(function() {
             pie = $("#pie_" + a).data("pie");
                 timer = setInterval(
                     "stoppie(" + a + ", " + pie + ")", 0);});
-                    piesiteFired = 1;}} 
+                    piesiteFired = 1;
+                    countUp();
+                }
+            } 
             else {$(".piesite").each(function() {
                     piesiteFired = 0;});}
                 });}
@@ -67,3 +70,4 @@ function stoppie(d, b) {
         $("#pie_" + d + " .percent .int").html(arr[0]);
     }
 }
+

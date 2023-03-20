@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function countUp() {
   // for first data-group
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
@@ -38,7 +38,7 @@ let valDisplays = document.querySelectorAll(".mynewnum");
 let valInterval = 4000;
 
 valDisplays.forEach((valDisplay) => {
-  let startValue = 296500;
+  let startValue = 297300;
   let endValue = parseInt(valDisplay.getAttribute("data-val"));
   let duration = Math.floor(valInterval / endValue);
   let counter = setInterval(function () {
@@ -50,4 +50,6 @@ valDisplays.forEach((valDisplay) => {
   }, duration);
   });
 ;}
-)
+
+
+
