@@ -325,7 +325,7 @@
 			<div class="card">
 				<div class="card-header" style="background-color: rgb(255, 230, 192);">
 					<h6 class="card-title" 
-                    style="color: orangered;">
+                    style="color: darkslategrey;">
                     OVAW-P Vs PARTY AFFILIATION
                     <span class="form-inline form-control-group" 
                     style="position: relative; float: right; color: gray;">
@@ -396,9 +396,43 @@
             </div>
         </div>
     </div>
-    <div class="row container">
-        <div class="col-sm"><canvas></canvas></div>
-        <div class="col-sm"><canvas></canvas></div>
+</div>
+<div class="row container-fluid p-3 mx-auto" style="background-color:rgb(219, 205, 205);">
+    // NB: Section is Still Under Construction! 
+    <div class="col-sm text-center">
+    <!---Canvas goes here-->
+    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
+    </div>
+    <div class="col-sm text-center">
+    <!---Canvas goes here too!-->
+    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
     </div>
 </div>
+<nav class="navbar navbar-expand-sm nav-styled" 
+    style="background-color:burlywood; border: 1px solid white; border-radius:'2px';">
+<ul class="nav nav-pills ml-auto">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">
+            <i class="fa fa-share" aria-hidden="true" style="color: darkorange;"></i>
+            Share
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class='fas fa-download' style="color: maroon;"></i>
+            Download
+        </a>
+    </li>
+</ul>
+</nav>
+<div class="container-fluid text-center p-3">
+    <h4 style="color: maroon;">// NOTE: Still Under Construction!!</h4>
+    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="50%" height="50%">
+</div>
+<hr style="background-color: black; width: '2px';">
+<div class="container-fluid text-center p-3">
+    <h3>// NB: This Is A Footer Section // Under Construction!!</h3>
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="40%" height="40%">
+</div>
+
 {% endblock %}
