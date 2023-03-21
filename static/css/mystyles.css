@@ -116,3 +116,14 @@ div.other-factors {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar; }
     
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+        }
+          
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+        }
