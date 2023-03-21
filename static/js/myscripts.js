@@ -34,6 +34,9 @@ $(document).ready(function() {
 
     $('#scroll-img').on('click',function() {
         window.scrollBy(0,100);
-    })
-
+    });
+  
 })
+
+
+    
