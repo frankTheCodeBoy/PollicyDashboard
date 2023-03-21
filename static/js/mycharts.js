@@ -7,14 +7,14 @@ new Chart(ctx, {
             labels: ['Daily', 'Multiple', 'Weekly', 'Rarely'],
             datasets: [{
                   label: 'Men',
-                  data: [12, 19, 3, 5, 2, 3],
+                  data: [15, 30, 3, 53],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: 'blue',
                 },
                 {
                   label: 'Women',
-                  data:[10, 12, 18, 4, 7, 4],
+                  data:[17, 39, 14, 31],
                   borderWidth: 1,
                   borderRadius: Number.MAX_VALUE,
                   borderSkipped: false,
@@ -56,7 +56,7 @@ var myDoughnutChart = new Chart(doughnutChart, {
   type: 'doughnut',
   data: {
     datasets: [{
-      data: [20, 30],
+      data: [16, 84],
       backgroundColor: ['#fdaf4b','#1d7af3']
     }],
 
@@ -97,7 +97,7 @@ var mydoughnut = new Chart(doughnut, {
   type: 'doughnut',
   data: {
     datasets: [{
-      data: [15, 40],
+      data: [72, 28],
       backgroundColor: ['#1d7af3','#f3545d']
     }],
 

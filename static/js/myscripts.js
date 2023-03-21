@@ -35,7 +35,13 @@ $(document).ready(function() {
     $('#scroll-img').on('click',function() {
         window.scrollBy(0,100);
     });
-  
+
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#dtdatatable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 })
 
 
