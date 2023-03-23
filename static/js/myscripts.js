@@ -61,6 +61,9 @@ $(document).ready(function() {
       
       window.addEventListener("scroll", reveal);
 
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
 
 })
 

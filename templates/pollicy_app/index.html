@@ -71,35 +71,18 @@
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 83, 109);
             border: 2px solid rgb(0, 83, 109);">
-    <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
-        Dashboard</a>
+    <!--Toogle Button, Sidebar-->
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span>Toggle Sidebar</span>
+    </button>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-            Navigate Sections
-            <span class="badge" 
-                style="color: maroon; 
-                    background-color: darkkhaki">8</span></a>
-        <div class="dropdown-menu" style="background-color: rgb(241, 219, 21);">
-            <a class="dropdown-item" href="#">Introduction</a>
-            <a class="dropdown-item" href="#">Research Questions</a>
-            <a class="dropdown-item" href="#">Key Findings</a>
-            <a class="dropdown-item" href="#">Women Using Social Media</a>
-            <a class="dropdown-item" href="#">Social Media Response</a>
-            <a class="dropdown-item" href="#">Evidence of OVAW-P</a>
-            <a class="dropdown-item" href="#">OVAW-P vs Other Factors</a>
-            <a class="dropdown-item" href="#">Apparent Relationships</a>
-        </div>
-    </li>
-    </ul>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
         <a class="nav-link" href="#">Hate Speech Classification</a>
         </li>
@@ -107,8 +90,37 @@
             <a class="nav-link" href="#">Translation</a>
         </li>
     </ul>
+    </div>
 </nav>
-<div class="container-fluid p-4 intro lead">
+<div class="wrapper">
+<nav id="sidebar" class="text-center p-2">
+        <!---Added from main nav-->
+        <div class="sidebar-header">
+            <h3>Sidebar Navigation</h3>
+        </div>
+        <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
+            Dashboard
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Research Questions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Key Findings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Women Using Social Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Social Media Response</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Evidence of OVAW-P</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
+        </ul>
+        <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
+            Options
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">Share</li>
+            <li class="nav-item">Download</li>
+        </ul>
+</nav>
+<div class="main container-fluid p-2">
+<div class="container-fluid p-2 intro lead mt-0">
     <p class="mb-1">
         The growth of internet users has brought about social and economic benefits on a global scale. 
         However, significant harms such as online violence, disinformation, and hate speech have also 
@@ -398,7 +410,6 @@
     </div>
 </div>
 <div class="row container-fluid p-3 mx-auto" style="background-color:rgb(219, 205, 205);">
-    // NB: Section is Still Under Construction! 
     <div class="col-sm text-center">
     <!---Canvas goes here-->
     <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
@@ -408,31 +419,13 @@
     <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
     </div>
 </div>
-<nav class="navbar navbar-expand-sm nav-styled" 
-    style="background-color:burlywood; border: 1px solid white; border-radius:'2px';">
-<ul class="nav nav-pills ml-auto">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">
-            <i class="fa fa-share" aria-hidden="true" style="color: darkorange;"></i>
-            Share
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <i class='fas fa-download' style="color: maroon;"></i>
-            Download
-        </a>
-    </li>
-</ul>
-</nav>
 <div class="container-fluid text-center p-3">
-    <h4 style="color: maroon;">// NOTE: Still Under Construction!!</h4>
+    <h4 style="color: maroon;">
     <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="50%" height="50%">
 </div>
-<hr style="background-color: black; width: '2px';">
-<div class="container-fluid text-center p-3">
-    <h3>// NB: This Is A Footer Section // Under Construction!!</h3>
-    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="40%" height="40%">
 </div>
-
+</div>
+<div class="container-fluid text-center p-3">
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="100%" height="40%">
+</div>
 {% endblock %}
