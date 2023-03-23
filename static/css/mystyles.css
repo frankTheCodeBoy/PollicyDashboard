@@ -82,6 +82,8 @@ div.other-factors {
     color: darkcyan;
 }
 
+/* table styling*/
+
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     vertical-align: middle; }
   
@@ -116,6 +118,8 @@ div.other-factors {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar; }
     
+
+    /* animate body */
     .reveal{
         position: relative;
         transform: translateY(150px);
