@@ -67,19 +67,6 @@ $(document).ready(function() {
     });
 })
 
-$(document).ready(function() {
-    function myCustomFunc(x) {
-        if (x.matches) { // If media query matches
-          $("#sidebar").removeClass("sticky-top");
-        } else {
-          $("#sidebar").addClass("sticky-top");
-        }
-      }
-      
-      var x = window.matchMedia("(max-width: 768px)");
-      myCustomFunc(x); // Call listener function at run time
-      x.addEventListener(myCustomFunc); // Attach listener function on state changes
-})
 
 
 
