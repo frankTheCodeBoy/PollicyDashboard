@@ -59,13 +59,50 @@ $(document).ready(function() {
         }
       }
       
-      window.addEventListener("scroll", reveal);
+    window.addEventListener("scroll", reveal);
 
-      $('#sidebarCollapse').on('click', function () {
+    $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
-
 })
+
+$(document).ready(function() {
+    function myCustomFunc(x) {
+        if (x.matches) { // If media query matches
+          $("#sidebar").removeClass("sticky-top");
+        } else {
+          $("#sidebar").addClass("sticky-top");
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 768px)");
+      myCustomFunc(x); // Call listener function at run time
+      x.addEventListener(myCustomFunc); // Attach listener function on state changes
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
