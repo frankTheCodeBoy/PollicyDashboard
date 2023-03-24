@@ -43,16 +43,16 @@
     border-radius: 0.5em;
   }
   li.design .piesite > #slice > .pie {
-    border-color: #49E;
+    border-color: #f89624;
   }
   li.usability .piesite > #slice > .pie {
-    border-color: #FFA500;
+    border-color: darkgrey;
   }
   li.creativity .piesite > #slice > .pie {
-    border-color: #6B8E23;
+    border-color: #ff5251;
   }
   li.adaptability .piesite > #slice > .pie {
-    border-color: palevioletred;
+    border-color: white;
   }
   .piesite > #slice > .pie.fill {
     transform: rotate(180deg) !important;
