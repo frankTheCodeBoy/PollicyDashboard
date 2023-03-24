@@ -123,8 +123,8 @@
             <li class="nav-item">Download</li>
         </ul>
 </nav>
-<div id="main-content" class="main container-fluid p-2 col-sm main-content mt-1">
-<div class="container-fluid p-2 intro lead mt-0">
+<div id="main-content" class="main container-fluid p-2 col-sm main-content mt-2">
+<div class="container-fluid p-2 intro lead">
     <p class="mb-1">
         The growth of internet users has brought about social and economic benefits on a global scale. 
         However, significant harms such as online violence, disinformation, and hate speech have also 
@@ -425,17 +425,32 @@
 </div>
 </div>
 </div>
-<div class="main-content container-fluid text-center p-3">
-    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="100%" height="40%">
+<div class="main-content container-fluid text-center p-0">
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="100%" height="10%">
 </div>
 
+
+<!--Specific page scripts-->
 <style>
-    .navbar-fixed-top {
+.navbar-fixed-top {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
+
+@media only screen and (max-width:768px) {
+    .index-content {
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .index-content {
+        z-index: 1;
+    }
+}
+
 </style>
 
 <script>
@@ -443,7 +458,7 @@ $(document).ready(function () {
 
     $(document).ready(function () {
 
-// Calculating the distance from the top of the page to the initial position of the navbar, and store it in a variable
+// the distance from top of page to initial position of the navbar, store it in a variable
 var navbarOffset = $('#main-navbar').offset().top;
 
 // Calculating the navbar height, and store it in a variable
@@ -451,20 +466,18 @@ var navbarHeight = $('#main-navbar').outerHeight();
 
 $(window).on('scroll', function () {
 
-   if ( $(window).scrollTop() >= navbarOffset ) { // if the navbar offset equal or bigger than user scrolling, make it fixed
+    if ( $(window).scrollTop() >= navbarOffset ) { 
+    // if the navbar offset equal or bigger than user scrolling, make it fixed
        $('#main-navbar').addClass('navbar-fixed-top');
        $('.main-content').css('padding-top', navbarHeight + 'px');
-
-   } else {// if not, return it to its initial state
+   } 
+   else {
+    // if not, return it to its initial state
        $('#main-navbar').removeClass('navbar-fixed-top');
        $('.main-content').css('padding-top', '0');
-
-   }
-
-});
-
-});            
-
+        }
+    });
+    });            
 });       
 </script>
 
