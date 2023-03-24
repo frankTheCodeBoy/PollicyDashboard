@@ -18,16 +18,17 @@ $(document).ready(function() {
         function() {
             $(this).css(
                 {
-                    'background-color':'darkred',
-                    'border': '2px solid darkorange',
-                    'border-radius': '3px',
+                    'background-color':'white',
+                    'border': '2px hidden gray',
+                    'border-radius': '5px',
                 });
         },
         function() {
             $(this).css(
                 {
-                    'background-color':'transparent',
-                    'border':'none',
+                    'background-color':'darkorange',
+                    'border':'2px hidden black',
+                    'border-radius': '5px',
                 });
         },
     );
