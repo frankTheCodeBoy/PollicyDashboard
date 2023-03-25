@@ -24,14 +24,13 @@
   }
 
   div.logo {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    border: 3px ridge grey;
     border-radius: 8px;
     padding: 5px;
-    width:20%;
+    width:fit-content;
     margin-left: 4px;
     margin-top: 10px;
-    background-image: linear-gradient(
-      to right, black,black,#822600,#f89624);
   }
 
   div.output {
