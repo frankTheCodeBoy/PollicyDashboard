@@ -1,19 +1,4 @@
 $(document).ready(function() {
-    $('#piechart-div1').sparkline([68,32], {
-			type: 'pie',
-            Offset: '-90',
-			height: '80',
-            tooltipChartTitle: "Women-Pie",
-	});
-
-    $('#piechart-div2').sparkline([50,50],
-        {
-            type:'pie',
-            height: '80',
-            tooltipChartTitle: "Men-Pie",
-            sliceColors: ["green", "yellow"],
-    });
-
     $('#scroll-img').hover(
         function() {
             $(this).css(
@@ -26,7 +11,7 @@ $(document).ready(function() {
         function() {
             $(this).css(
                 {
-                    'background-color':'darkorange',
+                    'background-color':'#822600',
                     'border':'2px hidden black',
                     'border-radius': '5px',
                 });
@@ -65,6 +50,37 @@ $(document).ready(function() {
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
+
+    var elColor = $('.custom-hover').css('background-color');
+    $('.custom-hover').hover(
+      function(){
+          $(this).css('background-color','gray');
+      },
+      function(){
+          $(this).css('background-color',elColor);
+      }
+    )
+
+    var varCol = $('.mycustom-hover').css('background-color');
+    $('.mycustom-hover').hover(
+      function(){
+          $(this).css('background-color','gray');
+      },
+      function(){
+          $(this).css('background-color',varCol);
+      }
+    )
+
+    var els = $('.tr-hover').css('background-color');
+    $('.tr-hover').hover(
+      function(){
+          $(this).css('background-color','lightgray');
+      },
+      function(){
+          $(this).css('background-color',els);
+      }
+    )
+
 })
 
 

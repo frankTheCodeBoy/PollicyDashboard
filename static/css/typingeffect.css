@@ -10,40 +10,43 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 1.5px solid darkorange;
-  border-left: 1.5px solid darkorange;
+  border-top: 1.5px solid black;
+  border-left: 1.5px solid black;
   border-right: 1.5px solid black;
   border-bottom: 1.5px solid black;
   }
 
   .output {
     text-align: center;
-    font-family: "Source Code Pro", monospace;
+    font-family: "DM Sans", sans-serif;
     color: white;
-    background-color: rgb(5, 5, 119);
+
   }
 
   div.logo {
-    background-color: inherit;
-    padding: 10px;
-    margin-left: 0px;
+    background-color: black;
+    border-radius: 8px;
+    padding: 5px;
+    width: fit-content;
+    margin-left: 4px;
+    margin-top: 10px;
   }
 
   div.output {
     background-color: inherit;
-    padding-top: 7%;
+    padding-top: 7.5%;
     padding-left: 5%;
     padding-right: 5%;
   }
 
   .typo-header {
-    font-size: 45px;
-    color: rgb(211, 48, 48);
+    color: #f89624;
+    font-weight: bold;
   }
   
   p.typo {
     font-size: 30px;
-    margin-top: 7px;
+    margin-top: 5.5px;
     margin-bottom: 0;
   }
 
@@ -58,17 +61,17 @@
           font-size: 18px;
         }
         p.typo {
-          font-size: 14px;
+          font-size: 15px;
         }
         span.typo {
-          font-size: 14px;
+          font-size: 15px;
         }
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
         /* for mobile landscape */
         .typo-header {
-          font-size: 20px;
+          font-size: 18px;
         }
         p.typo {
           font-size: 15px;
@@ -81,54 +84,61 @@
   @media only screen and (min-width: 480px) and (max-width: 767px) {
         /* for tablet */
         .typo-header {
-          font-size: 26px;
+          font-size: 22px;
         }
         p.typo {
-          font-size: 20px;
+          font-size: 18px;
         }
         span.typo {
-          font-size: 20px;
+          font-size: 18px;
         }
   }
   
   @media only screen and (min-width: 980px) and (max-width: 1023px) {
         /* for small desktop */
         .typo-header {
-          font-size: 30px;
+          font-size: 26px;
         }
         p.typo {
-          font-size: 24px;
+          font-size: 20px;
         }
         span.typo {
-          font-size: 24px;
+          font-size: 20px;
         }  
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
         /* for typical desktop */
         .typo-header {
-          font-size: 40px;
+          font-size: 35px;
         }
         p.typo {
-          font-size: 26px;
+          font-size: 24px;
         }
         span.typo {
-          font-size: 26px;
+          font-size: 24px;
         }
   }
 
   @media only screen and (min-width: 1200px) {
         /* for large desktop */
         .typo-header {
-          font-size: 48px;
+          font-size: 40px;
         }
         p.typo {
-          font-size: 30px;
+          font-size: 28px;
         }
         span.typo {
-          font-size: 30px;
+          font-size: 28px;
         }
   }
+
+  /*
+  @media only screen and (min-width: 1200px) and (orientation : portrait) {
+      CSS code
+    
+  }
+  */
   
   .scroll-div {
     padding: 3%;

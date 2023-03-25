@@ -6,9 +6,9 @@
 
 {% block body_block %}
 <div class="typo-div container-fluid">
-    <div class="logo container">
-        <img class="geek-img" src="{% static 'images/logo.png' %}" 
-            width="125px" height="60px" alt="logo image">
+    <div class="logo container-fluid">
+        <img id="pollicy-logo" 
+            src="{% static 'images/logo.png' %}" width="125px" height="60px" alt="logo image">
     </div>
     <div class="output container" id="output">
         <h1 class="typo-header"></h1>
@@ -17,7 +17,7 @@
     </div>
     <div class="scroll-div text-center container">
         <img id="scroll-img" class="scroll-img" 
-            style="background-color:darkorange;
+            style="background-color: #822600;
                 border: 2px hidden black;border-radius:5px;padding:2px;"
             src="{% static 'images/Scroll_icon.png' %}"
             width="60px">
@@ -72,10 +72,11 @@
     </ul>
 </div>
 <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark" 
-            style="background-color:#ff5251;
-            border: 2px solid #ff5251;">
+            style="background-color:#822600;
+            border: 2px solid #822600;">
     <!--Toogle Button, Sidebar-->
-    <button type="button" id="sidebarCollapse" class="btn btn-sm btn-info d-none d-lg-block">
+    <button type="button" id="sidebarCollapse" class="btn btn-sm d-none d-lg-block"
+            style="background-color: #f89624;">
         <i class="fas fa-align-left"></i>
         <span>Toggle Sidebar</span>
     </button>
@@ -100,9 +101,10 @@
             style="z-index: 0;">
         <!---Added from main nav-->
         <div class="sidebar-header main-content">
-            <h3>Sidebar Navigation</h3>
+            <h3 style="color:white;">Side Navigation</h3>
         </div>
-        <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
+        <a id="sidebrand" class="navbar-brand" href="#">
+            <i class="far fa-compass" style="color: #f89624"></i>
             Dashboard
         </a>
         <ul class="navbar-nav mr-auto">
@@ -115,15 +117,12 @@
             <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
         </ul>
-        <a class="navbar-brand" href="#"><i class="far fa-compass" style="color: orange"></i>
-            Options
-        </a>
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">Share</li>
-            <li class="nav-item">Download</li>
+            <li class="nav-item" style="color:white;">Share</li>
+            <li class="nav-item" style="color:white ;">Download</li>
         </ul>
 </nav>
-<div id="main-content" class="main container-fluid p-2 col-sm main-content mt-2">
+<div id="main-content" class="main container-fluid p-3 col-sm main-content mt-2">
 <div class="container-fluid p-5 intro lead" 
     style="background-color:rgb(245, 244, 244);width:100%;">
     <p class="mb-2">
@@ -161,7 +160,7 @@
     <div class="col-sm">
         <h4 class="card card-title" style="border: 1px solid white;">
             RESEARCH QUESTIONS USED TO GUIDE TOWARDS ACHIEVING THE RESEARCH OBJECTIVE.</h4>
-        <ul class="card card-body">
+        <ul class="card card-body" style="background-color: #f89624;">
             <li>
                 How do women politicians in Uganda use social media platforms for campaigning 
                 during the scientific general elections?
@@ -189,11 +188,11 @@
 </div>
 <div class="container-fluid row key-finding p-4 mx-auto">
     <div class="col-sm">
-        <img class="geek-img" src="{% static 'images/fnd-md.png' %}" width="95%">
+        <img class="geek-img" src="{% static 'images/fnd-md.png' %}" width="100%">
     </div>
     <div class="col-sm">
-        <h4 class="card card-title mt-2">FINDINGS FROM THE STUDY REVEALED THE FOLLOWING.</h4>
-        <ul class="card card-body" style="background-color: rgb(213, 232, 248);">
+        <h4 class="card card-title">FINDINGS FROM THE STUDY REVEALED THE FOLLOWING.</h4>
+        <ul class="card card-body" style="background-color: #822600; color: #b3b3b3;">
             <li>
                 The use of social media platforms for engaging with voters and constituents 
                 by women politicians remains low in Uganda. On Twitter, men candidates generated 
@@ -216,19 +215,9 @@
                 violence compared to 8% of those belonging to men.
             </li>
         </ul>
-        <div class="row card card-group mx-auto" 
-                style="background-color: rgb(31, 31, 41);">
-        <h5 class="card-title col-sm card-hstyle mt-1">
-            68% of Women's accounts monitored used Facebook at least once a week; 
-            Vs. Men at 50%.
-        </h5>
-        <div class="col-sm p-1" id="piechart-div1">
-        </div>
-        <div class="col-sm p-1" id="piechart-div2"></div>
-        </div>
     </div>
 </div>
-<div class="container-fluid women-sm p-4" style="background-color: rgb(179, 219, 241);">
+<div class="container-fluid women-sm p-4" style="background-color: snow;">
     <h4 class="mb-2">
         How did women politicians in Uganda use social media 
         platforms for campaigning during scientific general elections?
@@ -269,15 +258,15 @@
         <div class="col-sm text-center">
             <canvas id="doughnutChart"></canvas>
             <span class="p-2">
-                <button class="btn btn-sm btn-primary chart-btn">
+                <button class="btn btn-sm chart-btn" style="background-color: #f89624;">
                     <i class='fas fa-sync'></i>
                     Switch</button>
             </span>
         </div>
-        <div class="col-sm jumbotron p-5 mt-2" 
-            style="background-color: wheat; 
+        <div class="col-sm card p-4 mt-2" 
+            style="background-color:snow; 
             border: 1px solid white;">
-            <p>
+            <p class="card-body" style="font-size: 14px;">
                 Using sentiment analysis, the sentiment of the comments and replies 
                 from social media users to the candidates was analysed. 
                 According to the data, higher engagement by a candidate group leads to a higher 
@@ -289,7 +278,7 @@
         <div class="col-sm text-center">
             <canvas id="doughnut"></canvas>
             <span class="p-2">
-                <button class="btn btn-sm btn-success chart-btn">
+                <button class="btn btn-sm chart-btn" style="background-color: #822600;">
                     <i class='fas fa-sync'></i>
                     Switch</button>
             </span>
@@ -301,24 +290,24 @@
         Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?
     </h4>
     <div class="container-fluid">
-        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen"></i>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: #822600;"></i>
             Women candidates were more likely to experience trolling, sexual violence and 
             body shaming compared to their male counterparts. 
         </p>
-        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen;"></i>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: #822600"></i>
             Men candidates were more likely to experience hate speech and satirical 
             speech as compared to women candidates.
         </p>
-        <p class="mb-0"><i class='fas fa-check-circle' style="color: lightseagreen;"></i>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color: #822600"></i>
         The trend was witnessed across both social media platforms monitored.<br>
-        <i class='fas fa-check-circle' style="color: lightseagreen;"></i> 
+        <i class='fas fa-check-circle' style="color: #822600;"></i> 
         However, overall, across almost all categories, violence experienced by both women 
         and men candidates on Twitter was higher than that on Facebook.
         </p>
     </div>
     <div class="container p-3">
         <div class="p-2" 
-        style="width:100%;max-width:750px;margin:auto;background-color:rgb(3, 3, 24);">
+        style="width:100%;max-width:750px;margin:auto;background-color: white;">
             <canvas id="horizontalcxt"></canvas>
         </div>
     </div>
@@ -336,9 +325,9 @@
     <div class="row p-3">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header" style="background-color: rgb(255, 230, 192);">
+				<div class="card-header" style="background-color: #f89624;">
 					<h6 class="card-title" 
-                    style="color: darkslategrey;">
+                    style="color: black;">
                     OVAW-P Vs PARTY AFFILIATION
                     <span class="form-inline form-control-group" 
                     style="position: relative; float: right; color: gray;">
@@ -351,18 +340,18 @@
 				<div class="table-responsive">
 				    <table id="dtdatatable" class="display table table-striped 
                     table-bordered table-hover table-sm" >
-                        <thead>
+                        <thead style="background-color: #b3b3b3;">
 							<tr>
-								<th>Political Party</th>
-							    <th>Sexual Violence</th>
-								<th>Trolling</th>
-								<th>Insult & Hate Speech</th>
-								<th>Satire</th>
-								<th>Body Shaming</th>
+								<th>POLITICAL PARTY</th>
+							    <th>SEXUAL VIOLENCE</th>
+								<th>TROLLING</th>
+								<th>INSULT & HATE SPEECH</th>
+								<th>SATIRE</th>
+								<th>BODY SHAMING</th>
 							</tr>
 						</thead>
                         <tbody>
-                            <tr>
+                            <tr class="tr-hover">
                                 <td>FDC</td>
                                 <td>25</td>
                                 <td>38</td>
@@ -370,7 +359,8 @@
                                 <td>13</td>
                                 <td>0</td>
                             </tr>
-                            <tr>
+                            <tr class="custom-hover" 
+                                style="background-color: #f89624;">
                                 <td>NRM</td>
                                 <td>10</td>
                                 <td>27</td>
@@ -378,7 +368,7 @@
                                 <td>23</td>
                                 <td>3</td>
                             </tr>
-                            <tr>
+                            <tr class="tr-hover">
                                 <td>NUP</td>
                                 <td>15</td>
                                 <td>23</td>
@@ -386,7 +376,8 @@
                                 <td>23</td>
                                 <td>0</td>
                             </tr>
-                            <tr>
+                            <tr class="mycustom-hover" 
+                                style="background-color: #822600; color:#b3b3b3;">
                                 <td>INDEPENDENT</td>
                                 <td>5</td>
                                 <td>21</td>
@@ -394,7 +385,7 @@
                                 <td>16</td>
                                 <td>0</td>
                             </tr>
-                            <tr>
+                            <tr class="tr-hover">
                                 <td>Others</td>
                                 <td>0</td>
                                 <td>21</td>
@@ -413,16 +404,16 @@
 <div class="row container-fluid p-3 mx-auto" style="background-color:rgb(219, 205, 205);">
     <div class="col-sm text-center">
     <!---Canvas goes here-->
-    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="70%">
     </div>
     <div class="col-sm text-center">
     <!---Canvas goes here too!-->
-    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="70%">
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="70%">
     </div>
 </div>
 <div class="container-fluid text-center p-3">
-    <h4 style="color: maroon;">
-    <img src="{% static 'images/PLACEHOLDER.jpg' %}" width="50%" height="50%">
+    <h4 style="color: black;">
+    <img src="{% static 'images/PLACEHOLDER_DARK.jpg' %}" width="50%" height="50%">
 </div>
 </div>
 </div>

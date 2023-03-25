@@ -49,7 +49,7 @@
     border-color: darkgrey;
   }
   li.creativity .piesite > #slice > .pie {
-    border-color: #ff5251;
+    border-color: #822600;
   }
   li.adaptability .piesite > #slice > .pie {
     border-color: white;
@@ -114,7 +114,7 @@
 
   .anime-charts {
     background: rgb(12, 20, 20);
-    font-family: "Source Code Pro", monospace;
+    font-family: "DM Sans", sans-serif;
     color: darkgrey;
   }
   

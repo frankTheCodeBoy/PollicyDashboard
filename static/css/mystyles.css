@@ -1,22 +1,44 @@
 /* custom styles for project */
 div.intro {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
     font-size: 16px;
 }
 
 nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
 }
 
 #sidebar {
-    background-color: #B3B3B3;
+    background-color: #272727;
     height: 100vh;
 }
 
 #sidebar {
     min-width: 225px;
     max-width: 225px;
+}
+
+.sidebar-header {
+    background-color: gray;
+    border: 1px solid #f89624;
+}
+
+#sidebrand:hover {
+    color: white;
+}
+
+#sidebar a {
+    color: #B3B3B3;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+}
+#sidebar ul li a:hover {
+    background: #fff;
 }
 
 #sidebar.active {
@@ -33,41 +55,45 @@ nav {
 }
 
 div.res-obj {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
     font-size: 16px;
-    background-color: rgb(252, 211, 211);
+    background-color: snow;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    font-weight: bold;
 }
 
 .res-obj h4 {
-    color: maroon;
-    background-color: lightsteelblue;
+    color: #B3B3B3;
+    background-color: #272727;
     padding: 2px;
 }
 
 div.key-finding {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
     font-size: 16px;
-    background-color: antiquewhite;
+    background-color: snow;
 }
 
 .key-finding h4 {
-    color: white;
-    background-color: darkgray;
+    color: #B3B3B3;
+    background-color: #272727;
     padding: 2px;
 }
 
 .women-sm h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(12, 25, 218);
+    font-family: 'DM Sans',sans-serif;
+    color: black;
     text-transform: capitalize;
 }
 
 .card-hstyle {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(152, 156, 155);
+    font-family: 'DM Sans',sans-serif;
+    color: #272727;
     padding: 1px;
     font-size: 15px;
-    font-style: oblique;
+    font-style: normal;
 }
 
 .geek-img:hover {
@@ -75,46 +101,56 @@ div.key-finding {
 }
 
 .women-sm div {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
 }
 
 div.social-response {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: azure;
+    font-family: 'DM Sans',sans-serif;
+    background-color: #272727;
 }
 
 .social-response h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
     text-transform: capitalize;
+    color: white;
+}
+
+div.ovawp-proof {
+    background-color: #f89624;
 }
 
 .chart-btn {
-    font-family: 'Source Pro Code, monospace';
+    font-family: 'DM Sans',sans-serif;
 }
 
 .ovawp-proof {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
 }
 
 div.other-factors {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans',sans-serif;
 }
 
 .other-factors h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkcyan;
+    font-family: 'DM Sans',sans-serif;
+    color: #272727;
 }
 
 /* table styling*/
 
-.table > thead > tr > th, .table > tbody > tr > th, .table > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+.table {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > 
+tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tr > td {
     vertical-align: middle; }
   
   .table > tbody > tr > td, .table > tbody > tr > th {
-    padding: 8px; }
+    padding: 5px; }
   
   .table > tr > td, .table > tr > th {
-    padding: 8px; }
+    padding: 5px; }
   
   .table thead th {
     border-bottom-width: 2px;
@@ -124,9 +160,9 @@ div.other-factors {
     font-size: 14px;
     border-top-width: 0px;
     border-bottom: 1px solid;
-    border-color: #ebedf2 !important;
+    border-color: #B3B3B3 !important;
     padding: 0 25px !important;
-    height: 60px;
+    height: 40px;
     vertical-align: middle !important; 
 }
   

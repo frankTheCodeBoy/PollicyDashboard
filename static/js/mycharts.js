@@ -10,7 +10,7 @@ new Chart(ctx, {
                   data: [15, 30, 3, 53],
                   borderWidth: 1,
                   borderSkipped: false,
-                  backgroundColor: 'blue',
+                  backgroundColor: '#822600',
                 },
                 {
                   label: 'Women',
@@ -18,7 +18,7 @@ new Chart(ctx, {
                   borderWidth: 1,
                   borderRadius: Number.MAX_VALUE,
                   borderSkipped: false,
-                  backgroundColor: 'darkorange',
+                  backgroundColor: '#f89624',
                 },
               ]
             },
@@ -30,7 +30,7 @@ new Chart(ctx, {
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
-                  color: 'rgb(44,22,8)',
+                  color: 'black',
               }
                 }
             },
@@ -41,9 +41,9 @@ new Chart(ctx, {
                 title: {
                     display: true,
                     text: 'FACEBOOK DEMOGRAPHICS',
-                    color: 'rgb(44,22,8)',
+                    color: '#272727',
                     weight: 'bold',
-                    font: 'Source Pro Code, monospace',
+                    font: 'DM Sans, sans serif',
                   },
                 }
               }
@@ -57,7 +57,7 @@ var myDoughnutChart = new Chart(doughnutChart, {
   data: {
     datasets: [{
       data: [16, 84],
-      backgroundColor: ['#fdaf4b','#1d7af3']
+      backgroundColor: ['#f89624','#822600']
     }],
 
     labels: [
@@ -82,9 +82,9 @@ var myDoughnutChart = new Chart(doughnutChart, {
       title: {
           display: true,
           text: '(%)POSITIVE COMMENTS ON TWITTER',
-          color: 'royalblue',
+          color: '#B3B3B3',
           weight: 'bold',
-          font: 'Source Pro Code, monospace',
+          font: 'DM Sans, sans serif',
         },
       }
   }
@@ -98,7 +98,7 @@ var mydoughnut = new Chart(doughnut, {
   data: {
     datasets: [{
       data: [72, 28],
-      backgroundColor: ['#1d7af3','#f3545d']
+      backgroundColor: ['#822600','#f89624']
     }],
 
     labels: [
@@ -123,9 +123,9 @@ var mydoughnut = new Chart(doughnut, {
       title: {
           display: true,
           text: '(%)POSITIVE COMMENTS ON FACEBOOK',
-          color: 'darkgoldenrod',
+          color: '#B3B3B3',
           weight: 'bold',
-          font: 'Source Pro Code, monospace',
+          font: 'DM Sans , sans serif',
         },
       }
   }
@@ -147,14 +147,14 @@ new Chart(hori_Chart, {
                   data: [12, 19, 3, 5, 2],
                   borderWidth: 1,
                   borderSkipped: false,
-                  backgroundColor: 'green',
+                  backgroundColor: '#822600',
                 },
                 {
                   label: 'Women',
                   data:[10, 12, 18, 4, 7],
                   borderWidth: 1,
                   borderSkipped: false,
-                  backgroundColor: 'violet',
+                  backgroundColor: '#f89624',
                 },
               ]
             },
@@ -177,9 +177,9 @@ new Chart(hori_Chart, {
                 title: {
                     display: true,
                     text: 'OVAWP Illustration Graph',
-                    color: 'teal',
+                    color: 'black',
                     weight: 'bold',
-                    font: 'Source Pro Code, monospace',
+                    font: 'DM Sans, sans serif',
                   },
                 }
               }
