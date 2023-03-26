@@ -11,7 +11,7 @@ $(document).ready(function() {
         function() {
             $(this).css(
                 {
-                    'background-color':'#822600',
+                    'background-color':'#f89624',
                     'border':'2px hidden black',
                     'border-radius': '5px',
                 });

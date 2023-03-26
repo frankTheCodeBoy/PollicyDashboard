@@ -106,17 +106,17 @@ div.key-finding {
 
 div.social-response {
     font-family: 'DM Sans',sans-serif;
-    background-color: #272727;
+    background-color: #ffffff;
 }
 
 .social-response h4 {
     font-family: 'DM Sans',sans-serif;
     text-transform: capitalize;
-    color: white;
+    color: black;
 }
 
 div.ovawp-proof {
-    background-color: #f89624;
+    background-color: #ffffff;
 }
 
 .chart-btn {

@@ -82,7 +82,7 @@ var myDoughnutChart = new Chart(doughnutChart, {
       title: {
           display: true,
           text: '(%)POSITIVE COMMENTS ON TWITTER',
-          color: '#B3B3B3',
+          color: 'black',
           weight: 'bold',
           font: 'DM Sans, sans serif',
         },
@@ -123,7 +123,7 @@ var mydoughnut = new Chart(doughnut, {
       title: {
           display: true,
           text: '(%)POSITIVE COMMENTS ON FACEBOOK',
-          color: '#B3B3B3',
+          color: 'black',
           weight: 'bold',
           font: 'DM Sans , sans serif',
         },
