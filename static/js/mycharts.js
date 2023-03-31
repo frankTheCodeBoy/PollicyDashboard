@@ -144,14 +144,14 @@ new Chart(hori_Chart, {
             ],
             datasets: [{
                   label: 'Men',
-                  data: [12, 19, 3, 5, 2],
+                  data: [41,8,11,38,43],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#822600',
                 },
                 {
                   label: 'Women',
-                  data:[10, 12, 18, 4, 7],
+                  data:[50,18,14,34,27],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#f89624',
