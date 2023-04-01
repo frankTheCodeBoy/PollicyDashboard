@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     # My Apps,
     'pollicy_app',
+    'admin_app',
     # Third-Party Apps,
     'bootstrap4',
     # Django-Default Apps,
