@@ -136,6 +136,29 @@ div.other-factors {
     color: #272727;
 }
 
+.footer {
+    background-color: black;
+}
+
+.footer hr {
+    border: 1.5px groove rgb(61, 61, 61);
+    width: 95%;
+    margin-top: 0;
+}
+
+.footer h6 {
+    color:#f89624;
+}
+
+.footer i {
+    font-size: 18px;
+    color: #9c9c9c;
+}
+
+.footer p {
+    color: #9c9c9c;
+}
+
 /* table styling*/
 
 .table {
