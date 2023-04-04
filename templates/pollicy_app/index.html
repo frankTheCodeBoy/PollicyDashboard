@@ -119,13 +119,22 @@
             <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
         </ul>
         <div class="navbar-nav mr-auto p-2">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-block dropdown-toggle"
+                        style="background-color: #ebe9e9;"
+                        type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-share" style="color: #822600;"></i> 
+                    <span class="h6">Social Share</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" href="#">Facebook</a>
+                        <a class="dropdown-item" href="#">Twitter</a>
+                </div>
+            </div>
             <a href="#">
-            <p style="border:1px solid #b3b3b3;color: white;" class="nav-item">
-                <i class="fas fa-share" style="color: #f89624;"></i> Share</p>
-            </a>
-            <a href="#">
-            <p style="border: 1px solid #b3b3b3;color: white;" class="nav-item">
-                <i class="fas fa-download" style="color: #822600;"></i> Download</p>
+            <p style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;" class="nav-item">
+                <i class="fas fa-download" style="color: #f89624;"></i> Download</p>
             </a>
         </div>
 </nav>
