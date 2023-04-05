@@ -26,6 +26,46 @@
     <body>
         {% block body_block %}
         {% endblock %}
+        <div class="footer main-content container-fluid text-center p-0">
+            <div class="row p-4 mb-0">
+                <div class="col-sm">
+                    <h6>QUICK LINKS</h6>
+                    <p>Dashboard</p>
+                    <p>Hate Speech Classification</p>
+                </div>
+                <div class="col-sm">
+                    <h6>SOCIAL LINKS</h6>
+                    <p><i class="fab fa-twitter"></i> Twitter 
+                        <span class="ml-2">
+                            <i class="fab fa-medium"></i> Medium
+                        </span>
+                    </p>
+                    <p><i class="fab fa-facebook-f"></i> Facebook 
+                        <span class="ml-2">
+                            <i class="fab fa-linkedin-in"></i> Linkedin
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h6>LOCATION</h6>
+                    <p>Plot 7 Kulubya Close,</p>
+                    <p>Bugolobi (Kampala, Uganda)</p>
+                </div>
+            </div>
+            <hr>
+            <p>
+            <span class="h5" style="color: #f89624;">
+                Research conducted by Pollicy with support from the National Democratic Institute (NDI)
+            </span><br>
+            <span class="h6">
+                ☆This work is licensed under a Creative Commons Attribution-Non-Commercial-Share☆</span>
+            </p>
+            <div class="p-4">
+                <img src="{% static 'images/logo.png' %}" width="110px" height="55px">
+                <img class="ml-3" src="{% static 'images/logo2.png' %}" width="75px" height="55px">
+            </div>
+        </div>
+        <!--Page Scripts-->
         <script src="{% static 'js/typingscript.js' %}"></script>
         <script src="{% static 'js/animescript.js' %}"></script>
         <script src="{% static 'js/countup.js' %}"></script>
