@@ -11,9 +11,8 @@ nav {
 
 #speech-div {
     font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    vertical-align:middle;
-    text-align:center;
+    font-size: 16px;
+    margin: auto;
 }
 
 #sidebar {
@@ -61,6 +60,29 @@ nav {
 #sidebar ul li a:hover {
     background: white;
     color:rgb(61, 61, 61);
+}
+
+.form-control:focus {
+    border-color: #B3B3B3 !important;
+    box-shadow: none !important;
+}
+
+#ml-result {
+    border-color: #c7c7c7;
+}
+
+.ml-box img {
+    border: 1px groove #dfdede;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#ml-text {
+    caret-color: #272727;
+}
+
+#result {
+    caret-color: transparent;
 }
 
 div.res-obj {
