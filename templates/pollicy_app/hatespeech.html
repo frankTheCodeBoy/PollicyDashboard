@@ -1,0 +1,18 @@
+{% extends 'pollicy_app/base.html' %}
+{% load static %}
+{% block title_block %}
+    Hate Speech Classification
+{% endblock %}
+
+{% block body_block %}
+<div id="speech-div" class="container-fluid p-5">
+    <p>
+        Enter text from social media such as Facebook (posts/comments) 
+        or Twitter (tweets/replies) and click Enter to test out our hate speech classification model.
+    </p>
+    <p>
+        For example: We love you, congratulations you are winning this, you are wasting your time, 
+        no one's going to vote for you, you are not pretty enough for our votes, etc
+    </p>
+</div>
+{% endblock %}

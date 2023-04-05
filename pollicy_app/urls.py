@@ -10,4 +10,9 @@ urlpatterns = [
 		views.index, 
 		name='index',
 	),
+    path(
+		"hate_speech/",
+        views.hate_speech,
+        name='hate_speech',
+	),
 ]

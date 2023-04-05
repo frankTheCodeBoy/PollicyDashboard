@@ -9,6 +9,13 @@ nav {
     font-size: 16px;
 }
 
+#speech-div {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    vertical-align:middle;
+    text-align:center;
+}
+
 #sidebar {
     background-color: #272727;
     height: 100vh;
@@ -50,8 +57,10 @@ nav {
     font-size: 16px;
     display: block;
 }
+
 #sidebar ul li a:hover {
-    background: #fff;
+    background: white;
+    color:rgb(61, 61, 61);
 }
 
 div.res-obj {
