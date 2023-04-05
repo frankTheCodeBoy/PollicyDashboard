@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body_block %}
-<div id="speech-div" class="container p-5">
+<div id="speech-div" class="container p-5 hate-speech">
     <p>
         Enter text from social media such as Facebook (posts/comments) 
         or Twitter (tweets/replies) and click Enter to test out our hate speech classification model.
@@ -15,8 +15,8 @@
         no one's going to vote for you, you are not pretty enough for our votes, etc.
     </p>
     <h6><i class="fa fa-cog fa-spin" style="color:#f89624;"></i> Text Input:</h6>
-    <textarea  name="message" id="ml-text" class="form-control" rows="5">
-    </textarea>
+    <textarea  name="message" id="ml-text" class="form-control" rows="5"
+                placeholder="enter your text here and submit...."></textarea>
     <button id="ml-btn" class="btn btn-sm mt-2" 
         style="color:black;background-color:#f89624;">Submit</button>
     <button id="clear-text" class="btn btn-sm mt-2 ml-2"
@@ -52,7 +52,7 @@
 </div>
 </div>
 <!--Tabs here-->
-<div class="container p-3 text-center mt-0">
+<div class="container p-3 text-center mt-0 hate-speech">
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     <button type="button" class="btn btn-light" 
         style="border: 1px solid gray;">
@@ -63,7 +63,7 @@
         <i class="fas fa-th-large"></i>
         Main</button>
   
-    <div class="btn-group" role="group">
+    <div class="btn-group hate-speech" role="group">
       <button id="btnGroupDrop1" style="border: 1px solid gray;"
         type="button" class="btn btn-light dropdown-toggle" 
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

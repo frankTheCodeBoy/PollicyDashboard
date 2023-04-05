@@ -15,6 +15,10 @@ nav {
     margin: auto;
 }
 
+.hate-speech {
+    font-family: 'DM Sans', sans-serif;
+}
+
 #sidebar {
     background-color: #272727;
     height: 100vh;
@@ -79,6 +83,11 @@ nav {
 
 #ml-text {
     caret-color: #272727;
+}
+
+#ml-text::placeholder {
+    font-style: italic;
+    font-size: medium;
 }
 
 #result {
