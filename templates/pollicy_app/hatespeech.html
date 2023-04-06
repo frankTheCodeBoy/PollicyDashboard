@@ -85,6 +85,7 @@
         File</button>
 </div>
 </div>
+<!--Specific Page Scripts invoking Ajax embedded-->
 <script>
 $(document).ready(function(){
     $("#ml-btn").on('click',function(e) {
@@ -93,6 +94,11 @@ $(document).ready(function(){
         $.get('/output/', {txt_input: txtInput}, function(data){
             $("#ml-result").html(data.display_text);
         })
+    })
+    $("#clear-text").on('click',function(e) {
+        e.preventDefault();
+        $("#ml-text").val("");
+        $("#ml-result").html("");
     })
 })
 </script>

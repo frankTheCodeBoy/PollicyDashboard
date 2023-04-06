@@ -8,6 +8,7 @@ def machine_fun(text):
         'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
         'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
         'petty', 'imbecile', 'idle', 'cabbage', 'head',
+        'stubborn',
     ]
 
     sexual_violence_list = [
@@ -29,7 +30,8 @@ def machine_fun(text):
         'waste', 'wasting', 'unfriendly', 'tryhard',
         'hopeless', 'braggart', 'wishful', 'ashamed', 'shame',
         'religious', 'ungodly', 'hiding', 'hide', 'doom',
-        'clout', 'chaser', 'hopeless',
+        'clout', 'chaser', 'hopeless', 'leave', 'hater',
+        'go', 'away',
     ]
 
     positive_list = [
