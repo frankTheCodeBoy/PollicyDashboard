@@ -15,4 +15,9 @@ urlpatterns = [
         views.hate_speech,
         name='hate_speech',
 	),
+    path(
+		"output/",
+        views.output_text,
+        name='output_text',
+	),
 ]

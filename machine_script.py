@@ -1,7 +1,8 @@
-def machine_fun():
+def machine_fun(text):
+
     insult_list = [
         'hate', 'pig', 'stupid', 'pathetic',
-        'shut', 'fool', 'foolish', 'poor',
+        'shut', 'fool', 'foolish', 'poor', 'sick',
     ]
 
     sexual_violence_list = [
@@ -28,7 +29,6 @@ def machine_fun():
         'won',
     ]
 
-    text = input("enter text here: ").strip().split()
     message = "Non-Violent Comment"
 
     for string in text:
@@ -42,7 +42,6 @@ def machine_fun():
             message = "Trolling Comment"
         elif string in positive_list:
             message = "Non-Violent Comment"
+    
     return message
 
-if __name__=="__main__":
-    print(machine_fun())

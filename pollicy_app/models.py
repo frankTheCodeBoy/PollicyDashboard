@@ -2,6 +2,7 @@ from django.db import models
 from django.template.defaultfilters import slugify
 import datetime
 
+
 # All Models will fall under a specific year/ statistic period
 class StatsPeriod(models.Model):
 	year = models.IntegerField(unique=True)
