@@ -89,7 +89,8 @@
 $(document).ready(function(){
     $("#ml-btn").on('click',function(e) {
         e.preventDefault();
-        $.get('/output/', {}, function(data){
+        var txtInput = document.getElementById("ml-text").value;
+        $.get('/output/', {txt_input: txtInput}, function(data){
             $("#ml-result").html(data.display_text);
         })
     })
