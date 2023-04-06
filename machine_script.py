@@ -8,12 +8,12 @@ def machine_fun(text):
         'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
         'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
         'petty', 'imbecile', 'idle', 'cabbage', 'head',
-        'stubborn',
+        'stubborn', 'bugger',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
-        'kill', 'pretty', 'dick', 'maggot',
+        'kill', 'pretty', 'dick', 'maggot', 'feeble',
     ]
 
     shame_list = [
@@ -31,12 +31,13 @@ def machine_fun(text):
         'hopeless', 'braggart', 'wishful', 'ashamed', 'shame',
         'religious', 'ungodly', 'hiding', 'hide', 'doom',
         'clout', 'chaser', 'hopeless', 'leave', 'hater',
-        'go', 'away',
+        'go', 'away', 'kick', 'kicked', 'hahahaha', 'hahaha',
+        'stop', 'doll', 
     ]
 
     positive_list = [
         'Congratulations', 'good', 'winning', 'nice',
-        'won', 'play',
+        'won', 'play', 'cool',
     ]
 
     message = "Non-Violent Comment"
