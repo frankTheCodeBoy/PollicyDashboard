@@ -1,19 +1,23 @@
 def machine_fun(text):
+    text = set(text.strip().split())
 
     insult_list = [
         'hate', 'pig', 'stupid', 'pathetic',
         'shut', 'fool', 'foolish', 'poor', 'sick',
-        'crazy', 'retard', 'retarded',
+        'crazy', 'retard', 'retarded', 'bloody', 'reckless',
+        'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
+        'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
+        'petty', 'imbecile', 'idle', 'cabbage', 'head',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
-        'kill', 'pretty',
+        'kill', 'pretty', 'dick', 'maggot',
     ]
 
     shame_list = [
         'ugly', 'fat', 'bald', 'flabby', 'chubby',
-        'little', 'small', 'smelly', 
+        'little', 'small', 'smelly', 'old', 'midget',
     ]
 
     troll_list = [
@@ -22,12 +26,15 @@ def machine_fun(text):
         'nobody', 'no', 'one', 'didnt', 'lovely', 'stop',
         'liar', 'lying', 'false', 'hard', 'harder',
         'seeker', 'cheap', 'shot', 'propaganda',
-        'waste', 'wasting',
+        'waste', 'wasting', 'unfriendly', 'tryhard',
+        'hopeless', 'braggart', 'wishful', 'ashamed', 'shame',
+        'religious', 'ungodly', 'hiding', 'hide', 'doom',
+        'clout', 'chaser', 'hopeless',
     ]
 
     positive_list = [
         'Congratulations', 'good', 'winning', 'nice',
-        'won',
+        'won', 'play',
     ]
 
     message = "Non-Violent Comment"
