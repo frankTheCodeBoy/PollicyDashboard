@@ -3,6 +3,7 @@ def machine_fun(text):
     insult_list = [
         'hate', 'pig', 'stupid', 'pathetic',
         'shut', 'fool', 'foolish', 'poor', 'sick',
+        'crazy', 'retard', 'retarded',
     ]
 
     sexual_violence_list = [

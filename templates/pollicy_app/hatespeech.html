@@ -85,4 +85,14 @@
         File</button>
 </div>
 </div>
+<script>
+$(document).ready(function(){
+    $("#ml-btn").on('click',function(e) {
+        e.preventDefault();
+        $.get('/output/', {}, function(data){
+            $("#ml-result").html(data.display_text);
+        })
+    })
+})
+</script>
 {% endblock %}

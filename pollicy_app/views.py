@@ -14,7 +14,7 @@ def hate_speech(request):
 	)
 
 def output_text(request):
-	input_text = request.GET['query']
+	input_text = request.GET.get('query','')
 	text = list(input_text.strip().split())
 	display_text = machine_fun(text)
 	response = {
