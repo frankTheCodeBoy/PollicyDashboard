@@ -1,3 +1,4 @@
+$(document).ready(function () {
 // Bar Chart with Chart Js
 const ctx = document.getElementById('myChart');
           
@@ -184,3 +185,4 @@ new Chart(hori_Chart, {
                 }
               }
     });
+  })
