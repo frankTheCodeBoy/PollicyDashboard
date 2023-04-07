@@ -182,6 +182,7 @@ div.other-factors {
 
 .footer {
     background-color: black;
+    overflow: hidden !important;
 }
 
 .footer hr {
