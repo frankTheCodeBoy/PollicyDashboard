@@ -90,6 +90,7 @@ var myDoughnutChart = new Chart(doughnutChart, {
   }
 });
 
+// Update the first doughnut chart
 function addData(chart, data) {
   chart.data.datasets.forEach((dataset) => {
       dataset.data = data;
@@ -146,6 +147,21 @@ var mydoughnut = new Chart(doughnut, {
   }
 });
 
+// Update the second doughnut chart
+function putData(chart, data) {
+  chart.data.datasets.forEach((dataset) => {
+      dataset.data = data;
+  });
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON TWITTER';
+  chart.update();
+}
+
+var refresh_chart_btn = document.getElementById("refresh-btn");
+refresh_chart_btn.addEventListener(
+  'click', function() {
+    putData(mydoughnut, [14,86]);
+  }, false
+);
 
 // Horizontal Chart with Chart Js
 var hori_Chart = document.getElementById('horizontalcxt');
