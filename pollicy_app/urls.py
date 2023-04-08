@@ -21,11 +21,6 @@ urlpatterns = [
         name='output_text',
 	),
     path(
-		"flourish_view/",
-        views.flourish_view,
-        name='flourish_view',
-	),
-    path(
 		"intro_view/",
         views.intro_view,
         name='intro_view',
