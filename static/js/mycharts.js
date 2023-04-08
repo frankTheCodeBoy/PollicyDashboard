@@ -90,6 +90,21 @@ var myDoughnutChart = new Chart(doughnutChart, {
   }
 });
 
+function addData(chart, data) {
+  chart.data.datasets.forEach((dataset) => {
+      dataset.data = data;
+  });
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON FACEBOOK';
+  chart.update();
+}
+
+var update_chart_btn = document.getElementById("update-btn");
+update_chart_btn.addEventListener(
+  'click', function() {
+    addData(myDoughnutChart, [77,23]);
+  }, false
+);
+
 // Secondary Doughnut with Chart Js
 var doughnut = document.getElementById('doughnut').getContext('2d');
 
