@@ -113,7 +113,7 @@ function addData(chart, data) {
   chart.data.datasets.forEach((dataset) => {
       dataset.data = data;
   });
-  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬FACEBOOK';
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬 FACEBOOK';
   chart.update();
 }
 
@@ -170,7 +170,7 @@ function putData(chart, data) {
   chart.data.datasets.forEach((dataset) => {
       dataset.data = data;
   });
-  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬TWITTER';
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬 TWITTER';
   chart.update();
 }
 

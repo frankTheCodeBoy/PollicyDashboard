@@ -180,6 +180,11 @@ div.other-factors {
     color: #272727;
 }
 
+.my-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .footer {
     background-color: black;
     overflow: hidden !important;
