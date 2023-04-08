@@ -26,3 +26,8 @@ def intro_view(request):
 	return render(
 		request, "pollicy_app/intro.html", {}
 	)
+
+def research_view(request):
+	return render(
+		request, "pollicy_app/researchobjects.html", {}
+	)

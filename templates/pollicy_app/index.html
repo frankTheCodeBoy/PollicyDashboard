@@ -114,7 +114,10 @@
                 <a class="nav-link" href="{% url 'pollicy_app:intro_view' %}">
                 Introduction</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Research Questions</a></li>
+            <li id="research-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:research_view' %}">
+                    Research Questions</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Key Findings</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Women Using Social Media</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Social Media Response</a></li>
@@ -638,7 +641,12 @@ $(document).ready(function(){
         e.preventDefault();
         $("#main-content").load("intro_view/ #push-intro");
         e.stopPropagation();
-    })
+    }).on('click', '#research-link', function(e) {
+        e.preventDefault();
+        $("#main-content").load("research_view/ #push-research");
+        e.stopPropagation();
+    });
+
 })
 </script>
 {% endblock %}

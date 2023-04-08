@@ -25,4 +25,9 @@ urlpatterns = [
         views.intro_view,
         name='intro_view',
 	),
+    path(
+		"research_view/",
+        views.research_view,
+        name='research_view',
+	),
 ]
