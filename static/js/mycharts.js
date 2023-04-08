@@ -1,7 +1,7 @@
 // Bar Chart with Chart Js
 const ctx = document.getElementById('myChart');
           
-new Chart(ctx, {
+var my_bar =  new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Daily', 'Multiple', 'Weekly', 'Rarely'],
@@ -10,7 +10,7 @@ new Chart(ctx, {
                   data: [15, 30, 3, 53],
                   borderWidth: 1,
                   borderSkipped: false,
-                  backgroundColor: '#822600',
+                  backgroundColor:  '#f89624',
                 },
                 {
                   label: 'Women',
@@ -18,7 +18,7 @@ new Chart(ctx, {
                   borderWidth: 1,
                   borderRadius: Number.MAX_VALUE,
                   borderSkipped: false,
-                  backgroundColor: '#f89624',
+                  backgroundColor: '#822600',
                 },
               ]
             },
@@ -47,7 +47,25 @@ new Chart(ctx, {
                   },
                 }
               }
-    });
+});
+
+// Update bar chart
+function stackedGraph(chart, data) {
+  chart.data.labels = ['Jan 2021', 'Dec 2021'];
+  chart.data.datasets[0].data = [21,31];
+  chart.data.datasets[1].data = [11,14];
+  chart.data.datasets[0].borderRadius = Number.MAX_VALUE;
+  chart.options.plugins.title.text = 'TWITTER (%)USAGE DEMOGRAPHICS';
+  chart.update();
+}
+
+var chart_btn = document.querySelector(".chart-btn");
+chart_btn.addEventListener(
+  'click', function() {
+    stackedGraph(my_bar);
+  },
+  false
+);
 
 // Doughnut-Chart with Chart Js         
 var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
@@ -95,7 +113,7 @@ function addData(chart, data) {
   chart.data.datasets.forEach((dataset) => {
       dataset.data = data;
   });
-  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON FACEBOOK';
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬FACEBOOK';
   chart.update();
 }
 
@@ -152,7 +170,7 @@ function putData(chart, data) {
   chart.data.datasets.forEach((dataset) => {
       dataset.data = data;
   });
-  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON TWITTER';
+  chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬TWITTER';
   chart.update();
 }
 
