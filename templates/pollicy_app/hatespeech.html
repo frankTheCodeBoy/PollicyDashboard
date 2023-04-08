@@ -95,9 +95,14 @@ $(document).ready(function(){
     $("#ml-btn").on('click',function(e) {
         e.preventDefault();
         var txtInput = document.getElementById("ml-text").value;
+        if (txtInput.length <= 0){
+            window.alert("Warning, you have not entered text!");
+        }
+        else {
         $.get('/output/', {txt_input: txtInput}, function(data){
             $("#ml-result").html(data.display_text);
         })
+    }
     })
     $("#clear-text").on('click',function(e) {
         e.preventDefault();

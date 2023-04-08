@@ -8,12 +8,13 @@ def machine_fun(text):
         'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
         'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
         'petty', 'imbecile', 'idle', 'cabbage', 'head',
-        'stubborn', 'bugger',
+        'stubborn', 'bugger', 'idiot', 'idiots', 'dummy', 'dumb',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
         'kill', 'pretty', 'dick', 'maggot', 'feeble',
+        'tits', 'boobs', 'fucked', 'ass', 'arsehole', 'mama',
     ]
 
     shame_list = [
