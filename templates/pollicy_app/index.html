@@ -1,7 +1,7 @@
 {% extends 'pollicy_app/base.html' %}
 {% load static %}
 {% block title_block %}
- Index
+    | Dashboard
 {% endblock %}
 
 {% block body_block %}
@@ -109,8 +109,11 @@
             Dashboard
             <span class="badge badge-light">8</span>
         </a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Introduction</a></li>
+        <ul id="sidebar-uls" class="navbar-nav mr-auto">
+            <li id="intro-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:intro_view' %}">
+                Introduction</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Research Questions</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Key Findings</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Women Using Social Media</a></li>
@@ -144,7 +147,7 @@
         </div>
 </nav>
 <div id="main-content" class="main container-fluid p-3 col-sm main-content mt-2">
-<div class="container-fluid p-5 intro lead" 
+<div id="intro-div" class="container-fluid p-5 intro lead" 
     style="background-color:rgb(245, 244, 244);width:100%;">
     <p class="mb-2">
         The growth of internet users has brought about social and economic benefits on a global scale. 
@@ -626,5 +629,14 @@ $(window).on('scroll', function () {
     });            
 });       
 </script>
-
+<!--Ajax Scripts here-->
+<script>
+$(document).ready(function(){
+    $('#sidebar-uls').on('click', '#intro-link', function(e){
+        e.preventDefault();
+        $("#main-content").load("intro_view/ #push-intro");
+        e.stopPropagation();
+    })
+})
+</script>
 {% endblock %}

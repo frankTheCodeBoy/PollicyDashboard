@@ -20,4 +20,9 @@ urlpatterns = [
         views.output_text,
         name='output_text',
 	),
+    path(
+		"intro_view/",
+        views.intro_view,
+        name='intro_view',
+	),
 ]
