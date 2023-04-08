@@ -22,6 +22,11 @@ def output_text(request):
 	data = json.dumps(response)
 	return HttpResponse(data, content_type='application/json')
 
+def flourish_view(request):
+	return render(
+		request, "pollicy_app/flourish.html", {}
+	)
+
 def intro_view(request):
 	return render(
 		request, "pollicy_app/intro.html", {}
