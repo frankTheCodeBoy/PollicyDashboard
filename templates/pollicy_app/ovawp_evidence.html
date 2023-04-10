@@ -1,8 +1,30 @@
-<body>
-    Women candidates were more likely to experience trolling, sexual violence and body shaming 
-    compared to their male counterparts. 
-    Men candidates were more likely to experience hate speech and satirical speech as compared to 
-    women candidates. This trend was similarly observed across both social media platforms monitored. 
-    However, overall, across almost all categories, violence experienced by both women and men 
-    candidates on Twitter was higher than that on Facebook.
-</body>
+{% load static %}
+{% block body_block %}
+<div id="push-evidence" class="container-fluid ovawp-proof p-3">
+    <h4 class="text-center">
+        Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?
+    </h4>
+    <div class="container-fluid">
+        <p class="mb-0"><i class='fas fa-check-circle' style="color:#822600;"></i>
+            Women candidates were more likely to experience trolling, sexual violence and 
+            body shaming compared to their male counterparts. 
+        </p>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color:#822600;"></i>
+            Men candidates were more likely to experience hate speech and satirical 
+            speech as compared to women candidates.
+        </p>
+        <p class="mb-0"><i class='fas fa-check-circle' style="color:#822600;"></i>
+        The trend was witnessed across both social media platforms monitored.<br>
+        <i class='fas fa-check-circle' style="color:#822600;"></i> 
+        However, overall, across almost all categories, violence experienced by both women 
+        and men candidates on Twitter was higher than that on Facebook.
+        </p>
+    </div>
+    <div class="container p-3">
+        <div class="p-2" 
+        style="width:100%;max-width:750px;margin:auto;background-color: white;">
+            <canvas id="horizontalcxt"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}

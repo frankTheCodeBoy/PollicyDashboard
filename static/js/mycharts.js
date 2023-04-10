@@ -68,7 +68,6 @@ chart_btn.addEventListener(
 
 // Doughnut-Chart with Chart Js         
 var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
-
 var myDoughnutChart = new Chart(doughnutChart, {
   type: 'doughnut',
   data: {
@@ -125,7 +124,6 @@ update_chart_btn.addEventListener(
 
 // Secondary Doughnut with Chart Js
 var doughnut = document.getElementById('doughnut').getContext('2d');
-
 var mydoughnut = new Chart(doughnut, {
   type: 'doughnut',
   data: {

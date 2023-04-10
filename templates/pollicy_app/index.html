@@ -126,7 +126,10 @@
                 <a class="nav-link" href="{% url 'pollicy_app:women_sm_view' %}">
                     Women Using Social Media</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Social Media Response</a></li>
+            <li id="social-response-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:social_response_view' %}">
+                    Social Media Response</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Evidence of OVAW-P</a></li>
             <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
@@ -669,7 +672,20 @@ $(document).ready(function(){
             });
         return false;
         e.stopPropagation
-    })
+    }).on('click', '#social-response-link', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/social_response_view/",
+            data: {},
+            success: function(response){
+            $("#main-content").html(response);
+            doughGraphs();
+            }    
+            });
+        return false;
+        e.stopPropagation
+    });
 })
 </script>
 {% endblock %}

@@ -43,3 +43,8 @@ def women_sm_view(request):
 	if request.method == 'GET':
 		data = render_to_string("pollicy_app/women_using_sm.html", {})
 		return JsonResponse(data, safe=False)
+	
+def social_response_view(request):
+	if request.method == 'GET':
+		data = render_to_string("pollicy_app/social_media_response.html", {})
+		return JsonResponse(data, safe=False)

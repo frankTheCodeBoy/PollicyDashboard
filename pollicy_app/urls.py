@@ -40,4 +40,9 @@ urlpatterns = [
     views.women_sm_view,
     name='women_sm_view',
 ),
+    path(
+    "social_response_view/",
+    views.social_response_view,
+    name='social_response_view',
+),
 ]
