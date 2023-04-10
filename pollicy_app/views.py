@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from machine_script import machine_fun
+from django.http import JsonResponse
+from django.template.loader import render_to_string
 import json
 
 def index(request):
@@ -38,6 +40,6 @@ def findings_view(request):
 	)
 
 def women_sm_view(request):
-	return render(
-		request, "pollicy_app/women_using_sm.html", {}
-	)
+	if request.method == 'GET':
+		data = render_to_string("pollicy_app/women_using_sm.html", {})
+		return JsonResponse(data, safe=False)

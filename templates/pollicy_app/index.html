@@ -656,8 +656,20 @@ $(document).ready(function(){
         e.preventDefault();
         $("#main-content").load("findings_view/ #push-findings");
         e.stopPropagation();
-    });
+    }).on('click', '#women-sm-link', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/women_sm_view/",
+            data: {},
+            success: function(response){
+            $("#main-content").html(response);
+            }    
+            });
 
+        return false;
+        e.stopPropagation();
+    })
 })
 </script>
 {% endblock %}
