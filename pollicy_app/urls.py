@@ -50,4 +50,9 @@ urlpatterns = [
     views.ovawp_proof_view,
     name='ovawp_proof_view',
 ),
+    path(
+    "variables_view/",
+    views.variables_view,
+    name='variables_view',
+),
 ]

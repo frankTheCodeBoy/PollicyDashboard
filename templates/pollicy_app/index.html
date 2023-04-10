@@ -134,7 +134,10 @@
                 <a class="nav-link" href="{% url 'pollicy_app:ovawp_proof_view' %}">
                     Evidence of OVAW-P</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
+            <li id="other-variables" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:variables_view' %}">
+                    OVAW-P vs Other Factors</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
         </ul>
         <div class="navbar-nav mr-auto p-2">
@@ -654,15 +657,23 @@ $(document).ready(function(){
         e.preventDefault();
         $("#main-content").load("intro_view/ #push-intro");
         e.stopPropagation();
-    }).on('click', '#research-link', function(e){
+    })
+    .on('click', '#research-link', function(e){
         e.preventDefault();
         $("#main-content").load("research_view/ #push-research");
         e.stopPropagation();
-    }).on('click', '#findings-link', function(e){
+    })
+    .on('click', '#findings-link', function(e){
         e.preventDefault();
         $("#main-content").load("findings_view/ #push-findings");
         e.stopPropagation();
-    }).on('click', '#women-sm-link', function(e){
+    })
+    .on('click', '#other-variables', function(e){
+        e.preventDefault();
+        $("#main-content").load("variables_view/ #push-variables");
+        e.stopPropagation();
+    })
+    .on('click', '#women-sm-link', function(e){
         e.preventDefault();
         $.ajax({
             type: 'GET',
@@ -674,8 +685,9 @@ $(document).ready(function(){
             }    
             });
         return false;
-        e.stopPropagation
-    }).on('click', '#social-response-link', function(e){
+        e.stopPropagation();
+    })
+    .on('click', '#social-response-link', function(e){
         e.preventDefault();
         $.ajax({
             type: 'GET',
@@ -687,8 +699,9 @@ $(document).ready(function(){
             }    
             });
         return false;
-        e.stopPropagation
-    }).on('click', '#ovawp-proof-link', function(e){
+        e.stopPropagation();
+    })
+    .on('click', '#ovawp-proof-link', function(e){
         e.preventDefault();
         $.ajax({
             type: 'GET',
@@ -700,7 +713,7 @@ $(document).ready(function(){
             }    
             });
         return false;
-        e.stopPropagation
+        e.stopPropagation();
     });
 })
 </script>
