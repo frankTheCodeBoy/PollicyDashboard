@@ -58,3 +58,9 @@ def variables_view(request):
 	return render(
 		request, "pollicy_app/ovawp_vs_factors.html", {}
 	)
+
+def rels_view(request):
+	if request.method == 'GET':
+		data = render_to_string("pollicy_app/apparent_rels.html", {})
+		return JsonResponse(data, safe=False)
+	

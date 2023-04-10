@@ -55,4 +55,9 @@ urlpatterns = [
     views.variables_view,
     name='variables_view',
 ),
+    path(
+    "rels_view/",
+    views.rels_view,
+    name='rels_view',
+),
 ]

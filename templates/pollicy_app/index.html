@@ -138,7 +138,10 @@
                 <a class="nav-link" href="{% url 'pollicy_app:variables_view' %}">
                     OVAW-P vs Other Factors</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
+            <li id="rels-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:rels_view' %}">
+                    Apparent Relationships</a>
+            </li>
         </ul>
         <div class="navbar-nav mr-auto p-2">
             <div class="dropdown">
@@ -710,6 +713,19 @@ $(document).ready(function(){
             success: function(response){
             $("#main-content").html(response);
             myHorizons();
+            }    
+            });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#rels-link', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/rels_view/",
+            data: {},
+            success: function(response){
+            $("#main-content").html(response);
             }    
             });
         return false;
