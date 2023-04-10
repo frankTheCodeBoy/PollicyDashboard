@@ -45,4 +45,9 @@ urlpatterns = [
     views.social_response_view,
     name='social_response_view',
 ),
+    path(
+    "ovawp_proof_view/",
+    views.ovawp_proof_view,
+    name='ovawp_proof_view',
+),
 ]

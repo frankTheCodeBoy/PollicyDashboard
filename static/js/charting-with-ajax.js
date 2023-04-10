@@ -129,3 +129,57 @@ function doughGraphs() {
   });
 
 }
+
+function myHorizons() {
+  var horizon_graph = document.getElementById('horizongraph');
+  new Chart(horizon_graph, {
+        type: 'bar',
+        data: {
+            labels: [
+              'Trolling', 'Sexual Violence', 'Body Shaming', 
+              'Insult or Hate Speech', 'Satire'
+            ],
+            datasets: [{
+                  label: 'Men',
+                  data: [41,8,11,38,43],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#822600',
+                },
+                {
+                  label: 'Women',
+                  data:[50,18,14,34,27],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#f89624',
+                },
+              ]
+            },
+        options: {
+            responsive: true,
+            indexAxis: 'y',
+            barPercentage: 1.0,
+            scales: {
+            x: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function(value){return value+ "%"}
+              }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    },
+                title: {
+                    display: true,
+                    text: 'OVAWP Illustration Graph',
+                    color: 'black',
+                    weight: 'bold',
+                    font: 'DM Sans, sans serif',
+                  },
+                }
+              }
+  });
+
+}

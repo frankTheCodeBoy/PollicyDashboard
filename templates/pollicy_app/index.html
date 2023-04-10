@@ -130,7 +130,10 @@
                 <a class="nav-link" href="{% url 'pollicy_app:social_response_view' %}">
                     Social Media Response</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Evidence of OVAW-P</a></li>
+            <li id="ovawp-proof-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:ovawp_proof_view' %}">
+                    Evidence of OVAW-P</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Apparent Relationships</a></li>
         </ul>
@@ -681,6 +684,19 @@ $(document).ready(function(){
             success: function(response){
             $("#main-content").html(response);
             doughGraphs();
+            }    
+            });
+        return false;
+        e.stopPropagation
+    }).on('click', '#ovawp-proof-link', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/ovawp_proof_view/",
+            data: {},
+            success: function(response){
+            $("#main-content").html(response);
+            myHorizons();
             }    
             });
         return false;

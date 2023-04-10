@@ -48,3 +48,8 @@ def social_response_view(request):
 	if request.method == 'GET':
 		data = render_to_string("pollicy_app/social_media_response.html", {})
 		return JsonResponse(data, safe=False)
+
+def ovawp_proof_view(request):
+	if request.method == 'GET':
+		data = render_to_string("pollicy_app/ovawp_evidence.html", {})
+		return JsonResponse(data, safe=False)

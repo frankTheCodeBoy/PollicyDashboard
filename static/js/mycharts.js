@@ -180,7 +180,6 @@ refresh_chart_btn.addEventListener(
 
 // Horizontal Chart with Chart Js
 var hori_Chart = document.getElementById('horizontalcxt');
-          
 new Chart(hori_Chart, {
         type: 'bar',
         data: {
