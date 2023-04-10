@@ -118,8 +118,14 @@
                 <a class="nav-link" href="{% url 'pollicy_app:research_view' %}">
                     Research Questions</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Key Findings</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Women Using Social Media</a></li>
+            <li id="findings-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:findings_view' %}">
+                    Key Findings</a>
+            </li>
+            <li id="women-sm-link" class="nav-item">
+                <a class="nav-link" href="{% url 'pollicy_app:women_sm_view' %}">
+                    Women Using Social Media</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Social Media Response</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Evidence of OVAW-P</a></li>
             <li class="nav-item"><a class="nav-link" href="#">OVAW-P vs Other Factors</a></li>
@@ -642,9 +648,13 @@ $(document).ready(function(){
         e.preventDefault();
         $("#main-content").load("intro_view/ #push-intro");
         e.stopPropagation();
-    }).on('click', '#research-link', function(e) {
+    }).on('click', '#research-link', function(e){
         e.preventDefault();
         $("#main-content").load("research_view/ #push-research");
+        e.stopPropagation();
+    }).on('click', '#findings-link', function(e){
+        e.preventDefault();
+        $("#main-content").load("findings_view/ #push-findings");
         e.stopPropagation();
     });
 

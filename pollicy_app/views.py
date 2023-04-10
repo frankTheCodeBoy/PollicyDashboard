@@ -31,3 +31,13 @@ def research_view(request):
 	return render(
 		request, "pollicy_app/researchobjects.html", {}
 	)
+
+def findings_view(request):
+	return render(
+		request, "pollicy_app/findings.html", {}
+	)
+
+def women_sm_view(request):
+	return render(
+		request, "pollicy_app/women_using_sm.html", {}
+	)
