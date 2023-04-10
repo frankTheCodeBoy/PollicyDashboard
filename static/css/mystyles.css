@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .res-obj h4 {
-    color: #B3B3B3;
-    background-color: #272727;
+    color: black;
+    background-color: #f89624;
     padding: 2px;
 }
 
@@ -121,9 +121,10 @@ div.key-finding {
 }
 
 .key-finding h4 {
-    color: #B3B3B3;
-    background-color: #272727;
+    color: black;
+    background-color: #f89624;
     padding: 2px;
+    border: 1px solid white;
 }
 
 .women-sm h4 {
