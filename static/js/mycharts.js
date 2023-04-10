@@ -1,6 +1,5 @@
 // Bar Chart with Chart Js
 const ctx = document.getElementById('myChart');
-          
 var my_bar =  new Chart(ctx, {
         type: 'bar',
         data: {
