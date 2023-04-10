@@ -81,6 +81,7 @@ function doughGraphs() {
         title: {
             display: true,
             text: '(%)POSITIVE COMMENTS ON TWITTER',
+            position: 'bottom',
             color: 'black',
             weight: 'bold',
             font: 'DM Sans, sans serif',
@@ -120,6 +121,7 @@ function doughGraphs() {
       title: {
           display: true,
           text: '(%)POSITIVE COMMENTS ON FACEBOOK',
+          position: 'bottom',
           color: 'black',
           weight: 'bold',
           font: 'DM Sans , sans serif',
@@ -180,6 +182,89 @@ function myHorizons() {
                   },
                 }
               }
+  });
+
+}
+
+function tertiaryCharts() {
+  var third_dough = document.getElementById('third-dough').getContext('2d');
+  var thirdDough = new Chart(third_dough, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [77, 23],
+        backgroundColor: ['#f89624','#822600']
+      }],
+  
+      labels: [
+      'Women',
+      'Men',
+      ]
+    },
+    options: {
+      responsive: true, 
+      layout: {
+        padding: {
+          left: 20,
+          right: 20,
+          top: 20,
+          bottom: 20
+        }
+      },
+      plugins: {
+        legend: {
+            position: 'top',
+            },
+        title: {
+            display: true,
+            text: '(%)NEGATIVE COMMENTS ON FACEBOOK',
+            position: 'bottom',
+            color: 'black',
+            weight: 'bold',
+            font: 'DM Sans, sans serif',
+          },
+        }
+    }
+  });
+
+  var fourth_dough = document.getElementById('fourth-dough').getContext('2d');
+  var fourthDough = new Chart(fourth_dough, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [14, 86],
+      backgroundColor: ['#822600','#f89624']
+    }],
+
+    labels: [
+    'Women',
+    'Men',
+    ]
+  },
+  options: {
+    responsive: true, 
+    layout: {
+      padding: {
+        left: 20,
+        right: 20,
+        top: 20,
+        bottom: 20
+      }
+    },
+    plugins: {
+      legend: {
+          position: 'top',
+          },
+      title: {
+          display: true,
+          text: '(%)NEGATIVE COMMENTS ON TWITTER',
+          position: 'bottom',
+          color: 'black',
+          weight: 'bold',
+          font: 'DM Sans , sans serif',
+        },
+      }
+  }
   });
 
 }
