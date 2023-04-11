@@ -145,22 +145,33 @@
             </li>
         </ul>
         <div class="navbar-nav mr-auto p-2">
-            <div class="dropdown">
-                <button class="btn btn-sm btn-block dropdown-toggle my-btn"
-                        style="background-color: #ebe9e9;"
-                        type="button" id="dropdownMenu1" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-share" style="color: #822600;"></i> 
-                    <span class="h6">Social Share <span class="badge badge-dark">3</span>
-                    </span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right my-btn" aria-labelledby="dropdownMenu1">
-                        <a class="dropdown-item" href="#">
-                            Facebook</a>
-                        <a class="dropdown-item" href="#">Twitter</a>
-                        <a class="dropdown-item" href="#">LinkedIn</a>
-                </div>
-            </div>
+            <div class="container mt-0 mb-2">
+              <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light my-btn">
+                        <i class="fa fa-share-alt"></i>
+                        <span class="badge badge-dark">5</span>
+                    </button>
+                    <button type="button" 
+                    class="btn btn-outline-light dropdown-toggle dropdown-toggle-split my-btn" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-social">
+                    <a class="dropdown-item social-facebook mb-1 rounded" href="#">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="dropdown-item social-twitter mb-1 rounded" href="#">
+                        <i class="fab fa-twitter"></i></a>
+                    <a class="dropdown-item social-linkedin mb-1 rounded" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="dropdown-item social-youtube mb-1 rounded" href="#">
+                        <i class="fab fa-youtube"></i></a>
+                    <a class="dropdown-item social-instagram rounded" href="#">
+                        <i class="fab fa-instagram"></i></a>
+                    </div>
+              </div>
+              </div>
+            <!--ends here-->
             <a href="#" id="a-download" style="text-decoration: none;">
             <p style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;" 
                 class="nav-item">
@@ -626,7 +637,18 @@
         z-index: 1;
     }
 }
-
+/* social share btns */
+.dropdown-menu-social{min-width:2.8rem; padding:2px;}
+.social-facebook { background-color: #3b5898; color: #fff; }
+.social-facebook:hover { background-color: #385186; color: #fff; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.social-twitter { background-color: #1ea2f2; color: #fff; }
+.social-twitter:hover { background-color: #1c99e5; color: #fff; }
+.social-linkedin { background-color: #0179bd; color: #fff; }
+.social-linkedin:hover { background-color: #0571ae; color: #fff; }
+.social-instagram { background-color: #7a2276; color: #fff; }
+.social-instagram:hover { background-color: #8b2a86; color: #fff; }
+.social-youtube { background-color: #d30000; color: #fff; }
+.social-youtube:hover { background-color: #ff0000; }
 </style>
 
 <script>
