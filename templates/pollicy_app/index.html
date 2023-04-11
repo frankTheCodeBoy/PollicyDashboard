@@ -104,7 +104,7 @@
         <div class="sidebar-header main-content">
             <h3 style="color:white;">Side Navigation</h3>
         </div>
-        <a id="sidebrand" class="navbar-brand" href="#">
+        <a id="sidebrand" class="navbar-brand" href="{% url 'pollicy_app:index' %}">
             <i class="far fa-compass" style="color: #f89624"></i>
             Dashboard
             <span class="badge badge-light">8</span>
@@ -377,7 +377,7 @@
 		<div class="col-md-12">
 			<div class="card">
 				<div class="card-header" style="background-color: #f89624;">
-					<h6 class="card-title" 
+					<h6 class="card-title reveal fade-bottom" 
                     style="color: black;">
                     OVAW-P Vs PARTY AFFILIATION
                     <span class="form-inline form-control-group" 
@@ -496,7 +496,8 @@
         </div>
     </div>
     <div class="container text-center">
-        <h5 class="text-left" style="font-weight: normal;">OVAWP Vs. Social Media Usage</h5>
+        <h5 class="text-left reveal fade-right" 
+            style="font-weight: normal;">OVAWP Vs. Social Media Usage</h5>
         <div class="table-responsive">
         <table class="table table-bordered table-striped table-sm">
               <tr>
