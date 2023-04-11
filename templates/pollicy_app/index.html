@@ -1,5 +1,6 @@
 {% extends 'pollicy_app/base.html' %}
 {% load static %}
+{% load social_share %}
 {% block title_block %}
     | Dashboard
 {% endblock %}
@@ -154,7 +155,8 @@
                     </span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right my-btn" aria-labelledby="dropdownMenu1">
-                        <a class="dropdown-item" href="#">Facebook</a>
+                        <a class="dropdown-item" href="#">
+                            Facebook</a>
                         <a class="dropdown-item" href="#">Twitter</a>
                         <a class="dropdown-item" href="#">LinkedIn</a>
                 </div>
