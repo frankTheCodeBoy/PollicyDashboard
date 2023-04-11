@@ -9,17 +9,21 @@ def machine_fun(text):
         'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
         'petty', 'imbecile', 'idle', 'cabbage', 'head',
         'stubborn', 'bugger', 'idiot', 'idiots', 'dummy', 'dumb',
+        'kwenda', 'mchafu', 'potea',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
         'kill', 'pretty', 'dick', 'maggot', 'feeble',
         'tits', 'boobs', 'fucked', 'ass', 'arsehole', 'mama',
+        'kuma', 'malaya', 'shoga', 
     ]
 
     shame_list = [
         'ugly', 'fat', 'bald', 'flabby', 'chubby',
         'little', 'small', 'smelly', 'old', 'midget',
+        'mfupi', 'hauna', 'fukara', 'bandia', 'senye',
+        'matako', 
     ]
 
     troll_list = [
@@ -33,7 +37,7 @@ def machine_fun(text):
         'religious', 'ungodly', 'hiding', 'hide', 'doom',
         'clout', 'chaser', 'hopeless', 'leave', 'hater',
         'go', 'away', 'kick', 'kicked', 'hahahaha', 'hahaha',
-        'stop', 'doll', 
+        'stop', 'doll', 'toka', 'nenda', 
     ]
 
     positive_list = [
