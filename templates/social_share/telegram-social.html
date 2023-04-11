@@ -2,28 +2,7 @@
 {% load social_share %}
 
 {% block body_block %}
-<div id="telegram-div">
-<div>
-    <img src="{% static 'images/logo.png' %}" width="120px;">
+<div id="telegram-para">
+{% post_to_telegram object_or_url '<p>Post to Telegram</p>' %}
 </div>
-<div class="container telegram-socials-div">
-    <p>
-    {% post_to_telegram object_or_url '<p>telegram</p>' %}
-    </p>
-</div>
-</div>
-<style>
-    .telegram-socials-div  {
-        font-family: 'DM Sans, sans serif';
-        font-size: 20px;
-        background-color: white;
-        width: fit-content;
-        border: 1px solid #b3b3b3;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1%;
-        
-    }
-</style>
 {% endblock %}

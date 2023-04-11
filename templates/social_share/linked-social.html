@@ -2,27 +2,7 @@
 {% load social_share %}
 
 {% block body_block %}
-<div id="linkedin-div">
-<div>
-    <img src="{% static 'images/logo.png' %}" width="120px;">
+<div id="linkedin-para">
+    {% post_to_linkedin object_or_url %}
 </div>
-<div class="container linked-socials-div">
-    <p>
-    {% post_to_linkedin object_or_url "<p>Linkedin</p>" %}
-    </p>
-</div>
-</div>
-<style>
-    .linked-socials-div  {
-        font-family: 'DM Sans, sans serif';
-        background-color: white;
-        border: 1px groove #b3b3b3;
-        width: 15%;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1%;
-        
-    }
-</style>
 {% endblock %}

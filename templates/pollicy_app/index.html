@@ -168,14 +168,14 @@
                     </div>
               </div>
               </div>
-            <!--ends here-->
+            <!--placeholder div-->
+            <div id="sec-content"></div>
+            <div class="mb-2" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
             <a href="#" id="a-download" style="text-decoration: none;">
-            <p style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;" 
-                class="nav-item">
             <i class="fas fa-download" style="color: #f89624;"></i> 
             <span id="download">Download</span>
-            </p>
             </a>
+            </div>
         </div>
 </nav>
 <div id="main-content" class="main container-fluid p-3 col-sm main-content mt-2">
@@ -644,6 +644,17 @@
 .social-linkedin:hover { background-color: #0571ae; color: #fff; }
 .social-telegram { background-color: #c8232c; color: #fff; }
 .social-telegram:hover { background-color: #ba1f27; color: #fff; }
+
+div#sec-content {
+    display: inline-block;
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 </style>
 
 <script>
@@ -750,6 +761,28 @@ $(document).ready(function(){
             }    
         });
         return false;
+        e.stopPropagation();
+    });
+
+    // social media buttons scripts
+    $('body').on('click', '.social-facebook', function(e){
+        e.preventDefault();
+        $('#sec-content').load('fb_post_view/ #fb-para');
+        e.stopPropagation();
+    })
+    .on('click', '.social-twitter', function(e){
+        e.preventDefault();
+        $('#sec-content').load('twitter_post_view/ #twitter-para');
+        e.stopPropagation();
+    })
+    .on('click', '.social-linkedin', function(e){
+        e.preventDefault();
+        $('#sec-content').load('linked_post_view/ #linkedin-para');
+        e.stopPropagation();
+    })
+    .on('click', '.social-telegram', function(e){
+        e.preventDefault();
+        $('#sec-content').load('telegram_post_view/ #telegram-para');
         e.stopPropagation();
     });
 })
