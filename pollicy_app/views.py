@@ -63,4 +63,23 @@ def rels_view(request):
 	if request.method == 'GET':
 		data = render_to_string("pollicy_app/apparent_rels.html", {})
 		return JsonResponse(data, safe=False)
-	
+
+def fb_post_view(request):
+	return render(
+		request, "social_share/fb-social.html", {}
+	)
+
+def twitter_post_view(request):
+	return render(
+		request, "social_share/twitter-social.html", {}
+	)
+
+def linked_post_view(request):
+	return render(
+		request, "social_share/linked-social.html", {}
+	)
+
+def telegram_post_view(request):
+	return render(
+		request, "social_share/telegram-social.html", {}
+	)

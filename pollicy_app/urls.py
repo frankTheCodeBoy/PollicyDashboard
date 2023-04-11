@@ -60,4 +60,25 @@ urlpatterns = [
     views.rels_view,
     name='rels_view',
 ),
+    path(
+    "fb_post_view/",
+    views.fb_post_view,
+    name='fb_post_view/',
+),
+    path(
+    "twitter_post_view/",
+    views.twitter_post_view,
+    name='twitter_post_view',
+),
+    path(
+    "linked_post_view/",
+    views.linked_post_view,
+    name='linked_post_view',  
+),
+    path(
+    "telegram_post_view/",
+    views.telegram_post_view,
+    name='telegram_post_view',
+),
+
 ]

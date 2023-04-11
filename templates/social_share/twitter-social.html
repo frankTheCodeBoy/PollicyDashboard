@@ -1,0 +1,29 @@
+{% load static %}
+{% load social_share %}
+
+{% block body_block %}
+<div id="twitter-div">
+<div>
+    <img src="{% static 'images/logo.png' %}" width="120px;">
+</div>
+<div class="container twitter-socials-div">
+    <p>
+    {% post_to_twitter object_or_url %}
+    </p>
+</div>
+</div>
+<style>
+    .twitter-socials-div  {
+        font-family: 'DM Sans, sans serif';
+        font-size: 20px;
+        background-color: white;
+        width: fit-content;
+        border: 1px solid #b3b3b3;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        
+    }
+</style>
+{% endblock %}
