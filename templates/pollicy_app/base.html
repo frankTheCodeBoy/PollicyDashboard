@@ -32,19 +32,34 @@
             <div class="row p-4 mb-0">
                 <div class="col-sm">
                     <h6>QUICK LINKS</h6>
-                    <p>Dashboard</p>
-                    <p>Hate Speech Classification</p>
+                    <p><a href="{% url 'pollicy_app:index' %}" 
+                        style="color: #b3b3b3;text-decoration:none;">Dashboard</a></p>
+                    <p><a href="{% url 'pollicy_app:hate_speech' %}"
+                        style="color: #b3b3b3;text-decoration:none;">
+                        Hate Speech Classification</a></p>
                 </div>
                 <div class="col-sm">
                     <h6>SOCIAL LINKS</h6>
-                    <p><i class="fab fa-twitter"></i> Twitter 
+                    <p><a href="https://twitter.com/PollicyOrg" 
+                        style="color:#b3b3b3;text-decoration:none;">
+                        <i class="fab fa-twitter"></i> Twitter 
+                        </a>
                         <span class="ml-2">
+                        <a href="https://pollicy.medium.com/" 
+                        style="color:#b3b3b3;text-decoration:none;">
                             <i class="fab fa-medium"></i> Medium
+                        </a>
                         </span>
                     </p>
-                    <p><i class="fab fa-facebook-f"></i> Facebook 
+                    <p><a href="https://www.facebook.com/pollicy/" 
+                        style="color:#b3b3b3;text-decoration:none;">
+                        <i class="fab fa-facebook-f"></i> Facebook 
+                        </a>
                         <span class="ml-2">
+                        <a href="https://ug.linkedin.com/company/pollicy"
+                        style="color:#b3b3b3;text-decoration:none;">
                             <i class="fab fa-linkedin-in"></i> Linkedin
+                        </a>
                         </span>
                     </p>
                 </div>
@@ -63,8 +78,12 @@
                 ☆This work is licensed under a Creative Commons Attribution-Non-Commercial-Share☆</span>
             </p>
             <div class="p-4">
+                <a href="https://pollicy.org/" style="text-decoration:none;">
                 <img src="{% static 'images/logo.png' %}" width="110px" height="55px">
+                </a>
+                <a href="https://www.ndi.org/" style="text-decoration:none;">
                 <img class="ml-3" src="{% static 'images/logo2.png' %}" width="75px" height="55px">
+                </a>
             </div>
         </div>
         <!--Page Scripts-->
