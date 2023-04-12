@@ -71,9 +71,9 @@ urlpatterns = [
     name='twitter_post_view',
 ),
     path(
-    "linked_post_view/",
-    views.linked_post_view,
-    name='linked_post_view',  
+    "google_post_view/",
+    views.google_post_view,
+    name='google_post_view',  
 ),
     path(
     "telegram_post_view/",

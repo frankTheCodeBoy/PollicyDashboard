@@ -160,11 +160,10 @@
                         <i class="fab fa-facebook-f"></i></a>
                     <a class="dropdown-item social-twitter mb-1 rounded" href="#">
                         <i class="fab fa-twitter"></i></a>
+                    <a class="dropdown-item social-google mb-1 rounded" href="#">
+                        <i class="fab fa-google-plus-g"></i></a>
                     <a class="dropdown-item social-telegram mb-1 rounded" href="#">
                         <i class="fab fa-telegram"></i></a>
-                    <a class="dropdown-item social-linkedin mb-1 rounded" href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
                     </div>
               </div>
               </div>
@@ -640,10 +639,10 @@
 .social-facebook:hover { background-color: #385186; color: #fff; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 .social-twitter { background-color: #1ea2f2; color: #fff; }
 .social-twitter:hover { background-color: #1c99e5; color: #fff; }
-.social-linkedin { background-color: #0179bd; color: #fff; }
-.social-linkedin:hover { background-color: #0571ae; color: #fff; }
-.social-telegram { background-color: #c8232c; color: #fff; }
-.social-telegram:hover { background-color: #ba1f27; color: #fff; }
+.social-google { background-color: #f4422c; color: #fff; }
+.social-google:hover { background-color: #C20806; color: #fff; }
+.social-telegram { background-color: #0088cc; color: #fff; }
+.social-telegram:hover { background-color: #0088cc; color: #fff; }
 
 div#sec-content {
     display: inline-block;
@@ -775,9 +774,9 @@ $(document).ready(function(){
         $('#sec-content').load('twitter_post_view/ #twitter-para');
         e.stopPropagation();
     })
-    .on('click', '.social-linkedin', function(e){
+    .on('click', '.social-google', function(e){
         e.preventDefault();
-        $('#sec-content').load('linked_post_view/ #linkedin-para');
+        $('#sec-content').load('google_post_view/ #google-para');
         e.stopPropagation();
     })
     .on('click', '.social-telegram', function(e){

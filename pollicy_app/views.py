@@ -74,9 +74,9 @@ def twitter_post_view(request):
 		request, "social_share/twitter-social.html", {}
 	)
 
-def linked_post_view(request):
+def google_post_view(request):
 	return render(
-		request, "social_share/linked-social.html", {}
+		request, "social_share/google-social.html", {}
 	)
 
 def telegram_post_view(request):
