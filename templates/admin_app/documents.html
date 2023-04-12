@@ -4,17 +4,32 @@
 | Documents
 {% endblock %}
 {% block body_block %}
-<div class="p-3">
+<div class="p-3 docs">
+  <div>
+    <img src="{% static 'images/logo.png' %}" width="150px">
+  </div>
+  <div class="container p-2">
   <h2>Documents</h2>
-  <ul>
+  <ul class="card card-body mt-4 p-4" style="background-color:#acacac;">
     {% for document in documents %}
       <li>
         {{ document.description }} - 
-        <a href="{% url 'admin_app:download' document.id %}">Download</a>
+        <a style="color: white;" href="{% url 'admin_app:download' document.id %}">Download</a>
       </li>
     {% empty %}
       <li>No documents found.</li>
     {% endfor %}
   </ul>
+  </div>
 </div>
+<style>
+.docs {
+  font-family: 'DM Sans, sans serif';
+  font-size: 18px;
+}
+
+.docs h2 {
+  margin-top: 4px;
+}
+</style>
 {% endblock %}
