@@ -1,0 +1,20 @@
+{% extends 'pollicy_app/base.html' %}
+{% load static %}
+{% block title_block %}
+| Documents
+{% endblock %}
+{% block body_block %}
+<div class="p-3">
+  <h2>Documents</h2>
+  <ul>
+    {% for document in documents %}
+      <li>
+        {{ document.description }} - 
+        <a href="{% url 'admin_app:download' document.id %}">Download</a>
+      </li>
+    {% empty %}
+      <li>No documents found.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
