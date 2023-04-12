@@ -61,23 +61,25 @@
 <!--Tabs here-->
 <div class="container p-3 text-center mt-0 hate-speech">
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    <button type="button" class="btn btn-light" 
+    <button id="top" type="button" class="btn btn-light my-btn" 
         style="border: 1px solid gray;">
         <i class="fas fa-arrow-alt-circle-up"></i>
         Top</button>
-    <button type="button" class="btn btn-light"
+    <button id="main" type="button" class="btn btn-light my-btn"
         style="border: 1px solid gray;background-color:#f89624;">
         <i class="fa fa-home"></i>
-        Main</button>
+        Main
+    </button>
   
     <div class="btn-group hate-speech" role="group">
       <button id="btnGroupDrop1" style="border: 1px solid gray;"
+        class="my-btn"
         type="button" class="btn btn-light dropdown-toggle" 
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-share-square"></i>
         Mobile-Share
       </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <div class="dropdown-menu my-btn" aria-labelledby="btnGroupDrop1">
         <a class="dropdown-item" href="#">
             <i class="fab fa-facebook"></i> Facebook</a>
         <a class="dropdown-item" href="#">
@@ -87,7 +89,7 @@
         </a>
       </div>
     </div>
-    <button type="button" class="btn btn-secondary">
+    <button type="button" class="btn btn-secondary my-btn">
         <i class="fas fa-cloud-download-alt"></i>
         File</button>
 </div>
@@ -106,12 +108,22 @@ $(document).ready(function(){
             $("#ml-result").html(data.display_text);
         })
     }
-    })
+    });
     $("#clear-text").on('click',function(e) {
         e.preventDefault();
         $("#ml-text").val("");
         $("#ml-result").html("");
-    })
+    }); 
+    $("#top").on('click', function(e){
+        e.preventDefault();
+        $(window).scrollTop(0);
+    });
+    $("#main").on('click', function(e){
+        e.preventDefault();
+        var link = "{% url 'pollicy_app:index' %}";
+        window.location = link;
+    });
+
 })
 </script>
 {% endblock %}
