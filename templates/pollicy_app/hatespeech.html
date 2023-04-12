@@ -59,7 +59,7 @@
 </div>
 </div>
 <!--Tabs here-->
-<div class="container p-3 text-center mt-0 hate-speech">
+<div class="container p-3 text-center mt-0 hate-speech" style="font-family:'DM Sans', sans-serif;">
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     <button id="top" type="button" class="btn btn-light my-btn" 
         style="border: 1px solid gray;">
@@ -71,23 +71,27 @@
         Main
     </button>
   
-    <div class="btn-group hate-speech" role="group">
-      <button id="btnGroupDrop1" style="border: 1px solid gray;"
+    <div class="btn-group hate-speech" role="group" style="font-family:'DM Sans', sans-serif;">
+      <button id="btnGroupDrop1" style="border: 1px solid gray;font-family:'DM Sans', sans-serif;"
         class="my-btn"
         type="button" class="btn btn-light dropdown-toggle" 
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-share-square"></i>
         Mobile-Share
       </button>
-      <div class="dropdown-menu my-btn" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">
-            <i class="fab fa-facebook"></i> Facebook</a>
-        <a class="dropdown-item" href="#">
-            <i class="fab fa-twitter"></i> Twitter</a>
-        <a class="dropdown-item" href="#">
-            <i class="fab fa-linkedin"></i> linkedIn</a>
-        </a>
-      </div>
+      <div class="dropdown-menu my-btn" aria-labelledby="btnGroupDrop1" 
+        style="background:#272727;border: 1px ridge white;">
+        {% load social_share %}
+        <div class="dropdown-item" style="font-family:'DM Sans', sans-serif;">
+            {% post_to_facebook object_or_url '<i class="fab fa-facebook"> Facebook</i>' %}
+        </div>
+        <div class="dropdown-item" style="font-family:'DM Sans', sans serif;">
+           {% post_to_twitter object_or_url %}
+        </div>
+        <div class="dropdown-item" style="font-family:'DM Sans', sans serif;">
+            {% post_to_linkedin object_or_url %}
+        </div>
+        </div>
     </div>
     <button id="file" type="button" class="btn btn-secondary my-btn">
         <i class="fas fa-cloud-download-alt"></i>

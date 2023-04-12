@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 div.key-finding {
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     background-color: snow;
 }
@@ -189,6 +189,7 @@ div.other-factors {
 .footer {
     background-color: black;
     overflow: hidden !important;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .footer hr {
