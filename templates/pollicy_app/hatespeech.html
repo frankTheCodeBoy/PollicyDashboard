@@ -89,7 +89,7 @@
         </a>
       </div>
     </div>
-    <button type="button" class="btn btn-secondary my-btn">
+    <button id="file" type="button" class="btn btn-secondary my-btn">
         <i class="fas fa-cloud-download-alt"></i>
         File</button>
 </div>
@@ -123,6 +123,11 @@ $(document).ready(function(){
         var link = "{% url 'pollicy_app:index' %}";
         window.location = link;
     });
+    $("#file").on('click', function(e){
+        e.preventDefault();
+        var url = "{% url 'admin_app:view_documents' %}";
+        window.location = url;
+    })
 
 })
 </script>
