@@ -681,11 +681,7 @@ $(window).on('scroll', function () {
         }
     });
     });            
-});       
-</script>
-<!--Ajax Scripts here-->
-<script>
-$(document).ready(function(){
+
     $('#sidebar-uls').on('click', '#intro-link', function(e){
         e.preventDefault();
         $("#main-content").load("intro_view/ #push-intro");
@@ -763,7 +759,6 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-    // social media buttons scripts
     $('body').on('click', '.social-facebook', function(e){
         e.preventDefault();
         $('#sec-content').load('fb_post_view/ #fb-para');
