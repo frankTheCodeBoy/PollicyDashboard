@@ -46,13 +46,13 @@
     border-color: #f89624;
   }
   li.usability .piesite > #slice > .pie {
-    border-color: white;
+    border-color: #f89624;
   }
   li.creativity .piesite > #slice > .pie {
-    border-color: #822600;
+    border-color: #f89624;
   }
   li.adaptability .piesite > #slice > .pie {
-    border-color: darkgray;
+    border-color: #f89624;
   }
   .piesite > #slice > .pie.fill {
     transform: rotate(180deg) !important;
@@ -90,7 +90,7 @@
   }
   .box-piesite ul li {
     display: inline-block;
-    margin: 10px 20px;
+    margin: 10px 12px;
   }
   .chartBarsHorizontal .chartBars .bars {
     flex-direction: column;
@@ -108,7 +108,7 @@
     box-sizing: border-box;
     margin-top: 0;
     padding: 4%;
-    border: 1px solid darkgray;
+    border-top: 0.2px solid rgb(39, 39, 39);
     border-bottom: none;
   }
 
