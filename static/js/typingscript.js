@@ -12,8 +12,8 @@ var textArray = [
 ];
 
 // Speed (in milliseconds) of typing.
-var speedForward = 60, //Typing Speed
-    speedBetweenLines = 1000;//Wait between first and second lines
+var speedForward = 50, //Typing Speed
+    speedBetweenLines = 800;//Wait between first and second lines
 
 //Run the loop
 typeWriter("output", textArray);
