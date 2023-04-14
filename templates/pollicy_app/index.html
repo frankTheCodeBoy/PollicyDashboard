@@ -26,13 +26,13 @@
     ----->
     <div class="row container mx-auto box-metrix slide-view">
         <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Social media accounts
-            <br>monitored<p>202</p></div>
+            <br>monitored<p class="cl-num" data-val="202">000</p></div>
         <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Accounts actively used 
-            <br>in campaigns<p>89%</p></div>
+            <br>in campaigns<p class="cl-num" data-val="180">000</p></div>
         <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Twitter replies
-            <br>collected<p>298,571</p></div>
+            <br>collected<p class="cl-mynewnum" data-val="298571">000</p></div>
         <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Facebook comments
-            <br>collected<p>70,006</p></div>
+            <br>collected<p class="cl-newnum" data-val="70006">000</p></div>
     </div>
 </div>
 <div class="index-content container-fluid anime-charts box-piesite">
@@ -792,7 +792,8 @@ $(window).on('scroll', function () {
         $('#sec-content').load('telegram_post_view/ #telegram-para');
         e.stopPropagation();
     });
-
+    
+    myCountUp();
 })
 </script>
 {% endblock %}
