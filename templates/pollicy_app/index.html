@@ -15,12 +15,24 @@
         <p class="typo"></p>
         <span class="typo"></span>
     </div>
+    <!----
     <div class="scroll-div text-center container">
         <img id="scroll-img" class="scroll-img" 
             style="background-color: #822600;
                 border: 2px hidden black;border-radius:5px;padding:2px;"
             src="{% static 'images/Scroll_icon.png' %}"
             width="60px">
+    </div>
+    ----->
+    <div class="row container mx-auto box-metrix">
+        <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Social media accounts
+            <br>monitored<p>202</p></div>
+        <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Accounts actively used 
+            <br>in campaigns<p>89%</p></div>
+        <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Twitter replies
+            <br>collected<p>298,571</p></div>
+        <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Facebook comments
+            <br>collected<p>70,006</p></div>
     </div>
 </div>
 <div class="index-content container-fluid anime-charts box-piesite">
@@ -99,15 +111,13 @@
 </nav>
 <div class="row container-fluid">
 <nav id="sidebar" class="d-none d-lg-block text-center p-2 col-sm sticky-top"
-            style="z-index: 0;">
+            style="z-index: 0;overflow:hidden;">
         <!---Added from main nav-->
-        <div class="sidebar-header main-content">
-            <h3 style="color:white;">Side Navigation</h3>
+        <div class="main-content">
         </div>
         <a id="sidebrand" class="navbar-brand" href="{% url 'pollicy_app:index' %}">
-            <i class="far fa-compass" style="color: #f89624"></i>
-            Dashboard
-            <span class="badge badge-light">8</span>
+            <i class="fa fa-list-alt" style="color: #f89624"></i>
+            Content
         </a>
         <ul id="sidebar-uls" class="navbar-nav mr-auto">
             <li id="intro-link" class="nav-item">
@@ -147,8 +157,7 @@
             <div class="container mt-0 mb-2">
               <div class="btn-group">
                     <button type="button" class="btn btn-outline-light my-btn">
-                        <i class="fa fa-share-alt"></i>
-                        <span class="badge badge-dark">4</span>
+                        <i class="fa fa-share"></i> Share to
                     </button>
                     <button type="button" 
                     class="btn btn-outline-light dropdown-toggle dropdown-toggle-split my-btn" 
@@ -172,7 +181,7 @@
             <div class="mb-2" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
             <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
             <i class="fas fa-download" style="color: #f89624;"></i> 
-            <span id="download">Download</span>
+            <span id="download">Download Full Report</span>
             </a>
             </div>
         </div>

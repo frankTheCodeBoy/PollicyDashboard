@@ -9,6 +9,64 @@ nav {
     font-size: 16px;
 }
 
+.div-metrics {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    margin: auto;
+    background-color: #272727;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.box-metrix {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:768px){
+    .div-metrics {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        font-size: 11px;
+        padding: 0.25%;
+    }
+    .box-metrix {
+        margin-top: 1%;
+    }
+    .div-metrics p {
+        font-size: 13px;
+    }
+    
+}
+
+@media only screen and (min-width:769px) and (max-width:960px) {
+    .div-metrics {
+        margin: auto;
+        font-size: 12px;
+    }
+    .box-metrix {
+        margin-top: 3%;
+    }
+    .div-metrics p {
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (min-width:962px) {
+    .div-metrics p {
+        font-size: 22px;
+    }
+    .box-metrix {
+        margin-top: 5%;
+    }
+}
+
+.div-metrics p {
+    margin-top: 2px;
+    color: #f89624;
+}
+
 #speech-div {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
@@ -25,7 +83,7 @@ nav {
 }
 
 #sidebar {
-    min-width: 250px;
+    min-width: 100px;
     max-width: 250px;
 }
 
@@ -41,6 +99,16 @@ nav {
         margin-left: 0;
     }
 }
+
+/*
+@media (max-width: 1023px) {
+    #sidebar ul li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+}
+*/
 
 .sidebar-header {
     background-color: gray;
