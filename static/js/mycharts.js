@@ -23,6 +23,7 @@ var my_bar =  new Chart(ctx, {
             },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             barPercentage: 0.8,
             scales: {
             y: {
@@ -82,7 +83,8 @@ var myDoughnutChart = new Chart(doughnutChart, {
     ]
   },
   options: {
-    responsive: true, 
+    responsive: true,
+    maintainAspectRatio: false, 
     layout: {
       padding: {
         left: 20,
@@ -138,7 +140,8 @@ var mydoughnut = new Chart(doughnut, {
     ]
   },
   options: {
-    responsive: true, 
+    responsive: true,
+    maintainAspectRatio: false, 
     layout: {
       padding: {
         left: 20,
@@ -205,6 +208,7 @@ new Chart(hori_Chart, {
             },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             indexAxis: 'y',
             barPercentage: 1.0,
             scales: {
