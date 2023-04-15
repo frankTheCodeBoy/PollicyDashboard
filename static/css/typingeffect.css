@@ -135,6 +135,18 @@
         }
   }
 
+  @media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .typo-header {
+          font-size: 14px;
+        }
+        p.typo {
+          font-size: 12px;
+        }
+        span.typo {
+          font-size: 12px;
+        }
+}
+
   /*
   @media only screen and (min-width: 1200px) and (orientation : portrait) {
       CSS code
