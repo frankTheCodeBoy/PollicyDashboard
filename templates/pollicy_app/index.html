@@ -708,28 +708,20 @@ $(window).on('scroll', function () {
     .on('click', '#research-link', function(e){
         e.preventDefault();
         $("#main-content").load("research_view/ #push-research");
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         e.stopPropagation();
     })
     .on('click', '#findings-link', function(e){
         e.preventDefault();
         $("#main-content").load("findings_view/ #push-findings");
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         e.stopPropagation();
     })
     .on('click', '#other-variables', function(e){
         e.preventDefault();
         $("#main-content").load("variables_view/ #push-variables");
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         e.stopPropagation();
     })
     .on('click', '#women-sm-link', function(e){
         e.preventDefault();
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         $.ajax({
             type: 'GET',
             url: "/women_sm_view/",
@@ -744,8 +736,6 @@ $(window).on('scroll', function () {
     })
     .on('click', '#social-response-link', function(e){
         e.preventDefault();
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         $.ajax({
             type: 'GET',
             url: "/social_response_view/",
@@ -761,8 +751,6 @@ $(window).on('scroll', function () {
     })
     .on('click', '#ovawp-proof-link', function(e){
         e.preventDefault();
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         $.ajax({
             type: 'GET',
             url: "/ovawp_proof_view/",
@@ -777,8 +765,6 @@ $(window).on('scroll', function () {
     })
     .on('click', '#rels-link', function(e){
         e.preventDefault();
-        var el = document.getElementById("main-content");
-        el.scrollIntoView();
         $.ajax({
             type: 'GET',
             url: "/rels_view/",
