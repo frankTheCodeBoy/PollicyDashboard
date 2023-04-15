@@ -7,9 +7,10 @@ def machine_fun(text):
         'crazy', 'retard', 'retarded', 'bloody', 'reckless',
         'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
         'mannerless', 'ungrateful', 'beggar', 'silent', 'quiet',
-        'petty', 'imbecile', 'idle', 'cabbage', 'head',
+        'petty', 'imbecile', 'idle', 'cabbage', 'head', 'bastard',
         'stubborn', 'bugger', 'idiot', 'idiots', 'dummy', 'dumb',
-        'kwenda', 'mchafu', 'potea',
+        'kwenda', 'mchafu', 'potea', 'shenzi', 'shetani', 'mjinga',
+        'kumbafu', 'pepo', 'chafu', 'nyamaza', 'kelele', 'ngombe',
     ]
 
     sexual_violence_list = [
@@ -23,7 +24,7 @@ def machine_fun(text):
         'ugly', 'fat', 'bald', 'flabby', 'chubby',
         'little', 'small', 'smelly', 'old', 'midget',
         'mfupi', 'hauna', 'fukara', 'bandia', 'senye',
-        'matako', 
+        'matako', 'masikini',
     ]
 
     troll_list = [
@@ -35,9 +36,9 @@ def machine_fun(text):
         'waste', 'wasting', 'unfriendly', 'tryhard',
         'hopeless', 'braggart', 'wishful', 'ashamed', 'shame',
         'religious', 'ungodly', 'hiding', 'hide', 'doom',
-        'clout', 'chaser', 'hopeless', 'leave', 'hater',
+        'clout', 'chaser', 'hopeless', 'leave', 'hater', 'loser',
         'go', 'away', 'kick', 'kicked', 'hahahaha', 'hahaha',
-        'stop', 'doll', 'toka', 'nenda', 
+        'stop', 'doll', 'toka', 'nenda', 'ondoka', 'wewe',
     ]
 
     positive_list = [
