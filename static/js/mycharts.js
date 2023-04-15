@@ -96,6 +96,9 @@ var myDoughnutChart = new Chart(doughnutChart, {
     plugins: {
       legend: {
           position: 'top',
+          labels : {
+						padding: 20,
+					}
           },
       title: {
           display: true,
@@ -153,6 +156,9 @@ var mydoughnut = new Chart(doughnut, {
     plugins: {
       legend: {
           position: 'top',
+          labels : {
+						padding: 20,
+					}
           },
       title: {
           display: true,
