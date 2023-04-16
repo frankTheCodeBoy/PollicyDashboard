@@ -13,6 +13,16 @@
   <link rel="stylesheet" type="text/css" href="{% static 'js/gephi_js/fancybox/jquery.fancybox.css' %}"/>
   <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="screen" />
   <link rel="stylesheet" media="screen and (max-height: 770px)" href="{% static 'css/tablet.css' %}" />
+  <style>
+    @media only screen and (max-width:768px) {
+        #mainpanel {
+          display: none !important;
+        }
+        #zoom {
+          display: none !important;
+        }
+    }
+  </style>
   <div class="container-fluid p-3" style="font-family: inherit;">
     <h4 style="color: black;">
         Are there noticeable links between the perpetrators and their victims?</h4>
@@ -95,9 +105,11 @@
 	</div>
 </div>
 <div id="developercontainer">
+  <!----
 	<a href="http://www.oii.ox.ac.uk" title="Oxford Internet Institute">
     <div id="oii"><span>OII</span></div></a>
 	<a href="http://jisc.ac.uk" title="JISC"><div id="jisc"><span>JISC</span></div></a>	
+  ----->
 </div>
 <script type="text/javascript">
 
