@@ -1,3 +1,4 @@
+function typeInOutput () {
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
     a = 0,
@@ -10,11 +11,9 @@ var textArray = [
   "Amplified Abuse|  Understanding Violence against Women in Politics and Leadership.", 
   "%   A study of Uganda's 2021 National General Elections...",  
 ];
-
 // Speed (in milliseconds) of typing.
 var speedForward = 50, //Typing Speed
     speedBetweenLines = 800;//Wait between first and second lines
-
 //Run the loop
 typeWriter("output", textArray);
 
@@ -56,4 +55,5 @@ function typeWriter(id, ar) {
     setTimeout(function(){ typeWriter(id, ar); }, speedBetweenLines);
     }
   }
+  };
 }

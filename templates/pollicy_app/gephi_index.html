@@ -13,7 +13,18 @@
   <link rel="stylesheet" type="text/css" href="{% static 'js/gephi_js/fancybox/jquery.fancybox.css' %}"/>
   <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="screen" />
   <link rel="stylesheet" media="screen and (max-height: 770px)" href="{% static 'css/tablet.css' %}" />
-<div id="gephi" class="container" style="width:100%;height: auto;">
+  <div class="container-fluid p-3" style="font-family: inherit;">
+    <h4 style="color: black;">
+        Are there noticeable links between the perpetrators and their victims?</h4>
+    <p>
+      Using network analysis, the accounts posting comments or replies to each gender were mapped out. 
+      The diagram shows that a higher number of unique accounts left comments or replies to men candidates 
+      (left cluster), compared to women candidates (right cluster). 
+      Fewer numbers of unique accounts posted comments or replies to men and women candidates (middle cluster). 
+      This could indicate that certain accounts target women specifically.
+    </p>
+</div>
+<div id="gephi" class="p-4" style="width:100%;height:auto;">
 <div class="sigma-parent p-1">
     <div class="sigma-expand" id="sigma-canvas"></div>
     <div id="mainpanel">

@@ -36,9 +36,6 @@
     </div>
 </div>
 <div class="index-content container-fluid anime-charts box-piesite">
-    <div class="h5 p-1 reveal fade-bottom" 
-        style="color:#f89624;background-color:#1a1919d2;border-radius:5px;
-        width:fit-content;">Key Metrics Chart</div>
     <ul>
         <li class="design">
             <div class="piesite" id="pie_0" data-pie="69"></div>
@@ -114,7 +111,7 @@
 </nav>
 <div class="row container-fluid">
 <nav id="sidebar" class="d-none d-lg-block text-center p-2 col-sm sticky-top"
-            style="z-index: 0;overflow:hidden;">
+            style="z-index:0;overflow:hidden;">
         <!---Added from main nav-->
         <div class="main-content">
         </div>
@@ -158,8 +155,8 @@
         </ul>
         <div class="navbar-nav mr-auto p-2">
             <div class="container mt-0 mb-2">
-              <div class="btn-group">
-                    <button type="button" class="btn btn-outline-light my-btn">
+              <div class="btn-group dropup">
+                    <button type="button" class="btn btn-outline-light my-btn share-d">
                         <i class="fa fa-share"></i> Share to
                     </button>
                     <button type="button" 
@@ -181,7 +178,7 @@
               </div>
             <!--placeholder div-->
             <div id="sec-content"></div>
-            <div class="mb-2" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
+            <div class="mb-2 share-d" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
             <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
             <i class="fas fa-download" style="color: #f89624;"></i> 
             <span id="download">Download Full Report</span>
@@ -516,7 +513,7 @@
           </table>
         </div>
     </div>
-    <div class="container text-center mt-3">
+    <div class="container text-center mt-2">
         <h5 class="text-left reveal fade-right" 
             style="font-weight: normal;">OVAWP Vs. Social Media Usage</h5>
         <div class="table-responsive">
@@ -567,31 +564,16 @@
     </div>
     </div>
 </div>
-<div class="container-fluid p-3" style="font-family: inherit;">
-    <h4 style="color: black;">
-        Are there noticeable links between the perpetrators and their victims?</h4>
-    <p>
-        Using network analysis, the accounts posting comments or replies to each 
-        gender were mapped out by strategic density comparison. 
-        The diagram below shows the differential variation in 
-        responses to the two genders. 
-    </p>
-    <p>
-        It is evident that densely populated cluster (at 0.68 square inches)
-        represents the female victims in this scenario while the remainder (at 0.32 square inches) 
-        represent male victims. This visualisation evidences the fact that the females are 
-        major victims to online targeted violence.
-    </p>
     <div id="gephi-chart" class="container-fluid mx-auto"></div>
     <p class="p-2 mt-3 mb-1 reveal fade-right" 
-        style="background-color:#b3b3b3;width:fit-content;border-radius:6px;font-weight:bold;">
+        style="background-color:#b3b3b3;width:fit-content;border-radius:6px;
+            font-weight:bold;clear: both;">
         Note:
         As part of this project, a text classification model was used to classify tweets/posts 
         in various categories such as: Trolling, Sexual violence, Insults, etc. 
         <a style="color: inherit;" href="{% url 'pollicy_app:hate_speech' %}">
             This model can be tested out here!</a>
     </p>
-    </div>
     </div>
 </div>
 
@@ -647,25 +629,25 @@ $(document).ready(function () {
 
     $(document).ready(function () {
 
-// the distance from top of page to initial position of the navbar, store it in a variable
-var navbarOffset = $('#main-navbar').offset().top;
+        // the distance from top of page to initial position of the navbar, store it in a variable
+        var navbarOffset = $('#main-navbar').offset().top;
 
-// Calculating the navbar height, and store it in a variable
-var navbarHeight = $('#main-navbar').outerHeight();
+        // Calculating the navbar height, and store it in a variable
+        var navbarHeight = $('#main-navbar').outerHeight();
 
-$(window).on('scroll', function () {
+        $(window).on('scroll', function () {
 
-    if ( $(window).scrollTop() >= navbarOffset ) { 
-    // if the navbar offset equal or bigger than user scrolling, make it fixed
-       $('#main-navbar').addClass('navbar-fixed-top');
-       $('.main-content').css('padding-top', navbarHeight + 'px');
-   } 
-   else {
-    // if not, return it to its initial state
-       $('#main-navbar').removeClass('navbar-fixed-top');
-       $('.main-content').css('padding-top', '0');
-        }
-    });
+            if ( $(window).scrollTop() >= navbarOffset ) { 
+            // if the navbar offset equal or bigger than user scrolling, make it fixed
+            $('#main-navbar').addClass('navbar-fixed-top');
+            $('.main-content').css('padding-top', navbarHeight + 'px');
+        } 
+        else {
+            // if not, return it to its initial state
+            $('#main-navbar').removeClass('navbar-fixed-top');
+            $('.main-content').css('padding-top', '0');
+                }
+            });
     });            
 
     $('#sidebar-uls').on('click', '#intro-link', function(e){
@@ -767,12 +749,19 @@ $(window).on('scroll', function () {
         $('#sec-content').load('telegram_post_view/ #telegram-para');
         e.stopPropagation();
     });
-    
+    // to run on page load.
+    typeInOutput();
     myCountUp();
-
+    $.ajax({
+            type: 'GET',
+            url: "/gephi_view/",
+            data: {},
+            success: function(response){
+            $("#gephi-chart").html(response);
+            }    
+        });
+        return false;
+    
 });
-
-        
-
 </script>
 {% endblock %}
