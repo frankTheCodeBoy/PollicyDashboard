@@ -582,39 +582,7 @@
         represent male victims. This visualisation evidences the fact that the females are 
         major victims to online targeted violence.
     </p>
-    <!---
-    <div class="text-right">
-        <button class="btn btn-sm my-btn" 
-            style="background-color:#f89624;">Genders</button>
-        <button class="btn btn-sm ml-0 my-btn" 
-            style="background-color:#822600;color:#b3b3b3;">Sources</button>
-    </div>
-    --->
-    <!----
-    <div class="row">
-        <div class="col-sm-10 flourish-embed flourish-network" data-src="visualisation/13282164">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-        <div class="col-sm-2 card card-body mt-2" style="font-size:12px;height:fit-content;">
-            <div class="mb-2">
-                <img id="pollicy-small-logo" 
-                    src="{% static 'images/logo.png' %}" width="50px" height="32px" alt="logo image">
-            </div>
-            <p class="card-header">
-                Gendered Network Visualisation
-                Showing Large Bias Toward Female-Targeted Online Violence.
-            </p>
-            <p class="p-2"> 
-            • It is evident that densely populated cluster (at 0.68 sq-inch)
-            represents the female victims in this scenario while the 
-            remainder only represent male victims (at 0.32 sq-inch). 
-            </p>
-            <span class="p-2" style="font-weight: bold; text-decoration: underline;">Legend:</span>
-            <span class="p-2">• Male and Female Gender Categories.</span>
-        </div>
-    </div>
-    ---->
-    <div id="gephi-chart" class="container-fluid"></div>
+    <div id="gephi-chart" class="container-fluid mx-auto"></div>
     <p class="p-2 mt-3 mb-1 reveal fade-right" 
         style="background-color:#b3b3b3;width:fit-content;border-radius:6px;font-weight:bold;">
         Note:
@@ -625,7 +593,6 @@
     </p>
     </div>
     </div>
-</div>
 </div>
 
 <!--Specific page scripts-->
@@ -802,6 +769,10 @@ $(window).on('scroll', function () {
     });
     
     myCountUp();
-})
+
+});
+
+        
+
 </script>
 {% endblock %}
