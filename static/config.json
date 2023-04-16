@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "/static/data.json",
+  "logo": {
+    "file": "https://ogbv.pollicy.org/images/Pollicy-logo-01.png",
+    "link": "https://pollicy.org/",
+    "text": "Pollicy"
+  },
+  "text": {
+    "more": "",
+    "intro": "The diagram shows links between users leaving negative comments (Yellow nodes) on Monitored accounts (Red nodes). The presence of cones shaoed networks is a indication of some users targeting specific individuals and the more yellow nodes linked to a red node, the more users leaving negative or violent comments on that account.",
+    "title": "Reply Network Showing Social Media Users against leaving OVAW-P comments and replies on Monitored Accounts"
+  },
+  "legend": {
+    "edgeLabel": "Links",
+    "colorLabel": "",
+    "nodeLabel": "Users Vs gender of victims of OVAW-P"
+  },
+  "features": {
+    "search": false,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": "type"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}

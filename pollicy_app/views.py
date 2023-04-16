@@ -83,3 +83,8 @@ def telegram_post_view(request):
 	return render(
 		request, "social_share/telegram-social.html", {}
 	)
+
+def gephi_view(request):
+	return render(
+		request, "pollicy_app/gephi_index.html", {}
+	)

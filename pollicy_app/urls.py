@@ -80,5 +80,10 @@ urlpatterns = [
         views.telegram_post_view,
         name='telegram_post_view',
     ),
+    path(
+        "gephi_view/",
+        views.gephi_view,
+        name='gephi_view',
+    ),
 
 ]
