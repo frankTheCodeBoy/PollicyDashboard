@@ -38,7 +38,12 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
   {% trans "However, significant harms such as online violence, disinformation, and hate speech have also proliferated in these online spaces." %}
   {% trans "Discriminatory gendered practices are shaped by social, economic, cultural, and political structures in the physical world and are similarly reproduced online across digital platforms." %}
 </p>
-  <p>{{ text }}</p>
+  <p>
+    {% blocktrans %}
+    {{ text }}
+    {% endblocktrans %}
+  </p>
+
 </div>
 </div>
 <style>

@@ -13,6 +13,9 @@ class Intro(models.Model):
     text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        verbose_name_plural = "Introduction"
+
     def __str__(self):
         if len(self.text) <= 50:
             return self.text
@@ -36,3 +39,48 @@ class Objective(models.Model):
 
     def __str__(self):
         return self.title
+    
+class MediaUsage(models.Model):
+    title = models.CharField(max_length=128)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name_plural = "Media Usage"
+
+    def __str__(self):
+        return self.title
+    
+class MediaResponse(models.Model):
+    title = models.CharField(max_length=128)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name_plural = "Media Response"
+
+    def __str__(self):
+        return self.title
+
+class OvawpOtherFactors(models.Model):
+    title = models.CharField(max_length=128)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name_plural = "Ovawp other factors"
+
+    def __str__(self):
+        return self.title
+
+class ApparentRelations(models.Model):
+    title = models.CharField(max_length=128)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name_plural = "Apparent Relationships"
+
+    def __str__(self):
+        return self.title
+
