@@ -85,5 +85,10 @@ urlpatterns = [
         views.gephi_view,
         name='gephi_view',
     ),
+    path(
+        "translate/",
+        views.translate,
+        name="translate",
+    ),
 
 ]

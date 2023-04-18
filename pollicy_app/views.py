@@ -88,3 +88,8 @@ def gephi_view(request):
 	return render(
 		request, "pollicy_app/gephi_index.html", {}
 	)
+
+def translate(request):
+	return render(
+		request, "pollicy_app/translate.html", {}
+	)
