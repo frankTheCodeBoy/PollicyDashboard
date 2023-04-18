@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from machine_script import machine_fun
 from django.http import JsonResponse
 from django.template.loader import render_to_string
+from django.utils.translation import gettext_lazy as _
 import json
 
 def index(request):
@@ -90,6 +91,10 @@ def gephi_view(request):
 	)
 
 def translate(request):
+	text = _("This is some random text.")
+	context = {
+		'text': text,
+	}
 	return render(
-		request, "pollicy_app/translate.html", {}
+		request, "pollicy_app/translate.html", context
 	)

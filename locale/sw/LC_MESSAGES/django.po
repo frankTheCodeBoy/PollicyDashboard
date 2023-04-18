@@ -1239,3 +1239,6 @@ msgstr "Hata hivyo, madhara makubwa kama vile vurugu mtandaoni, taarifa potofu n
 
 msgid "Discriminatory gendered practices are shaped by social, economic, cultural, and political structures in the physical world and are similarly reproduced online across digital platforms."
 msgstr "Matendo ya kibaguzi ya kijinsia yanachangiwa na miundo ya kijamii, kiuchumi, kitamaduni na kisiasa katika ulimwengu halisi na vile vile hutolewa mtandaoni katika mifumo ya kidijitali."
+
+msgid "This is some random text."
+msgstr "Hii ni sentensi ya aina yeyote."
