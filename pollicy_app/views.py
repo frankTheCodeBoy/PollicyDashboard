@@ -4,6 +4,8 @@ from machine_script import machine_fun
 from django.http import JsonResponse
 from django.template.loader import render_to_string
 from django.utils.translation import gettext_lazy as _
+from django.utils import translation
+from django.conf import settings
 import json
 
 def index(request):
@@ -91,10 +93,14 @@ def gephi_view(request):
 	)
 
 def translate(request):
+	user_language = 'sw' 
+	translation.activate(user_language)
 	text = _("This is some random text.")
 	context = {
 		'text': text,
 	}
-	return render(
-		request, "pollicy_app/translate.html", context
-	)
+	
+	response = render(request, 'pollicy_app/translate.html', context)
+	response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+	return response
+		
