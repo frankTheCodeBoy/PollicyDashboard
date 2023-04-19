@@ -27,7 +27,7 @@
     background-color: rgb(0, 0, 0);
     border: 2.5px groove black;
     border-radius: 6px;
-    padding: 5px;
+    padding: 6px;
     width:fit-content;
     margin-left: 4px;
     margin-top: 10px;
@@ -73,13 +73,13 @@
   @media only screen and (min-width: 480px) and (max-width: 767px) {
         /* for mobile landscape */
         .typo-header {
-          font-size: 24px;
+          font-size: 18px;
         }
         p.typo {
-          font-size: 20px;
+          font-size: 15px;
         }
         span.typo {
-          font-size: 20px;
+          font-size: 15px;
         }
   }
 
@@ -107,6 +107,9 @@
         span.typo {
           font-size: 20px;
         }
+        div.output {
+          padding-top: 6%;
+        }
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -133,6 +136,9 @@
         span.typo {
           font-size: 28px;
         }
+        div.output {
+          padding-top: 10%;
+        }
   }
 
   @media screen and (max-device-width: 767px) and (orientation: landscape) {
@@ -147,12 +153,23 @@
         }
 }
 
-  /*
+  
   @media only screen and (min-width: 1200px) and (orientation : portrait) {
-      CSS code
+      .typo-header {
+          font-size: 45px;
+        }
+        p.typo {
+          font-size: 30px;
+        }
+        span.typo {
+          font-size: 28px;
+        }
+        div.output {
+          padding-top: 15% !important;
+        }
     
   }
-  */
+  
   
   .scroll-div {
     padding: 3%;
