@@ -45,7 +45,7 @@ nav {
         font-size: 12px;
     }
     .box-metrix {
-        margin-top: 3%;
+        margin-top: 2%;
     }
     .div-metrics p {
         font-size: 18px;
@@ -55,10 +55,10 @@ nav {
 
 @media only screen and (min-width:962px) {
     .div-metrics p {
-        font-size: 25px;
+        font-size: 27px;
     }
     .box-metrix {
-        margin-top: 5%;
+        margin-top: 2%;
     }
 }
 

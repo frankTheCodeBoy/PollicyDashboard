@@ -35,7 +35,7 @@
 
   div.output {
     background-color: inherit;
-    padding-top: 4.5%;
+    /*padding-top: 4.5%;*/
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -53,78 +53,87 @@
 
   span.typo {
     font-size: 30px;
-    margin-top: 0;
+    margin-top: 1px;
     
   }
 
   @media only screen and (min-width: 320px) and (max-width: 479px) {
         /* for typical mobile devices */
         .typo-header {
-          font-size: 18px;
+          font-size: 22px;
         }
         p.typo {
-          font-size: 15px;
+          font-size: 16px;
         }
         span.typo {
-          font-size: 15px;
+          font-size: 16px;
+        }
+        div.output {
+          padding-top: 2.5% !important;
         }
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
         /* for mobile landscape */
         .typo-header {
-          font-size: 18px;
+          font-size: 20px;
         }
         p.typo {
           font-size: 15px;
         }
         span.typo {
           font-size: 15px;
+        }
+        div.output {
+          padding-top: 2.5% !important;
         }
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
         /* for tablet */
         .typo-header {
-          font-size: 22px;
+          font-size: 24px;
         }
         p.typo {
-          font-size: 18px;
+          font-size: 20px;
         }
         span.typo {
-          font-size: 18px;
+          font-size: 20px;
+        }
+        div.output {
+          padding-top: 15% !important;
         }
   }
   
   @media only screen and (min-width: 980px) and (max-width: 1023px) {
         /* for small desktop */
         .typo-header {
-          font-size: 26px;
+          font-size: 28px;
         }
         p.typo {
-          font-size: 20px;
+          font-size: 22px;
         }
         span.typo {
-          font-size: 20px;
+          font-size: 22px;
         }
         div.output {
-          padding-top: 7%;
+          padding-top: 7% !important;
         }
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
         /* for typical desktop */
         .typo-header {
-          font-size: 35px;
+          font-size: 40px;
         }
         p.typo {
-          font-size: 24px;
+          font-size: 28px;
         }
         span.typo {
-          font-size: 24px;
+          font-size: 28px;
         }
         div.output {
-          padding-top: 9%;
+          padding-top: 8.5% !important;
         }
   }
 
@@ -140,22 +149,22 @@
           font-size: 28px;
         }
         div.output {
-          padding-top: 11%;
+          padding-top: 10.5% !important;
         }
   }
 
-  @media screen and (max-device-width: 767px) and (orientation: landscape) {
+ /* @media screen and (max-device-width: 767px) and (orientation: landscape) {
     .typo-header {
-          font-size: 14px;
+          font-size: 16px;
         }
         p.typo {
-          font-size: 12px;
+          font-size: 14px;
         }
         span.typo {
-          font-size: 12px;
+          font-size: 14px;
         }
 }
-
+*/
   
   @media only screen and (min-width: 1200px) and (orientation : portrait) {
       .typo-header {
@@ -168,7 +177,7 @@
           font-size: 28px;
         }
         div.output {
-          padding-top: 16% !important;
+          padding-top: 12.5% !important;
         }
     
   }
