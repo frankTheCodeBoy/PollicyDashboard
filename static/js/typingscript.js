@@ -9,7 +9,7 @@ var i = 0,
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
   "Malignant Medium|  ❛Online Violence Against Women in Politics❜ ", 
-  "% A Study of Kenya's 2022 General National Elections..",  
+  "% A Study of Kenya's 2022 National General Elections..",  
 ];
 // Speed (in milliseconds) of typing.
 var speedForward = 50, //Typing Speed
