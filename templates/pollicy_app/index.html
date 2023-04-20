@@ -154,19 +154,25 @@
                     Apparent Relationships</a>
             </li>
         </ul>
-        <div class="navbar-nav mr-auto p-2">
-            <div class="mb-2 share-d" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
+        <div class="navbar-nav mr-auto p-1">
+            <img src="{% static 'images/gender-violence.png' %}" width="50%" class="geek-img"
+                style="display:block;margin: 1px auto;">
+            <div class="mb-2" style="border: 2px ridge #f89624;color: white; 
+                margin-top:2px;border-radius:5px;">
                 <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
                 <i class="fas fa-download" style="color: #f89624;"></i> 
-                <span id="download">Download Full Report</span>
+                <span id="download" style="font-size:15px;">Download Full Report</span>
                 </a>
             </div>
             <!--placeholder div-->
             <div id="sec-content"></div>
-            <div class="container mt-0 mb-2">
-              <div class="btn-group dropup">
-                    <button type="button" class="btn btn-outline-light my-btn share-d">
-                        <i class="fa fa-share"></i> Share to
+            <div class="container mt-0 mb-3">
+              <div class="btn-group btn-group-sm dropup">
+                    <button type="button" class="btn btn-outline-light my-btn share-d"
+                        style="font-size: 15px;color:#b3b3b3;">
+                        <img src="{% static 'images/icons8-share.png' %}" width="20" height="20"
+                            class="share-img"> 
+                            Share On
                     </button>
                     <button type="button" 
                     class="btn btn-outline-light dropdown-toggle dropdown-toggle-split my-btn" 
@@ -613,6 +619,7 @@
 .social-google:hover { background-color: #C20806; color: #fff; }
 .social-telegram { background-color: #0088cc; color: #fff; }
 .social-telegram:hover { background-color: #0088cc; color: #fff; }
+.share-d:hover {color:black !important;}
 
 div#sec-content {
     display: inline-block;
