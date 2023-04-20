@@ -111,8 +111,8 @@
     </div>
 </nav>
 <div class="row container-fluid">
-<nav id="sidebar" class="d-none d-lg-block text-center p-2 col-sm sticky-top"
-            style="z-index:0;overflow:hidden;">
+<nav id="sidebar" class="d-none d-lg-block text-center p-2 col-sm sticky-top overflow-hidden"
+            style="z-index:0;">
         <!---Added from main nav-->
         <div class="main-content">
         </div>
@@ -155,6 +155,14 @@
             </li>
         </ul>
         <div class="navbar-nav mr-auto p-2">
+            <div class="mb-2 share-d" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
+                <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
+                <i class="fas fa-download" style="color: #f89624;"></i> 
+                <span id="download">Download Full Report</span>
+                </a>
+            </div>
+            <!--placeholder div-->
+            <div id="sec-content"></div>
             <div class="container mt-0 mb-2">
               <div class="btn-group dropup">
                     <button type="button" class="btn btn-outline-light my-btn share-d">
@@ -177,14 +185,6 @@
                     </div>
               </div>
               </div>
-            <!--placeholder div-->
-            <div id="sec-content"></div>
-            <div class="mb-2 share-d" style="border: 1px solid #b3b3b3;color: white; margin-top: 3px;">
-            <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
-            <i class="fas fa-download" style="color: #f89624;"></i> 
-            <span id="download">Download Full Report</span>
-            </a>
-            </div>
         </div>
 </nav>
 <div id="main-content" class="main container-fluid p-3 col-sm main-content mt-2">
