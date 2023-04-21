@@ -4,7 +4,7 @@ let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
 valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
+  let startValue = 10;
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
   let duration = Math.floor(interval / endValue);
   let counter = setInterval(function () {
