@@ -11,12 +11,12 @@ def machine_fun(text):
         'stubborn', 'bugger', 'idiot', 'idiots', 'dummy', 'dumb',
         'kwenda', 'mchafu', 'potea', 'shenzi', 'shetani', 'mjinga',
         'kumbafu', 'pepo', 'chafu', 'nyamaza', 'kelele', 'ngombe', 'mbwa',
-        'takataka',
+        'takataka', 'jambazi',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
-        'kill', 'pretty', 'dick', 'maggot', 'feeble',
+        'kill', 'pretty', 'dick', 'maggot', 'feeble', 'bitch',
         'tits', 'boobs', 'fucked', 'ass', 'arsehole', 'mama',
         'kuma', 'malaya', 'shoga', 'tombwa', 'katombwe',
     ]
@@ -39,7 +39,7 @@ def machine_fun(text):
         'religious', 'ungodly', 'hiding', 'hide', 'doom', 'losing',
         'clout', 'chaser', 'hopeless', 'leave', 'hater', 'loser',
         'go', 'away', 'kick', 'kicked', 'hahahaha', 'hahaha',
-        'stop', 'doll', 'toka', 'nenda', 'ondoka', 'wewe',
+        'stop', 'doll', 'toka', 'nenda', 'ondoka', 'wewe', 'ovyo',
     ]
 
     positive_list = [
@@ -60,6 +60,6 @@ def machine_fun(text):
             message = "Trolling Comment"
         elif string in positive_list:
             message = "Non-Violent Comment"
-    
+
     return message
 
