@@ -93,14 +93,16 @@ def gephi_view(request):
 	)
 
 def translate(request):
-	user_language = 'sw' 
-	translation.activate(user_language)
-	text = _("This is some random text.")
-	context = {
-		'text': text,
-	}
 	
-	response = render(request, 'pollicy_app/translate.html', context)
-	response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
-	return response
+	#user_language = 'sw' 
+	#translation.activate(user_language)
+	#text = _("This is some random text.")
+	#context = {'text': text,}
+	#response = render(request, 'pollicy_app/translate.html', context)
+	#response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+	#return response
+	
+	return render(
+		request, "pollicy_app/translate.html", {}
+	)
 		

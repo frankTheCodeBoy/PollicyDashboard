@@ -7,16 +7,16 @@
 
 {% block body_block %}
 <div class="container-fluid trans-styles p-3">
-<div class="p-1 mb-3" style="background-color:white;width:100%;
-    border:1px groove #f89624;border-radius:5px;">
+<div class="p-1 mb-3">
   <img src="{% static 'images/logo.png' %}" width="150px">
 </div>
-<!-----
 <div class="text-center p-2 mb-2" 
-style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius:5px;margin: auto;">
+style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius:5px;margin: auto;"
+      style="background-color:white;width:100%;
+    border:1px groove #f89624;border-radius:5px;">
     <form action="{% url 'set_language' %}" method="post">
         {% csrf_token %}
-        <h4>Select Your Preffered Language: </h4>
+        <h4>Select Swahili Here and Translate: </h4>
         <select name="language">
            {% get_current_language as LANGUAGE_CODE %}
            {% get_available_languages as LANGUAGES %}
@@ -31,7 +31,6 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
           type="submit" value="Translate" class="btn btn-sm btn-dark">
     </form>
 </div>
------->
 <div style="background-color:#eeeeee;" class="p-2 trans-styles">
   <h5 style="background-color:white;width:fit-content;border-radius:3px;" class="p-1">
     {% trans "Introduction" %}
@@ -41,11 +40,6 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
   {% trans "However, significant harms such as online violence, disinformation, and hate speech have also proliferated in these online spaces." %}
   {% trans "Discriminatory gendered practices are shaped by social, economic, cultural, and political structures in the physical world and are similarly reproduced online across digital platforms." %}
 </p>
-  <p>
-    {% blocktrans %}
-    {{ text }}
-    {% endblocktrans %}
-  </p>
 </div>
 </div>
 <style>

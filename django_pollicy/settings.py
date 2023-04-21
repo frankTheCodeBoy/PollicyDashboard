@@ -65,7 +65,6 @@ MIDDLEWARE = [
 LANGUAGES = [
   ('en-us', 'English'),
   ('sw', 'Swahili'),
-  ('fr', 'French'),
 ]
 
 ROOT_URLCONF = 'django_pollicy.urls'
