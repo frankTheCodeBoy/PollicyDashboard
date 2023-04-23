@@ -98,7 +98,7 @@ newValueDisplays.forEach((newValueDisplay) => {
   let duration = Math.floor(newInterval / endValue);
   let counter = setInterval(function () {
     startValue += 1;
-    newValueDisplay.textContent = startValue;
+    newValueDisplay.textContent = startValue.toLocaleString();
     if (startValue == endValue) {
       clearInterval(counter);
     }
@@ -115,7 +115,7 @@ valDisplays.forEach((valDisplay) => {
   let duration = Math.floor(valInterval / endValue);
   let counter = setInterval(function () {
     startValue += 1;
-    valDisplay.textContent = startValue;
+    valDisplay.textContent = startValue.toLocaleString();
     if (startValue == endValue) {
       clearInterval(counter);
     }
