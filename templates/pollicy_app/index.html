@@ -146,10 +146,12 @@
                 <a class="nav-link" href="{% url 'pollicy_app:women_sm_view' %}">
                     Women Using Social Media</a>
             </li>
+            <!------
             <li id="social-response-link" class="nav-item">
                 <a class="nav-link" href="{% url 'pollicy_app:social_response_view' %}">
                     Social Media Response</a>
             </li>
+            ------>
             <li id="ovawp-proof-link" class="nav-item">
                 <a class="nav-link" href="{% url 'pollicy_app:ovawp_proof_view' %}">
                     Evidence of OVAW-P</a>
@@ -164,7 +166,7 @@
             </li>
         </ul>
         <div class="navbar-nav mr-auto p-1">
-            <img src="{% static 'images/byte-bullies.jpg' %}" width="40%" class="geek-img gender-violence"
+            <img src="{% static 'images/byte-bullies.jpg' %}" width="60%" class="geek-img gender-violence"
                 style="display:block;margin: 1px auto;">
             <div class="mb-2" style="border: 2px ridge #f89624;color: white; 
                 margin-top:2px;border-radius:5px;">
@@ -315,6 +317,7 @@
         </div>
     </div>
 </div>
+<!--------
 <div class="container-fluid social-response p-4">
     <h4 class="mt-2 text-center">
         What sentiments are attached to women's social media posts and how are 
@@ -355,6 +358,7 @@
         </div>
     </div>
 </div>
+------->
 <div class="container-fluid ovawp-proof p-3">
     <h4 class="text-center">
         Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?
@@ -575,15 +579,61 @@
     </div>
 </div>
     <div id="gephi-chart" class="container-fluid mx-auto"></div>
-    <p class="p-2 mt-3 mb-1 reveal fade-right" 
-        style="background-color:#b3b3b3;width:fit-content;border-radius:6px;
-            font-weight:bold;clear: both;">
-        Note:
-        As part of this project, a text classification model was used to classify tweets/posts 
-        in various categories such as: Trolling, Sexual violence, Insults, etc. 
-        <a style="color: inherit;" href="{% url 'pollicy_app:hate_speech' %}">
-            This model can be tested out here!</a>
-    </p>
+    <!---SlidesShow-->
+    <div class="container-fluid mx-auto p-4">
+    <div class="slide-show" style="font-family: inherit;clear: both;">
+        <h5 style="color:black;background-color: #f89624;
+                width:fit-content;border-radius:4px;font-weight:normal;" 
+            class="p-2 reveal fade-right">
+            Slides Showing Word Networks Relating to Online Violence
+        </h5>
+        <p class="mb-3">
+            Using word networks, we mapped out networks of words being used in replies to tweets by
+            women candidates to understand the underlying themes and topics they portray. 
+            The diagrams below both show that the discourse was mostly centered around the presidential election 
+            with specific keywords showing up in the network of replies.  
+        </p>
+    </div>
+        <div class="slideshow-container slide-show">
+        <!-- Full-width images with number and caption text -->
+          <div class="mySlides slide-fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="{% static 'images/slide-img1.png' %}" 
+              style="width:100%;background-color:#bbb;padding:1%;">
+            <div class="text"><img src="{% static 'images/info-icon.png' %}" width="15">
+              Word network from sexual violence<br>
+              comments showing keywords and themes<br>used in the comments
+            </div>
+          </div>       
+          <div class="mySlides slide-fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="{% static 'images/slide-img2.png' %}" 
+              style="width:100%; background-color:#bbb;padding:1%;">
+            <div class="text"><img src="{% static 'images/info-icon.png' %}" width="15">
+              Word network showing the most frequently<br>used words in replies to women candidates<br> 
+              on Twitter
+            </div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="slide-prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        </div><!--pasting of slide ends here-->
+        <p class="p-2 reveal fade-right" 
+            style="background-color:#b3b3b3;width:fit-content;border-radius:6px;
+                font-weight:bold;clear: both;">
+            Note:
+            As part of this project, a text classification model was used to classify tweets/posts 
+            in various categories such as: Trolling, Sexual violence, Insults, etc. 
+            <a style="color: inherit;" href="{% url 'pollicy_app:hate_speech' %}">
+                This model can be tested out here!</a>
+        </p>
     </div>
 </div>
 
@@ -634,8 +684,105 @@ div#sec-content {
     margin-top: 0;
     margin-bottom: 0;
 }
-</style>
 
+.slide-show {
+      box-sizing:border-box;
+}
+    
+/* Slideshow container */
+.slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+}
+    
+/* Hide the images by default */
+.mySlides {
+      display: none;
+}
+    
+/* Next & previous buttons */
+.slide-prev, .slide-next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+}
+    
+/* Position the "next button" to the right */
+.slide-next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+}
+    
+.slide-prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+}
+    
+/* On hover, add a black background color with a little bit see-through */
+.slide-prev:hover, .slide-next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: #f89624;
+      text-decoration: none;
+}
+    
+/* Caption text */
+.text {
+      color:#f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: left;
+}
+    
+/* Number text (1/2 etc) */
+.numbertext {
+      color: #f2f2f2;
+      font-family: "DM Sans", sans-serif;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+}
+    
+/* The dots/bullets/indicators */
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+}
+    
+.slide-active, .dot:hover {
+      background-color: #717171;
+}
+    
+/* Fading animation */
+.slide-fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+}
+    
+@keyframes slide-fade {
+      from {opacity: .4}
+      to {opacity: 1}
+}
+</style>
 <script>
 $(document).ready(function () {
 
@@ -735,7 +882,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#main-content").html(response);
-            $("#gephi-buttons").hide();
             }    
         });
         return false;
@@ -763,27 +909,27 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
-    $('body').on('click', '#slide-btn', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'GET',
-            url: "/slides_view/",
-            data: {},
-            success: function(response){
-            $("#gephi-chart").html(response);
-            }    
-        });
-        return false;
-        e.stopPropagation();
-    })
-    .on('click', '#gender-btn', function(e){
+    $('body').on('click', '#gender-btn', function(e){
         e.preventDefault();
         $.ajax({
             type: 'GET',
             url: "/gephi_view/",
             data: {},
             success: function(response){
-            $("#gephi-chart").html(response);
+            $("#main-content").html(response);
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#slides-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/slides_view/",
+            data: {},
+            success: function(response){
+            $("#main-content").html(response);
             }    
         });
         return false;
@@ -799,10 +945,41 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#gephi-chart").html(response);
+            $("#gephi-buttons").hide();
             }    
         });
         return false;
     
 });
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" slide-active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " slide-active";
+}
 </script>
+    
 {% endblock %}

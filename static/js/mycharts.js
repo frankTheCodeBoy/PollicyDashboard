@@ -67,6 +67,61 @@ chart_btn.addEventListener(
   false
 );
 
+// Horizontal Chart with Chart Js
+var hori_Chart = document.getElementById('horizontalcxt');
+new Chart(hori_Chart, {
+        type: 'bar',
+        data: {
+            labels: [
+              'Trolling', 'Sexual Violence', 'Body Shaming', 
+              'Insult or Hate Speech', 'Satire'
+            ],
+            datasets: [{
+                  label: 'Men',
+                  data: [41,8,11,38,43],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#822600',
+                },
+                {
+                  label: 'Women',
+                  data:[50,18,14,34,27],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#f89624',
+                },
+              ]
+            },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            barPercentage: 1.0,
+            scales: {
+            x: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function(value){return value+ "%"}
+              }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    },
+                title: {
+                    display: true,
+                    text: 'OVAWP Illustration Graph',
+                    color: 'black',
+                    weight: 'bold',
+                    font: 'DM Sans, sans serif',
+                  },
+                }
+              }
+});
+
+// Below are de-commissioned for this project!
+
 // Doughnut-Chart with Chart Js         
 var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
 var myDoughnutChart = new Chart(doughnutChart, {
@@ -179,7 +234,6 @@ function putData(chart, data) {
   chart.options.plugins.title.text = '(%)NEGATIVE COMMENTS ON 🇺🇬 TWITTER';
   chart.update();
 }
-
 var refresh_chart_btn = document.getElementById("refresh-btn");
 refresh_chart_btn.addEventListener(
   'click', function() {
@@ -187,55 +241,3 @@ refresh_chart_btn.addEventListener(
   }, false
 );
 
-// Horizontal Chart with Chart Js
-var hori_Chart = document.getElementById('horizontalcxt');
-new Chart(hori_Chart, {
-        type: 'bar',
-        data: {
-            labels: [
-              'Trolling', 'Sexual Violence', 'Body Shaming', 
-              'Insult or Hate Speech', 'Satire'
-            ],
-            datasets: [{
-                  label: 'Men',
-                  data: [41,8,11,38,43],
-                  borderWidth: 1,
-                  borderSkipped: false,
-                  backgroundColor: '#822600',
-                },
-                {
-                  label: 'Women',
-                  data:[50,18,14,34,27],
-                  borderWidth: 1,
-                  borderSkipped: false,
-                  backgroundColor: '#f89624',
-                },
-              ]
-            },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            indexAxis: 'y',
-            barPercentage: 1.0,
-            scales: {
-            x: {
-                beginAtZero: true,
-                ticks: {
-                  callback: function(value){return value+ "%"}
-              }
-                }
-            },
-            plugins: {
-                legend: {
-                    position: 'top',
-                    },
-                title: {
-                    display: true,
-                    text: 'OVAWP Illustration Graph',
-                    color: 'black',
-                    weight: 'bold',
-                    font: 'DM Sans, sans serif',
-                  },
-                }
-              }
-});
