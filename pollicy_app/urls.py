@@ -90,5 +90,9 @@ urlpatterns = [
         views.translate,
         name="translate",
     ),
-
+    path(
+        "slides_view/",
+        views.slides_view,
+        name='slides_view',
+    ),
 ]

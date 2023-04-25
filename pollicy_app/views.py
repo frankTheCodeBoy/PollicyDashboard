@@ -92,6 +92,11 @@ def gephi_view(request):
 		request, "pollicy_app/gephi_index.html", {}
 	)
 
+def slides_view(request):
+	return render(
+		request, "pollicy_app/slides.html", {}
+	)
+
 def translate(request):
 	
 	#user_language = 'sw' 
