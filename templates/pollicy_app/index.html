@@ -758,6 +758,34 @@ $(document).ready(function () {
         $('#sec-content').load('telegram_post_view/ #telegram-para');
         e.stopPropagation();
     });
+
+    $('body').on('click', '#slide-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/slides_view/",
+            data: {},
+            success: function(response){
+            $("#gephi-chart").html(response);
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#gender-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/gephi_view/",
+            data: {},
+            success: function(response){
+            $("#gephi-chart").html(response);
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    });
+
     // to run on page load.
     typeInOutput();
     myCountUp();

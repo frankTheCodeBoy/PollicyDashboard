@@ -1,0 +1,190 @@
+{% load static %}
+{% load bootstrap4 %}
+{% block title_block %}
+{% endblock %}
+
+{% block body_block %}
+<!-- Slideshow container -->
+<div class="slide-show p-3 container-fluid" style="font-family: inherit;">
+<h4 style="color: black;">
+    Are there noticeable links between the perpetrators and their victims?
+</h4>
+<p>
+  Using network analysis, the accounts posting comments or replies to each candidate were mapped out. 
+  The diagram shows the presence of large cones indicating some women leaders' accounts had a concentrated 
+  number of accounts leaving negative comments on just their social media accounts. 
+  This can be an indication of targeted attacks towards specific women with the size of the cone 
+  indicating the number of accounts targeting a specific candidate. 
+  In this diagram four (4) women specifically received a large number of replies compared to other accounts.
+  The large size of the cones evidences this.
+</p>
+<div class="text-right">
+  <div class="btn-group mb-4" role="group" aria-label="Basic example">
+    <button id="gender-btn" type="button" class="btn btn-secondary my-btn">Gendered Network</button>
+    <button id="self-btn" type="button" class="btn my-btn" 
+      style="background-color:#f89624;">Slides</button>
+</div>
+<div class="slideshow-container">
+<!-- Full-width images with number and caption text -->
+  <div class="mySlides slide-fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="{% static 'images/slide-img1.png' %}" 
+      style="width:100%;background-color:#bbb;padding:1%;">
+    <div class="text"><img src="{% static 'images/info-icon.png' %}" width="15">
+      Word network from sexual violence<br>
+      comments showing keywords and themes<br>used in the comments
+    </div>
+  </div>
+
+  <div class="mySlides slide-fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="{% static 'images/slide-img2.png' %}" 
+      style="width:100%; background-color:#bbb;padding:1%;">
+    <div class="text"><img src="{% static 'images/info-icon.png' %}" width="15">
+      Word network showing the most frequently<br>used words in replies to women candidates<br> 
+      on Twitter
+    </div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="slide-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+</div>
+
+<style>
+.slide-show {
+  box-sizing:border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.slide-prev, .slide-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slide-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slide-prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slide-prev:hover, .slide-next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #f89624;
+}
+
+/* Caption text */
+.text {
+  color:#f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slide-active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide-fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide-fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+
+<script>   
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" slide-active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " slide-active";
+}
+</script>
+
+{% endblock %}
