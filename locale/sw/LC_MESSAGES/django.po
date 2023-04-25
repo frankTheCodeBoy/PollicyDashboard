@@ -1265,8 +1265,8 @@ msgstr " uchambuzi wa ubora wa data, na uundaji wa modeli ya Kujifunza Mashine"
 msgid " capable of identifying and categorizing instances of online violence and hate speech in both English and Swahili languages."
 msgstr " yenye uwezo wa kubainisha na kuainisha matukio ya vurugu mtandaoni na matamshi ya chuki katika lugha za Kiingereza na Kiswahili." 
 
-msgid "RESEARCH QUESTIONS USED TO GUIDE TOWARDS ACHIEVING THE RESEARCH OBJECTIVE."
-msgstr "MASWALI YA UTAFITI YANAYOTUMIKA KUONGOZA KUELEKEA KUFIKIA LENGO LA UTAFITI."
+msgid "RESEARCH QUESTIONS USED TO GUIDE TOWARDS ACHIEVING THE RESEARCH OBJECTIVE"
+msgstr "MASWALI YA UTAFITI YANAYOTUMIKA KUONGOZA KUELEKEA KUFIKIA LENGO LA UTAFITI"
 
 msgid "How do women politicians in Kenya use social media platforms for campaigning"
 msgstr "Je, ni jinsi gani wanasiasa wanawake nchini Kenya hutumia majukwaa ya mitandao ya kijamii kufanya kampeni"     
