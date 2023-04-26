@@ -135,4 +135,21 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
     font-size: 15px;
   }
 </style>
+<script>
+//for the slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myImgSlides");
+    for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
 {% endblock %}
