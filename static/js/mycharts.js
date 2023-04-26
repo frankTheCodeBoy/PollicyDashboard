@@ -180,11 +180,10 @@ new Chart(sec_hori_Chart, {
           }
 });
 
-
 // Below are de-commissioned for this project!
 
 // Doughnut-Chart with Chart Js         
-var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
+/* var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
 var myDoughnutChart = new Chart(doughnutChart, {
   type: 'doughnut',
   data: {
@@ -302,3 +301,4 @@ refresh_chart_btn.addEventListener(
   }, false
 );
 
+ */
