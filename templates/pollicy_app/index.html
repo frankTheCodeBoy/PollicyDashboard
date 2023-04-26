@@ -256,7 +256,10 @@
         </ul>  
     </div>
     <div class="col-sm text-center">
-        <img class="geek-img" src="{% static 'images/qn-md.png' %}" width="80%">
+        <div class="w3-content w3-section" style="max-width:100%">
+            <img class="myImgSlides" src="{% static 'images/sect-img1.jpg' %}" style="width:100%">
+            <img class="myImgSlides" src="{% static 'images/sect-img2.jpg' %}" style="width:100%">
+        </div>
     </div>
 </div>
 <div class="container-fluid row key-finding p-4 mx-auto reveal fade-right">
@@ -1081,6 +1084,21 @@ $(document).ready(function () {
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " slide-active";
 }
-</script>
-    
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myImgSlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+
+</script>    
 {% endblock %}
