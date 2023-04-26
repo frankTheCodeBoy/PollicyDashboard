@@ -53,11 +53,9 @@ var my_bar =  new Chart(ctx, {
 
 // Update bar chart
 function stackedGraph(chart, data) {
-  chart.data.labels = ['Jan 2021', 'Dec 2021'];
-  chart.data.datasets[0].data = [21,31];
-  chart.data.datasets[1].data = [11,14];
-  chart.data.datasets[0].borderRadius = Number.MAX_VALUE;
-  chart.options.plugins.title.text = 'TWITTER (%)USAGE DEMOGRAPHICS';
+  chart.data.datasets[0].data = [26.5, 20.6, 8.8, 44.1];
+  chart.data.datasets[1].data = [31.4, 7.8, 11.8, 49.0];
+  chart.options.plugins.title.text = 'TWITTER USAGE BY GENDER';
   chart.update();
 }
 

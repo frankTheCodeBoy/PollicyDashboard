@@ -6,16 +6,15 @@ function drawChart() {
                 labels: ['Daily', 'Multiple', 'Weekly', 'Rarely'],
                 datasets: [{
                       label: 'Men',
-                      data: [15, 30, 3, 53],
+                      data: [24.1, 58.2, 11.4, 6.3],
                       borderWidth: 1,
                       borderSkipped: false,
                       backgroundColor:  '#f89624',
                     },
                     {
                       label: 'Women',
-                      data:[17, 39, 14, 31],
+                      data:[15.7, 52.9, 11.4, 20],
                       borderWidth: 1,
-                      borderRadius: Number.MAX_VALUE,
                       borderSkipped: false,
                       backgroundColor: '#822600',
                     },
@@ -23,7 +22,7 @@ function drawChart() {
                 },
             options: {
                 responsive: true,
-                barPercentage: 0.8,
+                barPercentage: 1.0,
                 scales: {
                 y: {
                     beginAtZero: true,
@@ -36,10 +35,13 @@ function drawChart() {
                 plugins: {
                     legend: {
                         position: 'top',
+                        labels: {
+                          padding: 20,
+                        }
                         },
                     title: {
                         display: true,
-                        text: 'FACEBOOK DEMOGRAPHICS',
+                        text: 'FACEBOOK USAGE BY GENDER',
                         color: '#272727',
                         weight: 'bold',
                         font: 'DM Sans, sans serif',
