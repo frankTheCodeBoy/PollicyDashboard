@@ -681,25 +681,25 @@
         </div>
     </div>
 </div>
-    <div id="gephi-chart" class="container-fluid mx-auto"></div>
+<div id="gephi-chart" class="container-fluid mx-auto"></div>
     <!---SlidesShow-->
-    <div class="container-fluid mx-auto p-4">
-    <div class="slide-show" style="font-family: inherit;clear: both;">
-        <h5 style="color:black;background-color: #f89624;
+<div class="container-fluid mx-auto p-4">
+<div class="slide-show" style="font-family: inherit;clear: both;">
+    <h5 style="color:black;background-color: #f89624;
                 width:fit-content;border-radius:4px;font-weight:normal;" 
             class="p-2 reveal fade-right">
             Slides Showing Word Networks Relating to Online Violence
-        </h5>
-        <p class="mb-3">
+    </h5>
+    <p class="mb-3">
             Using word networks, we mapped out networks of words being used in replies to tweets by
             women candidates to understand the underlying themes and topics they portray. 
             The diagrams below both show that the discourse was mostly centered around the presidential election 
             with specific keywords showing up in the network of replies.  
-        </p>
+    </p>
     </div>
-        <div class="slideshow-container slide-show">
+    <div class="slideshow-container slide-show">
         <!-- Full-width images with number and caption text -->
-          <div class="mySlides slide-fade">
+        <div class="mySlides slide-fade">
             <div class="numbertext">1 / 2</div>
             <img src="{% static 'images/slide-img1.png' %}" 
               style="width:100%;background-color:#bbb;padding:1%;">
@@ -707,8 +707,8 @@
               Word network from sexual violence<br>
               comments showing keywords and themes<br>used in the comments
             </div>
-          </div>       
-          <div class="mySlides slide-fade">
+        </div>       
+        <div class="mySlides slide-fade">
             <div class="numbertext">2 / 2</div>
             <img src="{% static 'images/slide-img2.png' %}" 
               style="width:100%; background-color:#bbb;padding:1%;">
@@ -716,7 +716,7 @@
               Word network showing the most frequently<br>used words in replies to women candidates<br> 
               on Twitter
             </div>
-          </div>
+        </div>
           <!-- Next and previous buttons -->
           <a class="slide-prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
@@ -727,17 +727,17 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>
-        </div><!--pasting of slide ends here-->
-        <p class="p-2 reveal fade-right" 
-            style="background-color:#b3b3b3;width:fit-content;border-radius:6px;
-                font-weight:bold;clear: both;">
-            Note:
-            As part of this project, a text classification model was used to classify tweets/posts 
-            in various categories such as: Trolling, Sexual violence, Insults, etc. 
-            <a style="color: inherit;" href="{% url 'pollicy_app:hate_speech' %}">
-                This model can be tested out here!</a>
-        </p>
-    </div>
+</div><!--pasting of slide ends here-->
+<p class="p-2 reveal fade-right" 
+    style="background-color:#b3b3b3;width:fit-content;border-radius:6px;
+        font-weight:bold;clear: both;">
+     Note:
+    As part of this project, a text classification model was used to classify tweets/posts 
+    in various categories such as: Trolling, Sexual violence, Insults, etc. 
+    <a style="color: inherit;" href="{% url 'pollicy_app:hate_speech' %}">
+     This model can be tested out here!</a>
+</p>
+</div>
 </div>
 
 <!--Specific page scripts-->
@@ -1084,21 +1084,6 @@ $(document).ready(function () {
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " slide-active";
 }
-
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-        var i;
-        var x = document.getElementsByClassName("myImgSlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 4000); // Change image every 4 seconds
-        }
 
 </script>    
 {% endblock %}
