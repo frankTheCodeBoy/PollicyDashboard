@@ -1316,3 +1316,23 @@ msgid " contributed to online violence, and factors such as age and party affili
 msgstr " imechangia vurugu mtandaoni, na mambo kama vile umri na chama pia yaliwafanya"
 msgid " women more vulnerable to harassment and abuse."
 msgstr " wanawake kuwa katika hatari zaidi ya kunyanyaswa na kunyanyaswa."
+
+msgid "How did women politicians in Kenya use social media"
+msgstr "Jinsi gani wanasiasa wanawake nchini Kenya walitumia mitandao ya kijamii "
+msgid " platforms for campaigning during scientific general elections?"
+msgstr " kufanya kampeni wakati wa uchaguzi mkuu wa kisayansi?"
+
+msgid "Facebook usage was generally higher across the men candidates with 93.8 percent of"
+msgstr "Matumizi ya Facebook kwa ujumla yalikuwa ya juu zaidi kwa watahiniwa wa kiume huku asilimia 93.8 ya"
+msgid " the accounts belonging to the men candidates being used at least once a week compared"
+msgstr " akaunti za watahiniwa wanaume zikitumiwa angalau mara moja kwa wiki ikilinganishwa"
+msgid " to the women candidates at 80 percent."
+msgstr " na watahiniwa wanawake kwa asilimia 80."
+
+msgid " On Twitter, 51 percent of the women candidates used their account at least once a week"
+msgstr " Katika Twitter, asilimia 51 ya watahiniwa wanawake walitumia akaunti zao angalau mara moja kwa wiki"
+msgid " compared to their male counterparts at 56 percent."
+msgstr " ikilinganishwa na wenzao wa kiume kwa asilimia 56."
+
+msgid "Switch"
+msgstr "Badili"
