@@ -22,6 +22,7 @@ function drawChart() {
                 },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 barPercentage: 1.0,
                 scales: {
                 y: {
@@ -134,25 +135,27 @@ function doughGraphs() {
 
 }
 
+//first horizontal bar graph
 function myHorizons() {
   var horizon_graph = document.getElementById('horizongraph');
   new Chart(horizon_graph, {
         type: 'bar',
         data: {
             labels: [
-              'Trolling', 'Sexual Violence', 'Body Shaming', 
-              'Insult or Hate Speech', 'Satire'
+              'Sexual Violence/ Body-Shaming', 'Insult/ Hate speech',
+              'Trolling', 'Disinformation',
+
             ],
             datasets: [{
-                  label: 'Men',
-                  data: [41,8,11,38,43],
+                  label: 'Women',
+                  data: [25.7, 21.4, 45.7, 32.9],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#822600',
                 },
                 {
-                  label: 'Women',
-                  data:[50,18,14,34,27],
+                  label: 'Men',
+                  data:[1.3, 13.9, 27.8, 20.3],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#f89624',
@@ -161,6 +164,7 @@ function myHorizons() {
             },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             indexAxis: 'y',
             barPercentage: 1.0,
             scales: {
@@ -174,10 +178,73 @@ function myHorizons() {
             plugins: {
                 legend: {
                     position: 'top',
+                    labels: {
+                      padding: 30,
+                    }
                     },
                 title: {
                     display: true,
-                    text: 'OVAWP Illustration Graph',
+                    text: 'FACEBOOK ACCOUNTS EXPERIENCING SPECIFIC OVAWP BY GENDER',
+                    color: 'black',
+                    weight: 'bold',
+                    font: 'DM Sans, sans serif',
+                  },
+                }
+              }
+  });
+
+}
+
+//second horizontal bar graph
+function mySecHorizonGraphy() {
+  var sec_horizon_graph = document.getElementById('sec-horizon-graph');
+  new Chart(sec_horizon_graph, {
+        type: 'bar',
+        data: {
+            labels: [
+              'Sexual Violence/ Body-Shaming', 'Insult/ Hate speech',
+              'Trolling', 'Disinformation',
+
+            ],
+            datasets: [{
+                  label: 'Women',
+                  data: [43.1, 58.8, 62.8, 45.1],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#822600',
+                },
+                {
+                  label: 'Men',
+                  data:[1.5, 22.1, 60.3, 23.5],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#f89624',
+                },
+              ]
+            },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            barPercentage: 1.0,
+            scales: {
+            x: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function(value){return value+ "%"}
+              }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                      padding: 30,
+                    }
+                    },
+                title: {
+                    display: true,
+                    text: 'TWITTER ACCOUNTS EXPERIENCING SPECIFIC OVAWP BY GENDER',
                     color: 'black',
                     weight: 'bold',
                     font: 'DM Sans, sans serif',

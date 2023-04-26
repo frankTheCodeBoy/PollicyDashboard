@@ -73,19 +73,19 @@ new Chart(hori_Chart, {
         type: 'bar',
         data: {
             labels: [
-              'Trolling', 'Sexual Violence', 'Body Shaming', 
-              'Insult or Hate Speech', 'Satire'
+              'Sexual Violence/ Body-Shaming', 'Insult/ Hate Speech',
+              'Trolling', 'Disinformation',
             ],
             datasets: [{
-                  label: 'Men',
-                  data: [41,8,11,38,43],
+                  label: 'Women',
+                  data:[25.7, 21.4, 45.7, 32.9],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#822600',
                 },
                 {
-                  label: 'Women',
-                  data:[50,18,14,34,27],
+                  label: 'Men',
+                  data: [1.3, 13.9, 27.8, 20.3],
                   borderWidth: 1,
                   borderSkipped: false,
                   backgroundColor: '#f89624',
@@ -106,19 +106,80 @@ new Chart(hori_Chart, {
                 }
             },
             plugins: {
-                legend: {
-                    position: 'top',
-                    },
-                title: {
-                    display: true,
-                    text: 'OVAWP Illustration Graph',
-                    color: 'black',
-                    weight: 'bold',
-                    font: 'DM Sans, sans serif',
-                  },
+              legend: {
+                position: 'top',
+                labels : {
+                  padding: 30,
                 }
+                },
+              title: {
+                display: true,
+                text: "FACEBOOK ACCOUNTS EXPERIENCING SPECIFIC OVAWP BY GENDER",
+                color: 'black',
+                weight: 'bold',
+                font: 'DM Sans, sans-serif',
+                },
               }
+          }
 });
+
+
+// Second horizontal Chart with Chart Js
+var sec_hori_Chart = document.getElementById('sec-horizontal-cxt');
+new Chart(sec_hori_Chart, {
+        type: 'bar',
+        data: {
+            labels: [
+              'Sexual Violence/ Body-Shaming', 'Insult/ Hate Speech',
+              'Trolling', 'Disinformation',
+            ],
+            datasets: [{
+                  label: 'Women',
+                  data:[43.1, 58.8, 62.8, 45.1],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#822600',
+                },
+                {
+                  label: 'Men',
+                  data: [1.5, 22.1, 60.3, 23.5],
+                  borderWidth: 1,
+                  borderSkipped: false,
+                  backgroundColor: '#f89624',
+                },
+              ]
+            },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            barPercentage: 1.0,
+            scales: {
+            x: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function(value){return value+ "%"}
+              }
+                }
+            },
+            plugins: {
+              legend: {
+                position: 'top',
+                labels : {
+                  padding: 30,
+                }
+                },
+              title: {
+                display: true,
+                text: "TWITTER ACCOUNTS EXPERIENCING OVAWP BY GENDER",
+                color: 'black',
+                weight: 'bold',
+                font: 'DM Sans, sans-serif',
+                },
+              }
+          }
+});
+
 
 // Below are de-commissioned for this project!
 
