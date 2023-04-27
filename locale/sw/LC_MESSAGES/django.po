@@ -1336,3 +1336,23 @@ msgstr " ikilinganishwa na wenzao wa kiume kwa asilimia 56."
 
 msgid "Switch"
 msgstr "Badili"
+
+msgid "Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?"
+msgstr "Je, kuna ushahidi wa OVAW-P? Ikiwa ndio, ni nini maonyesho ya OVAW-P?"
+
+msgid "OVAW-P was more prevalent among women candidates on Facebook with at least one in two of"
+msgstr "OVAW-P ilienea zaidi miongoni mwa wagombea wanawake kwenye Facebook huku angalau akaunti moja kati ya akaunti mbili za" 
+msgid " the women's accounts monitored (55.7 percent) experiencing some form of OVAWP compared to"
+msgstr " wanawake ikifuatiliwa (asilimia 55.7) ikiwa na aina fulani ya OVAWP ikilinganishwa na" 
+msgid " 35.4 percent among the men candidates."
+msgstr " asilimia 35.4 kati ya watahiniwa wanaume."
+
+msgid "Additionally, each of the forms of violence observed was more prevalent towards those women"
+msgstr "Zaidi ya hayo, kila aina ya unyanyasaji ulioangaliwa ulikuwa umeenea zaidi kwa watahiniwa hao wanawake," 
+msgid " candidates, especially sexual violence which was predominantly experienced by women candidates."
+msgstr " hasa unyanyasaji wa kijinsia ambao ulishughulikiwa zaidi na watahiniwa wanawake." 
+
+msgid "On Twitter, online violence disproportionately affected women, with significantly higher percentages"
+msgstr "Kwenye Twitter, unyanyasaji wa mtandaoni uliwaathiri wanawake kwa njia isiyo sawa, huku asilimia kubwa zaidi" 
+msgid " of women experiencing sexual harassment, hate speech, and disinformation compared to men."
+msgstr " ya wanawake wakipata unyanyasaji wa kijinsia, matamshi ya chuki na habari potofu ikilinganishwa na wanaume."
