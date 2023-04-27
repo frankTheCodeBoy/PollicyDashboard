@@ -1319,8 +1319,8 @@ msgstr " wanawake kuwa katika hatari zaidi ya kunyanyaswa na kunyanyaswa."
 
 msgid "How did women politicians in Kenya use social media"
 msgstr "Jinsi gani wanasiasa wanawake nchini Kenya walitumia mitandao ya kijamii "
-msgid " platforms for campaigning during scientific general elections?"
-msgstr " kufanya kampeni wakati wa uchaguzi mkuu wa kisayansi?"
+msgid " platforms for campaigning during the general elections?"
+msgstr " kufanya kampeni wakati wa uchaguzi mkuu?"
 
 msgid "Facebook usage was generally higher across the men candidates with 93.8 percent of"
 msgstr "Matumizi ya Facebook kwa ujumla yalikuwa ya juu zaidi kwa watahiniwa wa kiume huku asilimia 93.8 ya"
