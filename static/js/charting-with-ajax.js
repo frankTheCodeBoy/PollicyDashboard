@@ -142,7 +142,7 @@ function myHorizons() {
         type: 'bar',
         data: {
             labels: [
-              'Sexual Violence/ Body-Shaming', 'Insult/ Hate speech',
+              'Sexual/ Shaming', 'Insult/ Hate speech',
               'Trolling', 'Disinformation',
 
             ],
@@ -202,7 +202,7 @@ function mySecHorizonGraphy() {
         type: 'bar',
         data: {
             labels: [
-              'Sexual Violence/ Body-Shaming', 'Insult/ Hate speech',
+              'Sexual/ Shaming', 'Insult/ Hate speech',
               'Trolling', 'Disinformation',
 
             ],
