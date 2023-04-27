@@ -52,7 +52,7 @@ var my_bar =  new Chart(ctx, {
 });
 
 // Update bar chart
-function stackedGraph(chart, data) {
+function stackedGraph(chart) {
   chart.data.datasets[0].data = [26.5, 20.6, 8.8, 44.1];
   chart.data.datasets[1].data = [31.4, 7.8, 11.8, 49.0];
   chart.options.plugins.title.text = 'TWITTER USAGE BY GENDER';
@@ -73,7 +73,7 @@ new Chart(hori_Chart, {
         type: 'bar',
         data: {
             labels: [
-              'Sexual Violence/ Body-Shaming', 'Insult/ Hate Speech',
+              'Sexual/ Shaming', 'Insult/ Hate Speech',
               'Trolling', 'Disinformation',
             ],
             datasets: [{
@@ -130,7 +130,7 @@ new Chart(sec_hori_Chart, {
         type: 'bar',
         data: {
             labels: [
-              'Sexual Violence/ Body-Shaming', 'Insult/ Hate Speech',
+              'Sexual/ Shaming', 'Insult/ Hate Speech',
               'Trolling', 'Disinformation',
             ],
             datasets: [{
