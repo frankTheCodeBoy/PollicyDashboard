@@ -8,11 +8,12 @@
 {% block body_block %}
 <header class="trans-header" data-scroll>
 <div class="p-2 trans-styles" style="z-index:0 !important;">
-  <img src="{% static 'images/logo.png' %}" width="150px">
+  <img src="{% static 'images/logo.png' %}" width="150px" class="p-1"
+    style="background-color:white;border: 1px solid white;border-radius:5px;">
 </div>
 <div class="text-center p-1 mb-2 trans-styles" 
       style="background-color:#f89624;width:45%;z-index:0 !important;
-      border:1px solid #f89624;border-radius:5px;margin:auto;">
+      border:1px solid white;border-radius:5px;margin:auto;">
     <form action="{% url 'set_language' %}" method="post">
         {% csrf_token %}
         <h4>{% trans "Select Swahili Here and Translate:" %}</h4>
@@ -216,6 +217,11 @@ form {
   transform: translatey(100);
 }
 
+header {
+  background-image: url("/static/images/byte-bullies2.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
 </style>
 <script>
 //for the slideshow
