@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="p-2 mb-3 trans-styles">
+<header class="trans-header" data-scroll>
+<div class="p-2 trans-styles" style="z-index:0 !important;">
   <img src="{% static 'images/logo.png' %}" width="150px">
 </div>
-<div class="text-center p-3 mb-3 trans-styles" 
-style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius:5px;margin: auto;"
-      style="background-color:white;width:100%;
-    border:1px groove #f89624;border-radius:5px;">
+<div class="text-center p-1 mb-2 trans-styles" 
+      style="background-color:#f89624;width:45%;z-index:0 !important;
+      border:1px solid #f89624;border-radius:5px;margin:auto;">
     <form action="{% url 'set_language' %}" method="post">
         {% csrf_token %}
         <h4>{% trans "Select Swahili Here and Translate:" %}</h4>
@@ -30,8 +30,10 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
           type="submit" value="{% trans 'Translate' %}" class="btn btn-sm btn-dark">
     </form>
 </div>
-<div style="background-color:#eeeeee;" class="p-4 trans-styles mb-5">
-  <h5 style="background-color:white;width:fit-content;border-radius:3px;" class="p-1">
+</header>
+<main class="main" style="z-index:1 !important;background-color:white;">
+<div style="background-color:#eeeeee;height:65vh;" class="p-4 trans-styles mb-5">
+  <h5 style="background-color:white;width:fit-content;border-radius:3px;" class="p-1 mb-2">
     {% trans "Introduction" %}
   </h5>
   <p class="trans-styles">
@@ -178,16 +180,42 @@ style="background-color:#f89624;width:45%;border:1px solid #f89624;border-radius
       </div>
   </div>
 </div>
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</main>
 <style>
-  .trans-styles {
+.trans-styles {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
   }
 
-  form {
+form {
     font-family: "DM Sans", sans-serif;
     font-size: 15px;
   }
+
+.main {
+  padding: 15em 0 4.5em;
+}
+
+.trans-header {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
+  padding: 0;
+}
+
+/* When header is not in viewport we hide it */
+.trans-header[data-scroll="out"] {
+  transform: translatey(-200%);
+}
+
+/* When moving up and header we show it */
+[data-scroll-dir-y="-1"] .trans-header {
+  transform: translatey(100);
+}
+
 </style>
 <script>
 //for the slideshow
@@ -205,5 +233,11 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000); // Change image every 4 seconds
 }
+
+ScrollOut({
+    cssProps: true,
+    threshold: 0.2
+  });
+
 </script>
 {% endblock %}
