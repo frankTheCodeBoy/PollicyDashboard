@@ -611,11 +611,10 @@ ScrollOut({
 $(document).ready(function() {
   $.ajax({
             type: 'GET',
-            url: "/gephi_view/",
+            url: "/rels_view/",
             data: {},
             success: function(response){
             $("#trans-gephi-chart").html(response);
-            $("#gephi-buttons").hide();
             }    
         });
         return false;
