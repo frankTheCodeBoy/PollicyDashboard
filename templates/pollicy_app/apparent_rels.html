@@ -1,5 +1,6 @@
 {% load static %}
 {% load bootstrap4 %}
+{% load i18n %}
 {% block title_block %}
 {% endblock %}
 
@@ -23,18 +24,18 @@
         }
     }
   </style>
-<div class="container-fluid p-2" style="font-family: inherit;">
+<div class="container-fluid p-2" style="font-family:'DM Sans', sans-serif">
     <h4 style="color:black;font-weight:normal;">
-        Are there noticeable links between the perpetrators and their victims?
+      {% trans "Are there noticeable links between the perpetrators and their victims?" %}
     </h4>
     <p>
-      Using network analysis, the accounts posting comments or replies to each candidate were mapped out. 
-      The diagram shows the presence of large cones indicating some women leaders' accounts had a concentrated 
-      number of accounts leaving negative comments on just their social media accounts. 
-      This can be an indication of targeted attacks towards specific women with the size of the cone 
-      indicating the number of accounts targeting a specific candidate. In this diagram four (4) women 
-      specifically received a large number of replies compared to other accounts. 
-      The large size of the cones evidences this.
+      {% trans "Using network analysis, the accounts posting comments or replies to each candidate were mapped out." %} 
+      {% trans " The diagram shows the presence of large cones indicating some women leaders' accounts had a concentrated" %} 
+      {% trans " number of accounts leaving negative comments on just their social media accounts." %} 
+      {% trans " This can be an indication of targeted attacks towards specific women with the size of the cone" %} 
+      {% trans " indicating the number of accounts targeting a specific candidate. In this diagram four (4) women" %} 
+      {% trans " specifically received a large number of replies compared to other accounts." %} 
+      {% trans " The large size of the cones evidences this." %}
     </p>
 </div>
 <div id="gephi" class="p-3" style="width:100%;height:auto;">
