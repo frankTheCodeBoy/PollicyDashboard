@@ -2,7 +2,7 @@ def machine_fun(text):
     text = set(text.strip().split())
 
     insult_list = [
-        'hate', 'pig', 'stupid', 'pathetic',
+        'hate', 'pig', 'stupid', 'pathetic', 'devil',
         'shut', 'fool', 'foolish', 'poor', 'sick',
         'crazy', 'retard', 'retarded', 'bloody', 'reckless',
         'uncouth', 'deluded', 'shitty', 'shit', 'shithead',
@@ -11,14 +11,15 @@ def machine_fun(text):
         'stubborn', 'bugger', 'idiot', 'idiots', 'dummy', 'dumb',
         'kwenda', 'mchafu', 'potea', 'shenzi', 'shetani', 'mjinga',
         'kumbafu', 'pepo', 'chafu', 'nyamaza', 'kelele', 'ngombe', 'mbwa',
-        'takataka', 'jambazi',
+        'takataka', 'jambazi', 'nyani', 'mshamba', 'devil-worshipper', 'attention-seeker',
     ]
 
     sexual_violence_list = [
         'sexy', 'fuck', 'fucker', 'rape', 'female',
         'kill', 'pretty', 'dick', 'maggot', 'feeble', 'bitch',
         'tits', 'boobs', 'fucked', 'ass', 'arsehole', 'mama',
-        'kuma', 'malaya', 'shoga', 'tombwa', 'katombwe',
+        'kuma', 'malaya', 'shoga', 'tombwa', 'katombwe', 'homo',
+        'homosexual', 'mkundu', 'pussy', 
     ]
 
     shame_list = [
@@ -40,11 +41,14 @@ def machine_fun(text):
         'clout', 'chaser', 'hopeless', 'leave', 'hater', 'loser',
         'go', 'away', 'kick', 'kicked', 'hahahaha', 'hahaha',
         'stop', 'doll', 'toka', 'nenda', 'ondoka', 'wewe', 'ovyo',
+        'slayqueen', 'slayer', 'slay', 'homosapien', 'homosapiens',
+        'nyanza', 'jaluo', 'phobia', 'gold-digger', 'lost', 'loser',
+        'losing', 'beaten', 'seeker',
     ]
 
     positive_list = [
         'Congratulations', 'good', 'winning', 'nice',
-        'won', 'play', 'cool',
+        'won', 'play', 'cool', 'wise',
     ]
 
     message = "Non-Violent Comment"
