@@ -178,27 +178,27 @@
             <!--placeholder div-->
             <div id="sec-content"></div>
             <div class="container mt-0 mb-3">
-              <div class="btn-group btn-group-sm dropup">
-                    <button type="button" class="btn btn-outline-light my-btn share-d"
-                        style="font-size: 15px;color:#b3b3b3;">
-                        <img src="{% static 'images/byte-bullies-share.jpg' %}" width="20" height="20"
-                            class="share-img"> 
-                            Share On
-                    </button>
+              <div class="btn-group btn-group-sm dropup" role="group">
                     <button type="button" 
-                    class="btn btn-outline-light dropdown-toggle dropdown-toggle-split my-btn" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    class="btn btn-dark dropdown-toggle dropdown-toggle-split my-btn" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="font-size: 15px;color:#b3b3b3;">
+                        <i class="fa fa-share-square"></i>
+                            Share On Socials
                     <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-social">
-                    <a class="dropdown-item social-facebook mb-1 rounded" href="#">
-                        <i class="fab fa-facebook-f"></i></a>
-                    <a class="dropdown-item social-twitter mb-1 rounded" href="#">
-                        <i class="fab fa-twitter"></i></a>
-                    <a class="dropdown-item social-google mb-1 rounded" href="#">
-                        <i class="fab fa-google-plus-g"></i></a>
-                    <a class="dropdown-item social-telegram mb-1 rounded" href="#">
-                        <i class="fab fa-telegram"></i></a>
+                    <div class="dropdown-menu my-btn" aria-labelledby="btnGroupDrop1" 
+                        style="background:#272727;border: 1px ridge white;">
+                        {% load social_share %}
+                        <div class="dropdown-item" style="font-family:'DM Sans', sans-serif;">
+                            {% post_to_facebook object_or_url '<i class="fab fa-facebook"> Facebook</i>' %}
+                        </div>
+                        <div class="dropdown-item" style="font-family:'DM Sans', sans serif;">
+                        {% post_to_twitter object_or_url %}
+                        </div>
+                        <div class="dropdown-item" style="font-family:'DM Sans', sans serif;">
+                            {% post_to_linkedin object_or_url %}
+                        </div>
                     </div>
               </div>
               </div>
@@ -774,7 +774,7 @@
 
 
 /* social share btns */
-.dropdown-menu-social{min-width:2.8rem; padding:2px;}
+/* .dropdown-menu-social{min-width:2.8rem; padding:2px;}
 .social-facebook { background-color: #3b5898; color: #fff; }
 .social-facebook:hover { background-color: #385186; color: #fff; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 .social-twitter { background-color: #1ea2f2; color: #fff; }
@@ -795,7 +795,7 @@ div#sec-content {
     margin-top: 0;
     margin-bottom: 0;
 }
-
+ */
 .slide-show {
       box-sizing:border-box;
 }
@@ -1000,7 +1000,7 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
-    $('body').on('click', '.social-facebook', function(e){
+    /* $('body').on('click', '.social-facebook', function(e){
         e.preventDefault();
         $('#sec-content').load('fb_post_view/ #fb-para');
         e.stopPropagation();
@@ -1019,7 +1019,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('#sec-content').load('telegram_post_view/ #telegram-para');
         e.stopPropagation();
-    });
+    }); */
 
     $('body').on('click', '#gender-btn', function(e){
         e.preventDefault();
