@@ -59,10 +59,25 @@ function stackedGraph(chart) {
   chart.update();
 }
 
+function reverseGraph(chart) {
+  chart.data.datasets[0].data = [24.1, 58.2, 11.4, 6.3];
+  chart.data.datasets[1].data = [15.7, 52.9, 11.4, 20];
+  chart.options.plugins.title.text = 'FACEBOOK USAGE BY GENDER';
+  chart.update();
+}
+
 var chart_btn = document.querySelector(".chart-btn");
 chart_btn.addEventListener(
   'click', function() {
     stackedGraph(my_bar);
+  },
+  false
+);
+
+var add_chart_btn = document.querySelector(".add-chart-btn");
+add_chart_btn.addEventListener(
+  'click', function() {
+    reverseGraph(my_bar);
   },
   false
 );
