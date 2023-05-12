@@ -8,14 +8,14 @@ function drawChart() {
                       label: 'Men',
                       data: [24.1, 58.2, 11.4, 6.3],
                       borderWidth: 1,
-                      borderSkipped: false,
+                      borderSkipped: true,
                       backgroundColor:  '#f89624',
                     },
                     {
                       label: 'Women',
                       data:[15.7, 52.9, 11.4, 20],
                       borderWidth: 1,
-                      borderSkipped: false,
+                      borderSkipped: true,
                       backgroundColor: '#822600',
                     },
                   ]
@@ -23,15 +23,25 @@ function drawChart() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                indexAxis: 'y',
                 barPercentage: 1.0,
                 scales: {
-                y: {
+                x: {
                     beginAtZero: true,
                     ticks: {
                       callback: function(value){return value+ "%"},
                       color: 'black',
-                  }
+                      display: false,
+                  },
+                    grid: {
+                      display: false,
                     }
+                    },
+                y: {
+                    grid: {
+                      display: false,
+                    }
+                  },
                 },
                 plugins: {
                     legend: {
@@ -150,14 +160,14 @@ function myHorizons() {
                   label: 'Women',
                   data: [25.7, 21.4, 45.7, 32.9],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#822600',
                 },
                 {
                   label: 'Men',
                   data:[1.3, 13.9, 27.8, 20.3],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#f89624',
                 },
               ]
@@ -171,9 +181,18 @@ function myHorizons() {
             x: {
                 beginAtZero: true,
                 ticks: {
-                  callback: function(value){return value+ "%"}
-              }
+                  callback: function(value){return value+ "%"},
+                  display: false,
+              },
+                grid: {
+                  display: false,
                 }
+              },
+            y: {
+              grid: {
+                display: false,
+              }
+            }
             },
             plugins: {
                 legend: {
@@ -210,14 +229,14 @@ function mySecHorizonGraphy() {
                   label: 'Women',
                   data: [43.1, 58.8, 62.8, 45.1],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#822600',
                 },
                 {
                   label: 'Men',
                   data:[1.5, 22.1, 60.3, 23.5],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#f89624',
                 },
               ]
@@ -231,9 +250,18 @@ function mySecHorizonGraphy() {
             x: {
                 beginAtZero: true,
                 ticks: {
-                  callback: function(value){return value+ "%"}
-              }
+                  callback: function(value){return value+ "%"},
+                  display: false,
+              },
+                grid: {
+                  display: false,
                 }
+                },
+            y: {
+              grid: {
+                display: false,
+              }
+            }
             },
             plugins: {
                 legend: {
