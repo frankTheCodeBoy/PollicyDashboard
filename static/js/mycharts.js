@@ -26,13 +26,21 @@ var my_bar =  new Chart(ctx, {
             barPercentage: 1.0,
             indexAxis: 'y',
             scales: {
+            y: {
+                grid: {
+                  display: false,
+                }
+            },
             x: {
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
                   color: 'black',
+              },
+              grid: {
+                display: false,
               }
-                }
+              }
             },
             plugins: {
                 legend: {
