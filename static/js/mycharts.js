@@ -36,11 +36,12 @@ var my_bar =  new Chart(ctx, {
                 ticks: {
                   callback: function(value){return value+ "%"},
                   color: 'black',
+                  display: false,
               },
-              grid: {
+            grid: {
                 display: false,
               }
-              }
+            }
             },
             plugins: {
                 legend: {
