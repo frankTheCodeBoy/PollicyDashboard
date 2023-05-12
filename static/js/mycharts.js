@@ -24,8 +24,9 @@ var my_bar =  new Chart(ctx, {
             responsive: true,
             maintainAspectRatio: false,
             barPercentage: 1.0,
+            indexAxis: 'y',
             scales: {
-            y: {
+            x: {
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
