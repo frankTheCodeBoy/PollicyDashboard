@@ -105,14 +105,14 @@ new Chart(hori_Chart, {
                   label: 'Women',
                   data:[25.7, 21.4, 45.7, 32.9],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#822600',
                 },
                 {
                   label: 'Men',
                   data: [1.3, 13.9, 27.8, 20.3],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#f89624',
                 },
               ]
@@ -126,9 +126,18 @@ new Chart(hori_Chart, {
             x: {
                 beginAtZero: true,
                 ticks: {
-                  callback: function(value){return value+ "%"}
-              }
+                  callback: function(value){return value+ "%"},
+                  display: false,
+              },
+                grid: {
+                  display: false,
                 }
+            },
+            y: {
+              grid: {
+                display: false,
+              }
+            }  
             },
             plugins: {
               legend: {
@@ -162,14 +171,14 @@ new Chart(sec_hori_Chart, {
                   label: 'Women',
                   data:[43.1, 58.8, 62.8, 45.1],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#822600',
                 },
                 {
                   label: 'Men',
                   data: [1.5, 22.1, 60.3, 23.5],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#f89624',
                 },
               ]
@@ -183,9 +192,18 @@ new Chart(sec_hori_Chart, {
             x: {
                 beginAtZero: true,
                 ticks: {
-                  callback: function(value){return value+ "%"}
-              }
+                  callback: function(value){return value+ "%"},
+                  display: false,
+              },
+                grid: {
+                  display: false,
                 }
+                },
+            y: {
+              grid: {
+                display: false,
+              }
+            }
             },
             plugins: {
               legend: {
