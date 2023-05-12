@@ -8,14 +8,14 @@ var my_bar =  new Chart(ctx, {
                   label: 'Men',
                   data: [24.1, 58.2, 11.4, 6.3],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor:  '#f89624',
                 },
                 {
                   label: 'Women',
                   data:[15.7, 52.9, 11.4, 20],
                   borderWidth: 1,
-                  borderSkipped: false,
+                  borderSkipped: true,
                   backgroundColor: '#822600',
                 },
               ]
