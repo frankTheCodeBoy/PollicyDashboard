@@ -95,4 +95,14 @@ urlpatterns = [
         views.slides_view,
         name='slides_view',
     ),
+    path(
+        "range_plot_view/",
+        views.range_plot_view,
+        name='range_plot_view',
+    ),
+    path(
+        "range_chart_view/",
+        views.range_chart_view,
+        name='range_chart_view',
+    ),
 ]
