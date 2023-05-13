@@ -105,4 +105,14 @@ urlpatterns = [
         views.range_chart_view,
         name='range_chart_view',
     ),
+    path(
+        "line_plot_view/",
+        views.line_plot_view,
+        name='line_plot_view',
+    ),
+    path(
+        "line_chart_view/",
+        views.line_chart_view,
+        name='line_chart_view',
+    ),
 ]

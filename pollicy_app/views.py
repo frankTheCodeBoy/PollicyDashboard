@@ -111,7 +111,6 @@ def translate(request):
 		request, "pollicy_app/translate.html", {}
 	)
 		
-
 def range_plot_view(request):
 	return render(
 		request, "pollicy_app/range_plot.html", {}
@@ -120,4 +119,14 @@ def range_plot_view(request):
 def range_chart_view(request):
 	return render(
 		request, "pollicy_app/range_chart.html", {}
+	)
+
+def line_plot_view(request):
+	return render(
+		request, "pollicy_app/line_plot.html", {}
+	)
+
+def line_chart_view(request):
+	return render(
+		request, "pollicy_app/line_chart.html", {}
 	)
