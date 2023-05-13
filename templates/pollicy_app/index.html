@@ -671,7 +671,7 @@
             </tbody>
         </table>
         </div> -->
-    <h5 class="text-left reveal fade-bottom" style="font-weight: normal;">
+    <h5 class="reveal fade-bottom l-plots" style="font-weight: normal;">
             OVAWP Vs. Frequency of Social Media Usage By Women Candidates  
     </h5>
     <div class="line-plt">
@@ -681,11 +681,12 @@
     </div>
     </div>
     <div> <!---div for buttons-->
-    <button class="btn btn-sm my-btn" style="background-color:#f89624;">
-        Ovawp Vs. Frequency Plot
+    <button id="line-plt-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
+        Ovawp Vs. Frequency Chart
     </button>
-    <button class="btn btn-sm my-btn ml-3" style="background-color:#822600;color:#b3b3b3;">
-        Ovawp Vs. Elections Plot
+    <button id="line-chart-btn" class="btn btn-sm my-btn ml-3" 
+        style="background-color:#822600;color:#b3b3b3;">
+        Ovawp Vs. Elections Chart
     </button>
     </div>
     </div>
@@ -1116,6 +1117,34 @@ $(document).ready(function () {
             success: function(response){
             $("#plots").html(response);
             $(".h-plots").html("Facebook Statistics - Women Age Ranges Experiencing Ovawp");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#line-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/line_plot_view/",
+            data: {},
+            success: function(response){
+            $(".line-plt").html(response);
+            $(".l-plots").html("Ovawp and Frequency Relationship");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#line-chart-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/line_chart_view/",
+            data: {},
+            success: function(response){
+            $(".line-plt").html(response);
+            $(".l-plots").html("Ovawp and Election Outcome Relationship");
             }    
         });
         return false;
