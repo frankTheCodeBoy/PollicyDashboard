@@ -1,3 +1,5 @@
+Chart.defaults.font.size = 12;
+Chart.defaults.font.family = "DM Sans, sans-serif";
 function drawChart() {
     var myBarGraph = document.getElementById('myBarGraph');
     var draw_bar =  new Chart(myBarGraph, {
@@ -27,6 +29,7 @@ function drawChart() {
                 barPercentage: 1.0,
                 scales: {
                 x: {
+                    display: false,
                     beginAtZero: true,
                     ticks: {
                       callback: function(value){return value+ "%"},
@@ -179,6 +182,7 @@ function myHorizons() {
             barPercentage: 1.0,
             scales: {
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
@@ -248,6 +252,7 @@ function mySecHorizonGraphy() {
             barPercentage: 1.0,
             scales: {
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},

@@ -1,4 +1,6 @@
 // Bar Chart with Chart Js
+Chart.defaults.font.size = 12;
+Chart.defaults.font.family = "DM Sans, sans-serif";
 const ctx = document.getElementById('myChart');
 var my_bar =  new Chart(ctx, {
         type: 'bar',
