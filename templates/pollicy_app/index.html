@@ -495,7 +495,7 @@
     </div>
     ------>
 </div>
-<div class="container-fluid p-3 mx-auto">
+<div class="container-fluid mx-auto">
     <!------
     <div class="container text-center">
         <h5 class="text-left reveal fade-right" style="font-weight: normal;">
@@ -542,16 +542,26 @@
     </div>
     ------>
     <!---First range plot here-->
-        <div class="p-3" style="font-family:DM Sans, sans-serif;font-weight:normal;">
-            <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/hZQKL/embed.js?v=1" 
-                charset="utf-8"></script><noscript>
-                <img src="https://datawrapper.dwcdn.net/hZQKL/full.png" alt="" />
-            </noscript>
-        </div>
-    <div class="p-3">
+    <h4 class="h-plots p-3 reveal fade-right" style="font-weight:normal;">
+        Twitter: Women Age Range Percentages Experiencing Ovawp</h4>
+    <div id="plots" class="p-4">
+    <div>
+        <iframe title="Women Age-Groups Experiencing OVAWP on Twitter" 
+        aria-label="Range Plot" id="datawrapper-chart-hZQKL" 
+        src="https://datawrapper.dwcdn.net/hZQKL/3/" scrolling="no" frameborder="0" 
+        style="width: 0; min-width: 100% !important; border: none;" height="145" data-external="1">
+        </iframe>
+        <script type="text/javascript">!function(){"use strict";
+        window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");
+        for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source)
+        {var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+    </div>
+    </div>
+    <div class="p-4">
         <button class="btn btn-sm range-plt-btn my-btn" style="background-color:#f89624;">
             Facebook Range Plot</button>
-        <button class="ml-3 btn btn-sm range-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
+        <button class="ml-4 btn btn-sm range-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
             Twitter Range Plot</button>
     </div>    
     <!-- <div class="container text-center mt-4">
@@ -1062,6 +1072,34 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#main-content").html(response);
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '.range-cht-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/range_plot_view/",
+            data: {},
+            success: function(response){
+            $("#plots").html(response);
+            $(".h-plots").html("Twitter Statistics - Women Age-Ranges Experiencing Ovawp");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '.range-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/range_chart_view/",
+            data: {},
+            success: function(response){
+            $("#plots").html(response);
+            $(".h-plots").html("Facebook Statistics - Women Age Ranges Experiencing Ovawp");
             }    
         });
         return false;
