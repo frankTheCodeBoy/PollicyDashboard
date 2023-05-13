@@ -32,6 +32,7 @@ var my_bar =  new Chart(ctx, {
                 }
             },
             x: {
+                display:false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
@@ -124,6 +125,7 @@ new Chart(hori_Chart, {
             barPercentage: 1.0,
             scales: {
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
@@ -190,6 +192,7 @@ new Chart(sec_hori_Chart, {
             barPercentage: 1.0,
             scales: {
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
