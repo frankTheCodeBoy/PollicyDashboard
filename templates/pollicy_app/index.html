@@ -166,18 +166,22 @@
             </li>
         </ul>
         <div class="navbar-nav mr-auto p-1">
-            <img src="{% static 'images/byte-bullies.jpg' %}" width="60%" class="geek-img gender-violence"
+            <img src="{% static 'images/byte-bullies.jpg' %}" width="60%" class="geek-img"
                 style="display:block;margin: 1px auto;">
-            <div class="mb-2" style="border: 2px ridge #f89624;color: white; 
+            <div class="mb-1" style="border: 2px ridge #f89624;color: white; 
                 margin-top:2px;border-radius:5px;">
                 <a href="{% url 'admin_app:download' 1 %}" id="a-download" style="text-decoration: none;">
                 <i class="fas fa-download" style="color: #f89624;"></i> 
                 <span id="download" style="font-size:15px;">Download Full Report</span>
                 </a>
             </div>
-            <!--placeholder div-->
-            <div id="sec-content"></div>
-            <div class="container mt-0 mb-3">
+            <!--placeholder div, put image here-->
+            <div id="sec-content">
+                <img id="img-byte-bully"
+                    class="geek-img" src="{% static 'images/Byte_Bully_1.png' %}" width="60%"
+                    style="display:block; margin: 1px auto;">
+            </div>
+            <div class="container mt-1 mb-3">
               <div class="btn-group btn-group-sm dropup" role="group">
                     <button type="button" 
                     class="btn btn-dark dropdown-toggle dropdown-toggle-split my-btn" 
@@ -819,6 +823,11 @@
     
 }
 
+@media only screen and (max-width:1366px) {
+    #img-byte-bully {
+        display: none !important;
+    }
+}
 
 /* social share btns */
 /* .dropdown-menu-social{min-width:2.8rem; padding:2px;}
