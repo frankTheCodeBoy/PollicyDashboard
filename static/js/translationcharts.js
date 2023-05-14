@@ -1,3 +1,5 @@
+Chart.defaults.font.size = 12;
+Chart.defaults.font.family = "DM Sans, sans-serif";
 var secBarCanva = document.getElementById('secbarcanva');
 var secBar_Canva = new Chart(secBarCanva, {
         type: 'bar',
@@ -23,8 +25,15 @@ var secBar_Canva = new Chart(secBarCanva, {
             responsive: true,
             maintainAspectRatio: false,
             barPercentage: 1.0,
+            indexAxis: 'y',
             scales: {
             y: {
+                grid: {
+                  display: false,
+                }
+            },
+            x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"},
@@ -98,7 +107,13 @@ new Chart(transHorizonCanva, {
             indexAxis: 'y',
             barPercentage: 1.0,
             scales: {
+            y: {
+                grid: {
+                  display: false,
+                }
+            },
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"}
@@ -155,7 +170,13 @@ new Chart(transHoriGraphCanva, {
             indexAxis: 'y',
             barPercentage: 1.0,
             scales: {
+            y: {
+                grid: {
+                  display: false,
+                }
+            },
             x: {
+                display: false,
                 beginAtZero: true,
                 ticks: {
                   callback: function(value){return value+ "%"}
