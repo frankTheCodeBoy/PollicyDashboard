@@ -1177,6 +1177,34 @@ $(document).ready(function () {
         });
         return false;
         e.stopPropagation();
+    })
+    .on('click', '#new-line-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/line_plot_view/",
+            data: {},
+            success: function(response){
+            $(".div-line-plt").html(response);
+            $(".new-lplots").html("Ovawp and Frequency Relationship");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#new-line-chart-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/line_chart_view/",
+            data: {},
+            success: function(response){
+            $(".div-line-plt").html(response);
+            $(".new-lplots").html("Ovawp and Election Outcome Relationship");
+            }    
+        });
+        return false;
+        e.stopPropagation();
     });
 
     // to run on page load.
