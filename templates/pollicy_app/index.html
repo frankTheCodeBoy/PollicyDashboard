@@ -1163,6 +1163,20 @@ $(document).ready(function () {
         });
         return false;
         e.stopPropagation();
+    })
+    .on('click', '.new-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/range_chart_view/",
+            data: {},
+            success: function(response){
+            $("#new-plots").html(response);
+            $(".new-h-plots").html("Facebook Statistics - Women Age Ranges Experiencing Ovawp");
+            }    
+        });
+        return false;
+        e.stopPropagation();
     });
 
     // to run on page load.
