@@ -68,13 +68,27 @@ function transformGraph(chart) {
     chart.update();
   }
   
-  var chart_btn = document.querySelector(".trans-btn");
-  chart_btn.addEventListener(
+function reverseTransformGraph(chart) {
+    chart.data.datasets[0].data = [24.1, 58.2, 11.4, 6.3];
+    chart.data.datasets[1].data = [15.7, 52.9, 11.4, 20];
+    chart.options.plugins.title.text = 'FACEBOOK USAGE BY GENDER';
+    chart.update();
+  }
+  
+var chart_btn = document.querySelector(".trans-btn");
+var trans_fb_btn = document.querySelector(".trans-fb-btn");
+chart_btn.addEventListener(
     'click', function() {
       transformGraph(secBar_Canva);
     },
     false
-  );
+);
+trans_fb_btn.addEventListener(
+  "click", function(){
+    reverseTransformGraph(secBar_Canva);
+  },
+  false
+);
   
   // Horizontal Chart with Chart Js
 var transHorizonCanva = document.getElementById('transhorizoncanva');
