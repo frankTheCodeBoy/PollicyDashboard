@@ -144,11 +144,11 @@
       </div>
       <div class="col-sm p-2 text-center" style="width:100%;max-width:900px;height:380px;">
           <canvas id="secbarcanva"></canvas>
-      <div class="p-3">
+      <div class="btn-group p-3" role="group">
         <button class="btn btn-sm my-btn trans-btn" style="background-color:#f89624;">
           {% trans "Get Twitter Chart" %}
         </button>
-        <button class="ml-3 btn btn-sm my-btn trans-fb-btn" 
+        <button class="btn btn-sm my-btn trans-fb-btn" 
           style="background-color:#822600;color: #b3b3b3;;">
           {% trans "Revert to Facebook Chart" %}
         </button>
@@ -220,10 +220,10 @@
         </script>
     </div>
     </div>
-    <div>
+    <div class="btn-group" role="group">
         <button class="btn btn-sm trans-plt-btn my-btn" style="background-color:#f89624;">
           {% trans "Facebook Range Plot" %}</button>
-        <button class="ml-3 btn btn-sm trans-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
+        <button class="btn btn-sm trans-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
           {% trans "Twitter Range Plot" %}</button>
     </div> 
     </div>   
@@ -237,11 +237,11 @@
         </script>
     </div>
     </div>
-    <div> <!---div for buttons-->
+    <div class="btn-group" role="group"> <!---div for buttons-->
     <button id="trans-line-plt-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
      {% trans "Ovawp Vs. Frequency Chart" %}
     </button>
-    <button id="trans-line-chart-btn" class="btn btn-sm my-btn ml-3" 
+    <button id="trans-line-chart-btn" class="btn btn-sm my-btn" 
         style="background-color:#822600;color:#b3b3b3;">
       {% trans "Ovawp Vs. Elections Chart" %}
     </button>
