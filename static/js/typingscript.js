@@ -8,7 +8,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "Byte Bullies|  ❛Online Violence Against Women in Politics❜ ", 
+  "Byte Bullies|  Understanding Violence against Women in Politics and Leadership", 
   "% A Study of Kenya's 2022 National General Elections..",  
 ];
 // Speed (in milliseconds) of typing.
