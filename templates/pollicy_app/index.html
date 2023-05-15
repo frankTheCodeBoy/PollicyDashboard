@@ -261,14 +261,14 @@
     </div>
     <div class="col-sm text-center">
         <div class="w3-content w3-section" style="max-width:100%">
-            <img class="myImgSlides" src="{% static 'images/sect-img1.jpg' %}" style="width:90%">
-            <img class="myImgSlides" src="{% static 'images/sect-img2.jpg' %}" style="width:90%">
+            <img class="myImgSlides custom-img" src="{% static 'images/sect-img1.jpg' %}" style="width:100%">
+            <img class="myImgSlides custom-img" src="{% static 'images/sect-img2.jpg' %}" style="width:100%">
         </div>
     </div>
 </div>
 <div class="container-fluid row key-finding p-4 mx-auto reveal fade-right">
     <div class="col-sm">
-        <img class="geek-img" src="{% static 'images/Byte_Bully_1.png' %}" width="96%">
+        <img class="geek-img custom-img2" src="{% static 'images/Byte_Bully_1.png' %}" width="100%">
     </div>
     <div class="col-sm">
         <h4 class="card card-title">FINDINGS FROM THE STUDY REVEALED THE FOLLOWING</h4>
@@ -724,6 +724,15 @@
 @media only screen and (max-width:1366px) {
     #img-byte-bully {
         display: none !important;
+    }
+}
+
+@media only screen and (min-width:1367px) {
+    .custom-img {
+        width: 90% !important;
+    }
+    .custom-img2 {
+        width: 96% !important;
     }
 }
 
