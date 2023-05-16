@@ -929,6 +929,34 @@ $(document).ready(function () {
         return false;
         e.stopPropagation();
     })
+    .on('click', '.new-facebook-cht-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/facebook_plot_view/",
+            data: {},
+            success: function(response){
+            $("#new-facebook-plots").html(response);
+            $(".new-facebook-header").html("(Facebook) Grouped Bars Showing Women Experiencing OVAWP");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '.new-facebook-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/facebook_chart_view/",
+            data: {},
+            success: function(response){
+            $("#new-facebook-plots").html(response);
+            $(".new-facebook-header").html("(Facebook) Bar Chart Showing Women Experiencing OVAWP");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
     .on('click', '#new-line-plt-btn', function(e){
         e.preventDefault();
         $.ajax({
