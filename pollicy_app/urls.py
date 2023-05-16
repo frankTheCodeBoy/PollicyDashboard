@@ -96,14 +96,14 @@ urlpatterns = [
         name='slides_view',
     ),
     path(
-        "range_plot_view/",
-        views.range_plot_view,
-        name='range_plot_view',
+        "twitter_plot_view/",
+        views.twitter_plot_view,
+        name='twitter_plot_view',
     ),
     path(
-        "range_chart_view/",
-        views.range_chart_view,
-        name='range_chart_view',
+        "twitter_chart_view/",
+        views.twitter_chart_view,
+        name='twitter_chart_view',
     ),
     path(
         "line_plot_view/",

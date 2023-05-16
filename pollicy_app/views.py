@@ -111,14 +111,14 @@ def translate(request):
 		request, "pollicy_app/translate.html", {}
 	)
 		
-def range_plot_view(request):
+def twitter_plot_view(request):
 	return render(
-		request, "pollicy_app/range_plot.html", {}
+		request, "pollicy_app/twitter_plot.html", {}
 	)
 
-def range_chart_view(request):
+def twitter_chart_view(request):
 	return render(
-		request, "pollicy_app/range_chart.html", {}
+		request, "pollicy_app/twitter_chart.html", {}
 	)
 
 def line_plot_view(request):
