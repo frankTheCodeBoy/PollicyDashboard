@@ -1372,26 +1372,28 @@ msgstr " uchaguzi walikumbwa na misukosuko."
 msgid " In terms of social media frequency of use, higher usage of social media platforms resulted in higher levels of online violence."
 msgstr " Kwa upande wa matumizi ya mara kwa mara ya mitandao ya kijamii, matumizi ya juu ya majukwaa ya mitandao ya kijamii yalisababisha viwango vya juu vya vurugu mtandaoni."
 
-msgid "Women Age Range Percentages Experiencing Ovawp in Twitter Platform"
-msgstr "Asilimia za Masafa ya Umri ya Wanawake Wanapitia Ovawp katika Twitter"
+msgid "Statistics on Twitter of Women Experiencing OVAWP Forms"
+msgstr "Takwimu kwenye Twitter za Wanawake Wanaopitia Fomu za OVAWP"
+
+msgid "Statistics on Facebook of Women Experiencing OVAWP Forms"
+msgstr "Takwimu kwenye Facebook za Wanawake Wanaopitia Fomu za OVAWP"
 
 msgid "OVAWP Vs. Frequency of Social Media Usage By Women Candidates"
 msgstr "OVAWP dhidi ya Marudio ya Matumizi ya Mitandao ya Kijamii na Wagombea Wanawake"
 
-msgid "Get Twitter Chart"
-msgstr "Chati ya Twitter"
-msgid "Revert to Facebook Chart"
-msgstr "Chati ya Facebook"
+msgid "OVAWP Vs. Election Outcome Chart"
+msgstr "OVAWP dhidi ya Chati ya Matokeo ya Uchaguzi"
 
-msgid "Ovawp Vs. Frequency Chart"
-msgstr "Ovawp na Matumizi"
-msgid "Ovawp Vs. Elections Chart"
-msgstr "Ovawp na Matokeo"
+msgid "Twitter Chart I"
+msgstr "Chati ya Kwanza"
+msgid "Twitter Chart II"
+msgstr "Chati ya Pili"
 
-msgid "Facebook Range Plot"
-msgstr "Ploti ya Facebook"
-msgid "Twitter Range Plot"
-msgstr "Ploti ya Twitter"
+msgid "Facebook Chart I"
+msgstr "Chati ya Kwanza"
+
+msgid "Facebook Chart II"
+msgstr "Chati ya Pili"
 
 msgid "Evaluating the Nature of Discourse Observed in the Twitter Replies to Women Candidates"
 msgstr "Kutathmini Hali ya Hotuba Inayozingatiwa katika Majibu ya Twitter kwa Wagombea Wanawake"
