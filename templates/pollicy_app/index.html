@@ -15,15 +15,6 @@
         <p class="typo"></p>
         <span class="typo"></span>
     </div>
-    <!----
-    <div class="scroll-div text-center container">
-        <img id="scroll-img" class="scroll-img" 
-            style="background-color: #822600;
-                border: 2px hidden black;border-radius:5px;padding:2px;"
-            src="{% static 'images/Scroll_icon.png' %}"
-            width="60px">
-    </div>
-    ----->
     <div class="row container mx-auto box-metrix slide-view">
         <div class="col-sm-2 col-sm-offset-2 text-center div-metrics p-1">Social Media Accounts
             <br>Monitored<p class="cl-num" data-val="268">000</p></div>
@@ -146,12 +137,6 @@
                 <a class="nav-link" href="{% url 'pollicy_app:women_sm_view' %}">
                     Women Using Social Media</a>
             </li>
-            <!------
-            <li id="social-response-link" class="nav-item">
-                <a class="nav-link" href="{% url 'pollicy_app:social_response_view' %}">
-                    Social Media Response</a>
-            </li>
-            ------>
             <li id="ovawp-proof-link" class="nav-item">
                 <a class="nav-link" href="{% url 'pollicy_app:ovawp_proof_view' %}">
                     Evidence of OVAW-P</a>
@@ -328,48 +313,6 @@
         </div>
     </div>
 </div>
-<!--------
-<div class="container-fluid social-response p-4">
-    <h4 class="mt-2 text-center">
-        What sentiments are attached to women's social media posts and how are 
-        these sentiments distributed? 
-    </h4>
-    <div class="row container-fluid">
-        <div class="col-sm text-center" style="width:100%;max-width:300px;height:300px;">
-            <canvas id="doughnutChart"></canvas>
-            <span class="p-2">
-                <button id="update-btn" class="btn btn-sm chart-btn my-btn" 
-                    style="background-color: #f89624;">
-                    <i class='fas fa-sync'></i>
-                    Switch</button>
-            </span>
-        </div>
-        <div class="col-sm p-2">
-        <div class="container card mt-5" 
-            style="background-color:#f5f5f5;
-                border: 1px solid white;">
-            <p class="card-body reveal fade-bottom" style="font-size: 14px;">
-                Using sentiment analysis, the sentiment of the comments and replies 
-                from social media users to the candidates was analysed. 
-                According to the data, higher engagement by a candidate group leads to a higher 
-                volume of negative comments across both platforms. 
-                On Facebook, women candidates received 77% of negative comments while on Twitter, 
-                men candidates received 85.7% of negative replies.
-            </p>
-        </div>
-        </div>
-        <div class="col-sm text-center" style="width:100%;max-width:300px;height:300px;">
-            <canvas id="doughnut"></canvas>
-            <span class="p-2">
-                <button id="refresh-btn" class="btn btn-sm chart-btn my-btn" 
-                    style="background-color: #822600;color: #b3b3b3;">
-                    <i class='fas fa-sync'></i>
-                    Switch</button>
-            </span>
-        </div>
-    </div>
-</div>
-------->
 <div class="container-fluid ovawp-proof p-3 mt-4">
     <h4>
         Is there evidence of OVAW-P? If yes, what are the manifestations of OVAW-P?
@@ -417,134 +360,9 @@
         election experienced trolling. 
         In terms of social media frequency of use, higher usage of social media platforms resulted in 
         higher levels of online violence.
-    </div>
-    <!------
-    <div class="row p-3">
-		<div class="col-md-12">
-			<div class="card">
-				<div class="card-header" style="background-color: #f89624;">
-					<h6 class="card-title reveal fade-bottom" 
-                    style="color: black;">
-                    OVAW-P Vs PARTY AFFILIATION
-                    <span class="form-inline form-control-group" 
-                    style="position: relative; float: right; color: gray;">
-                        Search:<input class="form-control form-control-sm ml-1" 
-                        id="myInput" type="search" name="search">
-                    </span>
-                    </h6>
-				</div>
-				<div class="card-body">
-				<div class="table-responsive">
-				    <table id="dtdatatable" class="display table table-striped 
-                    table-bordered table-hover table-sm" >
-                        <thead style="background-color: rgb(207, 207, 207); color: rgb(0, 0, 0);">
-							<tr>
-								<th>POLITICAL PARTY</th>
-							    <th>SEXUAL VIOLENCE</th>
-								<th>TROLLING</th>
-								<th>INSULT & HATE SPEECH</th>
-								<th>SATIRE</th>
-								<th>BODY SHAMING</th>
-							</tr>
-						</thead>
-                        <tbody>
-                            <tr class="tr-hover">
-                                <td>FDC</td>
-                                <td>25</td>
-                                <td>38</td>
-                                <td>38</td>
-                                <td>13</td>
-                                <td>0</td>
-                            </tr>
-                            <tr class="custom-hover" 
-                                style="background-color: #f89624;">
-                                <td>NRM</td>
-                                <td>10</td>
-                                <td>27</td>
-                                <td>20</td>
-                                <td>23</td>
-                                <td>3</td>
-                            </tr>
-                            <tr class="tr-hover">
-                                <td>NUP</td>
-                                <td>15</td>
-                                <td>23</td>
-                                <td>39</td>
-                                <td>23</td>
-                                <td>0</td>
-                            </tr>
-                            <tr class="mycustom-hover" 
-                                style="background-color: #822600; color:#b3b3b3;">
-                                <td>INDEPENDENT</td>
-                                <td>5</td>
-                                <td>21</td>
-                                <td>5</td>
-                                <td>16</td>
-                                <td>0</td>
-                            </tr>
-                            <tr class="tr-hover">
-                                <td>Others</td>
-                                <td>0</td>
-                                <td>21</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>    
-                    </table>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    ------>
+    </div>   
 </div>
 <div class="container-fluid mx-auto">
-    <!------
-    <div class="container text-center">
-        <h5 class="text-left reveal fade-right" style="font-weight: normal;">
-            Twitter: Percentage of Women Experiencing OVAWP Grouped By Age-Group
-        </h5>
-        <div class="table-responsive">
-        <table class="table table-font
-            table-bordered table-striped table-sm">
-              <tr>
-                <td style="background-color:#f89624;color:black;">
-                    OVAWP ON TWITTER</td>
-                <td>Under 40</td>
-                <td>40 to 45</td>
-                <td>Above 55</td>
-              </tr>
-            <tbody>
-              <tr>
-                <td>SEXUAL OR BODY SHAMING<br>(Within the Age Category)</td>
-                <td style="background-color: white;">23.1</td>
-                <td>25.0</td>
-                <td style="background-color: white;">25.0</td>
-              </tr>
-              <tr>
-                <td>INSULT OR HATE SPEECH<br>(Within the Age Category)</td>
-                <td style="background-color: #dadada;">23.1</td>
-                <td>33.0</td>
-                <td style="background-color: #dadada;">25.0</td>
-              </tr>
-              <tr>
-                <td>TROLLING<br>(Within the Age Category)</td>
-                <td style="background-color: white;">30.8</td>
-                <td>35.0</td>
-                <td style="background-color: white;">25.0</td>
-              </tr>
-              <tr>
-                <td>DISINFORMATION<br>(Within the Age Category)</td>
-                <td style="background-color: white;">23.1</td>
-                <td>30.0</td>
-                <td style="background-color: white;">25.0</td>
-              </tr>
-            </tbody>
-        </table>
-        </div>
-    </div>
-    ------>
     <!---First range plot here-->
     <div class="p-3">
     <h5 class="h-plots reveal fade-right" style="font-weight:normal;">
@@ -697,29 +515,6 @@
     }
 }
 
-/* social share btns */
-/* .dropdown-menu-social{min-width:2.8rem; padding:2px;}
-.social-facebook { background-color: #3b5898; color: #fff; }
-.social-facebook:hover { background-color: #385186; color: #fff; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
-.social-twitter { background-color: #1ea2f2; color: #fff; }
-.social-twitter:hover { background-color: #1c99e5; color: #fff; }
-.social-google { background-color: #f4422c; color: #fff; }
-.social-google:hover { background-color: #C20806; color: #fff; }
-.social-telegram { background-color: #0088cc; color: #fff; }
-.social-telegram:hover { background-color: #0088cc; color: #fff; }
-.share-d:hover {color:black !important;}
-
-div#sec-content {
-    display: inline-block;
-    text-align: right;
-    font-size: 12px;
-    text-decoration: underline;
-    text-decoration-color: #b3b3b3;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 0;
-}
- */
 .slide-show {
       box-sizing:border-box;
 }
@@ -923,27 +718,6 @@ $(document).ready(function () {
         return false;
         e.stopPropagation();
     });
-
-    /* $('body').on('click', '.social-facebook', function(e){
-        e.preventDefault();
-        $('#sec-content').load('fb_post_view/ #fb-para');
-        e.stopPropagation();
-    })
-    .on('click', '.social-twitter', function(e){
-        e.preventDefault();
-        $('#sec-content').load('twitter_post_view/ #twitter-para');
-        e.stopPropagation();
-    })
-    .on('click', '.social-google', function(e){
-        e.preventDefault();
-        $('#sec-content').load('google_post_view/ #google-para');
-        e.stopPropagation();
-    })
-    .on('click', '.social-telegram', function(e){
-        e.preventDefault();
-        $('#sec-content').load('telegram_post_view/ #telegram-para');
-        e.stopPropagation();
-    }); */
 
     $('body').on('click', '#gender-btn', function(e){
         e.preventDefault();
