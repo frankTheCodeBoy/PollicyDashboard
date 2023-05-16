@@ -363,7 +363,7 @@
     </div>   
 </div>
 <div class="container-fluid mx-auto">
-    <!---First range plot here-->
+    <!---Twitter charts here-->
     <div class="p-3">
     <h5 class="twitter-header reveal fade-right" style="font-weight:normal;">
         Statistics on Twitter of Women Experiencing OVAWP Forms</h5>
@@ -416,17 +416,17 @@
     </h5>
     <div class="line-plt">
     <div><!--data plot here-->
-        <iframe title="[ Insert title here ]" aria-label="Interactive line chart" id="datawrapper-chart-JC08H" src="https://datawrapper.dwcdn.net/JC08H/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        <iframe title="[ Insert title here ]" aria-label="Grouped Column Chart" id="datawrapper-chart-SVAAz" src="https://datawrapper.dwcdn.net/SVAAz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="499" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
         </script>
     </div>
     </div>
     <div class="btn-group" role="group"> <!---div for buttons-->
     <button id="line-plt-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
-        Ovawp Vs. Frequency Chart
+        Ovawp Vs. Frequency Chart I
     </button>
     <button id="line-chart-btn" class="btn btn-sm my-btn" 
         style="background-color:#822600;color:#b3b3b3;">
-        Ovawp Vs. Elections Chart
+        Ovawp Vs. Frequency Chart II
     </button>
     </div>
     </div>
@@ -829,7 +829,7 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".line-plt").html(response);
-            $(".l-plots").html("Ovawp and Frequency Relationship");
+            $(".l-plots").html("Ovawp and Usage Frequency Chart I");
             }    
         });
         return false;
@@ -843,7 +843,7 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".line-plt").html(response);
-            $(".l-plots").html("Ovawp and Election Outcome Relationship");
+            $(".l-plots").html("Ovawp and Usage Frequency Chart II");
             }    
         });
         return false;
@@ -885,7 +885,7 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
-            $(".new-lplots").html("Ovawp and Frequency Relationship");
+            $(".new-lplots").html("Ovawp and Usage Frequency  Chart I");
             }    
         });
         return false;
@@ -899,7 +899,7 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
-            $(".new-lplots").html("Ovawp and Election Outcome Relationship");
+            $(".new-lplots").html("Ovawp and Usage Frequency Chart II");
             }    
         });
         return false;
