@@ -984,6 +984,34 @@ $(document).ready(function () {
         });
         return false;
         e.stopPropagation();
+    })
+    .on('click', '#new-election-plot-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/election_plot_view/",
+            data: {},
+            success: function(response){
+            $(".new-election-plot").html(response);
+            $(".new-election-header").html("Ovawp Vs. Elections Result Chart II");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#new-election-chart-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/election_chart_view/",
+            data: {},
+            success: function(response){
+            $(".new-election-plot").html(response);
+            $(".new-election-header").html("Ovawp Vs. Elections Result Chart I");
+            }    
+        });
+        return false;
+        e.stopPropagation();
     });
 
     // to run on page load.
