@@ -393,9 +393,9 @@
 <!---Facebook graphs-->
 <div class="container-fluid mx-auto">
     <div class="p-3">
-    <h5 class="f-h-plots reveal fade-right" style="font-weight:normal;">
+    <h5 class="facebook-header reveal fade-right" style="font-weight:normal;">
         Statistics on Facebook of Women Experiencing OVAWP Forms</h5>
-    <div id="f-plots">
+    <div id="facebook-plots">
     <div>
         <div>
             <iframe title="[ Insert title here ]" aria-label="Grouped Column Chart" id="datawrapper-chart-oIoxI" src="https://datawrapper.dwcdn.net/oIoxI/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
@@ -404,9 +404,9 @@
     </div>
     </div>
     <div class="btn-group" role="group">
-        <button class="btn btn-sm f-range-plt-btn my-btn" style="background-color:#f89624;">
+        <button class="btn btn-sm facebook-plt-btn my-btn" style="background-color:#f89624;">
             Facebook Chart I</button>
-        <button class="btn btn-sm f-range-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
+        <button class="btn btn-sm facebook-cht-btn my-btn" style="background-color:#822600;color:#b3b3b3;">
             Facebook Chart II</button>
     </div> 
     </div>   
@@ -788,6 +788,34 @@ $(document).ready(function () {
             success: function(response){
             $("#twitter-plots").html(response);
             $(".twitter-header").html("(Twitter) Split Bars Showing Women Experiencing OVAWP");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '.facebook-cht-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/facebook_plot_view/",
+            data: {},
+            success: function(response){
+            $("#facebook-plots").html(response);
+            $(".facebook-header").html("(Facebook) Grouped Bars Showing Women Experiencing OVAWP");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '.facebook-plt-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/facebook_chart_view/",
+            data: {},
+            success: function(response){
+            $("#facebook-plots").html(response);
+            $(".facebook-header").html("(Facebook) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;

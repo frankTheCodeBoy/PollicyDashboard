@@ -121,6 +121,16 @@ def twitter_chart_view(request):
 		request, "pollicy_app/twitter_chart.html", {}
 	)
 
+def facebook_plot_view(request):
+	return render(
+		request, "pollicy_app/facebook_plot.html", {}
+	)
+
+def facebook_chart_view(request):
+	return render(
+		request, "pollicy_app/facebook_chart.html", {}
+	)
+
 def line_plot_view(request):
 	return render(
 		request, "pollicy_app/line_plot.html", {}

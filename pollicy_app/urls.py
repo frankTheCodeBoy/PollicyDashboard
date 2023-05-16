@@ -101,6 +101,16 @@ urlpatterns = [
         name='twitter_plot_view',
     ),
     path(
+        "facebook_plot_view/",
+        views.facebook_plot_view,
+        name='facebook_plot_view',
+    ),
+    path(
+        "facebook_chart_view/",
+        views.facebook_chart_view,
+        name='facebook_chart_view',
+    ),
+    path(
         "twitter_chart_view/",
         views.twitter_chart_view,
         name='twitter_chart_view',
