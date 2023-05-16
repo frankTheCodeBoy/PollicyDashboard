@@ -431,8 +431,8 @@
     </div>
     </div>
     <!---graph and slide here-->
-    <div class="row">
-        <div class="col-sm mt-2 p-3">
+    <div class="row mt-2 p-3">
+        <div class="col-sm">
         <h5 class="election-header reveal fade-bottom" style="font-weight:normal;">
             OVAWP Vs. Election Outcome Chart
         </h5>
@@ -443,10 +443,10 @@
         </div>
         </div>
         <div class="btn-group" role="group"> <!---div for buttons-->
-            <button id="election-plt-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
+            <button id="election-chart-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
                 Ovawp Vs. Elections Chart I
             </button>
-            <button id="election-chart-btn" class="btn btn-sm my-btn" 
+            <button id="election-plot-btn" class="btn btn-sm my-btn" 
                 style="background-color:#822600;color:#b3b3b3;">
                 Ovawp Vs. Elections Chart II
             </button>
@@ -868,6 +868,34 @@ $(document).ready(function () {
             success: function(response){
             $(".line-plt").html(response);
             $(".l-plots").html("Ovawp and Usage Frequency Chart II");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#election-plot-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/election_plot_view/",
+            data: {},
+            success: function(response){
+            $(".election-plot").html(response);
+            $(".election-header").html("Ovawp Vs. Elections Result Chart II");
+            }    
+        });
+        return false;
+        e.stopPropagation();
+    })
+    .on('click', '#election-chart-btn', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: "/election_chart_view/",
+            data: {},
+            success: function(response){
+            $(".election-plot").html(response);
+            $(".election-header").html("Ovawp Vs. Elections Result Chart I");
             }    
         });
         return false;

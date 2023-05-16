@@ -140,3 +140,13 @@ def line_chart_view(request):
 	return render(
 		request, "pollicy_app/line_chart.html", {}
 	)
+
+def election_plot_view(request):
+	return render(
+		request, "pollicy_app/elections_plot.html", {}
+	)
+
+def election_chart_view(request):
+	return render(
+		request, "pollicy_app/elections_chart.html", {}
+	)
