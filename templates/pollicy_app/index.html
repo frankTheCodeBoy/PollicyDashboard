@@ -305,11 +305,11 @@
         <div class="btn-group p-4 text-center reveal fade-left" role="group">
             <button class="btn btn-sm chart-btn my-btn" 
                 style="background-color:#f89624;color:black;">
-               Get Twitter Chart
+               Twitter
             </button>
             <button class="btn btn-sm add-chart-btn my-btn"
                 style="background-color:#822600;color:#b3b3b3;">
-                Revert to Facebook
+                Facebook
             </button>
         </div>
         </div>
@@ -368,7 +368,8 @@
     <!---Twitter charts here-->
     <div class="p-3 col-sm">
     <h5 class="twitter-header reveal fade-bottom" style="font-weight:normal;">
-        Statistics on Twitter of Women Experiencing OVAWP Forms</h5>
+        Percentage of women candidates on Twitter experiencing a specific 
+        form of online violence grouped by their age</h5>
     <div id="twitter-plots">
     <div class="reveal fade-right">
         <div>
@@ -393,7 +394,8 @@
     </div>
     <div class="p-3 col-sm">
         <h5 class="facebook-header mb-4 reveal fade-bottom" style="font-weight:normal;">
-            Statistics on Facebook of Women Experiencing OVAWP Forms</h5>
+            Percentage of women candidates on Facebook experiencing a 
+            specific form of online violence grouped by their age</h5>
         <div id="facebook-plots">
         <div class="reveal fade-left">
             <div>
@@ -413,7 +415,8 @@
 <div class="container-fluid mx-auto">
     <div class="mt-2 p-3">    
     <h5 class="reveal fade-bottom l-plots" style="font-weight: normal;">
-            OVAWP Vs. Frequency of Social Media Usage By Women Candidates  
+    Percentage of women candidates experiencing a specific form of OVAWP 
+    grouped by their usage frequency on Facebook 
     </h5>
     <div class="line-plt">
         <div>
@@ -435,7 +438,8 @@
     <div class="row mt-2 p-3">
         <div class="col-sm">    
         <h5 class="mb-5 election-header reveal fade-bottom" style="font-weight:normal;">
-            OVAWP Vs. Election Outcome Chart
+        Percentage of women candidates on Facebook experiencing online 
+        violence grouped by the election outcome
         </h5>
         <div class="election-plot p-5 mb-5 mt-3">
         <div>
@@ -445,11 +449,11 @@
         </div>
         <div class="btn-group mt-4" role="group"> <!---div for buttons-->
             <button id="election-chart-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
-                Ovawp Vs. Elections Chart I
+                Ovawp Vs. Election Outcome I
             </button>
             <button id="election-plot-btn" class="btn btn-sm my-btn" 
                 style="background-color:#822600;color:#b3b3b3;">
-                Ovawp Vs. Elections Chart II
+                Ovawp Vs. Election Outcome II
             </button>
         </div>
         </div>
@@ -458,15 +462,15 @@
         <div class="screenshot-image-container reveal fade-right">
             <div class="_slide">
                 <div class="_slideNumber">1</div>
-                <img class="screenshot-img" src="{% static 'images/asset3.png' %}">
+                <img class="screenshot-img" src="{% static 'images/byte-slide3.png' %}">
             </div>
             <div class="_slide">
                 <div class="_slideNumber">2</div>
-                <img class="screenshot-img" src="{% static 'images/asset2.png' %}">
+                <img class="screenshot-img" src="{% static 'images/byte-slide2.png' %}">
             </div>
             <div class="_slide">
                 <div class="_slideNumber">3</div>
-                <img class="screenshot-img" src="{% static 'images/asset1.png' %}">
+                <img class="screenshot-img" src="{% static 'images/byte-slide1.png' %}">
             </div>
       
             <!-- Next and Previous icon to change images -->
@@ -711,7 +715,7 @@ a {
           
     /* Image-container design */
     .screenshot-image-container {
-        max-width: 430px;
+        max-width: 450px;
         position: relative;
         margin: auto;
     }
@@ -746,7 +750,7 @@ a {
         position: absolute;
     }
     .screen-fa {
-        font-size: 30px;
+        font-size: 35px;
         color: #822600;
     }
           
@@ -913,7 +917,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#twitter-plots").html(response);
-            $(".twitter-header").html("(Twitter) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -927,7 +930,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#twitter-plots").html(response);
-            $(".twitter-header").html("(Twitter) Split Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -941,7 +943,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#facebook-plots").html(response);
-            $(".facebook-header").html("(Facebook) Grouped Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -955,7 +956,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#facebook-plots").html(response);
-            $(".facebook-header").html("(Facebook) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -969,7 +969,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".line-plt").html(response);
-            $(".l-plots").html("Ovawp and Usage Frequency Chart I");
             }    
         });
         return false;
@@ -983,7 +982,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".line-plt").html(response);
-            $(".l-plots").html("Ovawp and Usage Frequency Chart II");
             }    
         });
         return false;
@@ -997,7 +995,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".election-plot").html(response);
-            $(".election-header").html("Ovawp Vs. Elections Result Chart II");
             }    
         });
         return false;
@@ -1011,7 +1008,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".election-plot").html(response);
-            $(".election-header").html("Ovawp Vs. Elections Result Chart I");
             }    
         });
         return false;
@@ -1025,7 +1021,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#new-plots").html(response);
-            $(".new-h-plots").html("(Twitter) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -1039,7 +1034,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#new-plots").html(response);
-            $(".new-h-plots").html("(Twitter) Split Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -1053,7 +1047,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#new-facebook-plots").html(response);
-            $(".new-facebook-header").html("(Facebook) Grouped Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -1067,7 +1060,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $("#new-facebook-plots").html(response);
-            $(".new-facebook-header").html("(Facebook) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -1081,7 +1073,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
-            $(".new-lplots").html("Ovawp and Usage Frequency  Chart I");
             }    
         });
         return false;
@@ -1095,7 +1086,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
-            $(".new-lplots").html("Ovawp and Usage Frequency Chart II");
             }    
         });
         return false;
@@ -1109,7 +1099,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".new-election-plot").html(response);
-            $(".new-election-header").html("Ovawp Vs. Elections Result Chart II");
             }    
         });
         return false;
@@ -1123,7 +1112,6 @@ $(document).ready(function () {
             data: {},
             success: function(response){
             $(".new-election-plot").html(response);
-            $(".new-election-header").html("Ovawp Vs. Elections Result Chart I");
             }    
         });
         return false;
