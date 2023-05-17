@@ -204,7 +204,7 @@
 <div class="row p-3">   
 <div class="p-3 col-sm">
 <h5 class="trans-theader reveal fade-left" style="font-weight:normal;">
-  {% trans "Statistics on Twitter of Women Experiencing OVAWP Forms" %}</h5>
+  {% trans "Percentage of women candidates on Twitter experiencing a specific form of online violence grouped by their age" %}</h5>
 <div id="trans-plots">
   <div>
       <iframe title="[ Insert title here ]" aria-label="Grouped Column Chart" 
@@ -228,7 +228,7 @@
 <!--facebook charts here-->
 <div class="p-3 col-sm">
   <h5 class="trans-fheader reveal fade-right mb-4" style="font-weight:normal;">
-     {% trans "Statistics on Facebook of Women Experiencing OVAWP Forms" %}</h5>
+     {% trans "Percentage of women candidates on Facebook experiencing a specific form of online violence grouped by their age" %}</h5>
   <div id="transfacebook-plots">
   <div>
       <div>
@@ -247,7 +247,7 @@
 </div>    
 <div class="mt-2 p-3">    
 <h5 class="translplots reveal fade-right" style="font-weight: normal;">
-      {% trans "OVAWP Vs. Frequency of Social Media Usage By Women Candidates" %}  
+      {% trans "Percentage of women candidates experiencing a specific form of OVAWP grouped by their usage frequency on Facebook" %}  
 </h5>
 <div class="transdiv-line-plt reveal fade-left">
   <div>
@@ -267,7 +267,7 @@
 </div>
 <div class="mt-2 p-3">
   <h5 class="transelection-header reveal fade-bottom" style="font-weight:normal;">
-      {% trans "OVAWP Vs. Election Outcome Chart" %}
+      {% trans "Percentage of women candidates on Facebook experiencing online violence grouped by the election outcome" %}
   </h5>
   <div class="transelection-plot">
   <div>
@@ -277,11 +277,11 @@
   </div>
   <div class="btn-group" role="group"> <!---div for buttons-->
       <button id="transelection-chart-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
-          Ovawp Vs. Elections Chart I
+          Ovawp Vs. Election Outcome I
       </button>
       <button id="transelection-plot-btn" class="btn btn-sm my-btn" 
           style="background-color:#822600;color:#b3b3b3;">
-          Ovawp Vs. Elections Chart II
+          Ovawp Vs. Election Outcome II
       </button>
   </div>
 </div>  
@@ -579,7 +579,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $("#trans-plots").html(response);
-            $(".trans-theader").html("(Twitter) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -593,7 +592,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $("#trans-plots").html(response);
-            $(".trans-theader").html("(Twitter) Split Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -607,7 +605,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $("#transfacebook-plots").html(response);
-            $(".trans-fheader").html("(Facebook) Grouped Bars Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -621,7 +618,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $("#transfacebook-plots").html(response);
-            $(".trans-fheader").html("(Facebook) Bar Chart Showing Women Experiencing OVAWP");
             }    
         });
         return false;
@@ -635,7 +631,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $(".transdiv-line-plt").html(response);
-            $(".translplots").html("Ovawp and Usage Frequency Chart I");
             }    
         });
         return false;
@@ -649,7 +644,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $(".transdiv-line-plt").html(response);
-            $(".translplots").html("Ovawp and Usage Frequency Chart II");
             }    
         });
         return false;
@@ -663,7 +657,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $(".transelection-plot").html(response);
-            $(".transelection-header").html("Ovawp Vs. Elections Result Chart II");
             }    
         });
         return false;
@@ -677,7 +670,6 @@ $(document).ready(function() {
             data: {},
             success: function(response){
             $(".transelection-plot").html(response);
-            $(".transelection-header").html("Ovawp Vs. Elections Result Chart I");
             }    
         });
         return false;

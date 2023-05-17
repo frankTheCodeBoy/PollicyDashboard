@@ -1372,17 +1372,17 @@ msgstr " uchaguzi walikumbwa na misukosuko."
 msgid " In terms of social media frequency of use, higher usage of social media platforms resulted in higher levels of online violence."
 msgstr " Kwa upande wa matumizi ya mara kwa mara ya mitandao ya kijamii, matumizi ya juu ya majukwaa ya mitandao ya kijamii yalisababisha viwango vya juu vya vurugu mtandaoni."
 
-msgid "Statistics on Twitter of Women Experiencing OVAWP Forms"
-msgstr "Takwimu kwenye Twitter za Wanawake Wanaopitia Fomu za OVAWP"
+msgid "Percentage of women candidates on Twitter experiencing a specific form of online violence grouped by their age"
+msgstr "Takwimu kwenye Twitter za wanawake wanaopitia fomu za OVAWP kulingana na umri zao"
 
-msgid "Statistics on Facebook of Women Experiencing OVAWP Forms"
-msgstr "Takwimu kwenye Facebook za Wanawake Wanaopitia Fomu za OVAWP"
+msgid "Percentage of women candidates on Facebook experiencing a specific form of online violence grouped by their age"
+msgstr "Takwimu kwenye Facebook za wanawake wanaopitia fomu za OVAWP kulingana na umri zao"
 
-msgid "OVAWP Vs. Frequency of Social Media Usage By Women Candidates"
-msgstr "OVAWP dhidi ya Marudio ya Matumizi ya Mitandao ya Kijamii na Wagombea Wanawake"
+msgid "Percentage of women candidates experiencing a specific form of OVAWP grouped by their usage frequency on Facebook"
+msgstr "OVAWP dhidi ya marudio ya matumizi ya mitandao ya kijamii na wagombea wanawake"
 
-msgid "OVAWP Vs. Election Outcome Chart"
-msgstr "OVAWP dhidi ya Chati ya Matokeo ya Uchaguzi"
+msgid "Percentage of women candidates on Facebook experiencing online violence grouped by the election outcome"
+msgstr "Takwimu ya wanawake waliopitia OVAWP kulingana na matokeo ya uchaguzi"
 
 msgid "Twitter Chart I"
 msgstr "Chati ya Kwanza"
