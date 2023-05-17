@@ -16,12 +16,12 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 });
 
-// first group-b data
+// first group-b data,
 let secValueDisplays = document.querySelectorAll(".sec-num");
 let secInterval = 4000;
 
 secValueDisplays.forEach((secValueDisplay) => {
-  let startValue = 100;
+  let startValue = 10;
   let endValue = parseInt(secValueDisplay.getAttribute("data-val"));
   let duration = Math.floor(secInterval / endValue);
   let counter = setInterval(function () {
@@ -38,7 +38,7 @@ let newValueDisplays = document.querySelectorAll(".newnum");
 let newInterval = 4000;
 
 newValueDisplays.forEach((newValueDisplay) => {
-  let startValue = 70;
+  let startValue = 15;
   let endValue = parseInt(newValueDisplay.getAttribute("data-val"));
   let duration = Math.floor(newInterval / endValue);
   let counter = setInterval(function () {
@@ -55,7 +55,7 @@ let valDisplays = document.querySelectorAll(".mynewnum");
 let valInterval = 4000;
 
 valDisplays.forEach((valDisplay) => {
-  let startValue = 70;
+  let startValue = 5;
   let endValue = parseInt(valDisplay.getAttribute("data-val"));
   let duration = Math.floor(valInterval / endValue);
   let counter = setInterval(function () {
