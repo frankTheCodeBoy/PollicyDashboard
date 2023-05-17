@@ -430,18 +430,18 @@
     </div>
     </div>
     <!---graph and slide here-->
-    <div class="row mt-1 p-3" style="border:1px hidden #b3b3b3;border-radius:5px;background-color: #f3f3f3;">
-        <div class="col-sm p-2" style="background-color:white;border-radius:5px;">    
-        <h5 class="mb-3 p-2 election-header reveal fade-bottom" style="font-weight:normal;">
+    <div class="row mt-2 p-3">
+        <div class="col-sm">    
+        <h5 class="mb-5 election-header reveal fade-bottom" style="font-weight:normal;">
             OVAWP Vs. Election Outcome Chart
         </h5>
-        <div class="election-plot p-5 mb-4">
+        <div class="election-plot p-5 mb-5 mt-3">
         <div>
             <iframe title="" aria-label="Range Plot" id="datawrapper-chart-HKoWI" src="https://datawrapper.dwcdn.net/HKoWI/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="146" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
             </script>
         </div>
         </div>
-        <div class="btn-group" role="group"> <!---div for buttons-->
+        <div class="btn-group mt-4" role="group"> <!---div for buttons-->
             <button id="election-chart-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
                 Ovawp Vs. Elections Chart I
             </button>
@@ -451,20 +451,20 @@
             </button>
         </div>
         </div>
-        <div class="col-sm">
+        <div class="col-sm p-3">
         <!---screenshot slides--->
         <div class="screenshot-image-container reveal fade-right">
             <div class="_slide">
                 <div class="_slideNumber">1</div>
-                <img class="screenshot-img" src="{% static 'images/byte-slide1.png' %}">
+                <img class="screenshot-img" src="{% static 'images/asset3.png' %}">
             </div>
             <div class="_slide">
                 <div class="_slideNumber">2</div>
-                <img class="screenshot-img" src="{% static 'images/byte-slide2.png' %}">
+                <img class="screenshot-img" src="{% static 'images/asset2.png' %}">
             </div>
             <div class="_slide">
                 <div class="_slideNumber">3</div>
-                <img class="screenshot-img" src="{% static 'images/byte-slide3.png' %}">
+                <img class="screenshot-img" src="{% static 'images/asset1.png' %}">
             </div>
       
             <!-- Next and Previous icon to change images -->
@@ -701,7 +701,7 @@
           
     /* Image-container design */
     .screenshot-image-container {
-        max-width: 400px;
+        max-width: 430px;
         position: relative;
         margin: auto;
     }
@@ -736,7 +736,7 @@
         position: absolute;
     }
     .screen-fa {
-        font-size: 25px;
+        font-size: 30px;
         color: #822600;
     }
           
