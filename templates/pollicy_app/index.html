@@ -555,23 +555,31 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2 !important;
 }
 
 @media only screen and (max-width:980px) {
     .index-content {
-        z-index: 2;
+        z-index: 3 !important;
     }
 }
 
 @media only screen and (min-width: 1240px) {
     .index-content {
-        z-index: 2;
+        z-index: 3 !important;
         height: 100vh;
         display: grid;
         place-items: center;
     }
 
+}
+
+a {
+    z-index: 1 !important;
+}
+
+.btn {
+    z-index: 1 !important;
 }
 
 @media only screen and (max-width:768px) {
