@@ -414,10 +414,10 @@
             OVAWP Vs. Frequency of Social Media Usage By Women Candidates  
     </h5>
     <div class="line-plt">
-    <div><!--data plot here-->
-        <iframe title="[ Insert title here ]" aria-label="Grouped Column Chart" id="datawrapper-chart-SVAAz" src="https://datawrapper.dwcdn.net/SVAAz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="499" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-        </script>
-    </div>
+        <div>
+            <iframe title="[ Insert title here ]" aria-label="Table" id="datawrapper-chart-cFjc5" src="https://datawrapper.dwcdn.net/cFjc5/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="299" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+        </div>        
     </div>
     <div class="btn-group" role="group"> <!---div for buttons-->
     <button id="line-plt-btn" class="btn btn-sm my-btn" style="background-color:#f89624;">
@@ -955,7 +955,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             type: 'GET',
-            url: "/line_plot_view/",
+            url: "/line_chart_view/",
             data: {},
             success: function(response){
             $(".line-plt").html(response);
@@ -969,7 +969,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             type: 'GET',
-            url: "/line_chart_view/",
+            url: "/line_plot_view/",
             data: {},
             success: function(response){
             $(".line-plt").html(response);
@@ -1067,7 +1067,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             type: 'GET',
-            url: "/line_plot_view/",
+            url: "/line_chart_view/",
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
@@ -1081,7 +1081,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             type: 'GET',
-            url: "/line_chart_view/",
+            url: "/line_plot_view/",
             data: {},
             success: function(response){
             $(".div-line-plt").html(response);
@@ -1216,20 +1216,6 @@ var _slideIndex = 1;
             totalslides[_slideIndex - 1].style.display = "block";
             totaldots[_slideIndex - 1].className += " _active";
         }
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </script>    
 {% endblock %}
