@@ -1,85 +1,112 @@
-## 🗺️ PollicyDashboard — Interactive Visualization Platform
+### 🧩 README for `PollicyDashboard`
 
-[![Django](https://img.shields.io/badge/Django-4.x-green?logo=django)](https://www.djangoproject.com/)  
-[![HTML5](https://img.shields.io/badge/HTML5-40%25-orange?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
-[![JavaScript](https://img.shields.io/badge/JavaScript-39%25-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+```markdown
+# PollicyDashboard 🧭  
+**Civic Tech Visualization Dashboard for East Africa**
 
-A Django-powered dashboard for interactive geospatial and network visualizations. Inspired by the Oxford Internet Institute’s InteractiveVis project, this platform supports modular data ingestion, multilingual support, and offline-ready visualizations.
-
----
-
-### 🧩 Features
-
-- 🌍 Interactive visualizations using HTML5, CSS3, SVG  
-- 🧠 Modular Django apps: `pollicy_app`, `admin_app`, `django_pollicy`  
-- 🗂️ Static and media file support  
-- 🌐 Multilingual interface via `locale/sw/LC_MESSAGES`  
-- ⚙️ Custom data ingestion via `machine_script.py`  
-- 🧱 Web-ready configuration files (`web.config`, `.htaccess_example`)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+![Django](https://img.shields.io/badge/Django-4.2-green.svg)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-orange.svg)
+![GeoJSON](https://img.shields.io/badge/GeoJSON-Mapping-lightgrey.svg)
 
 ---
 
-### 📁 Project Structure
+## 📊 Overview
 
-```plaintext
+**PollicyDashboard** is a modular Django web app designed to visualize civic engagement metrics across East Africa. It leverages Plotly for interactive charts and GeoJSON for spatial mapping, offering stakeholders a clear, data-driven lens into regional trends.
+
+---
+
+## 🚀 Features
+
+- 📍 **GeoJSON Mapping** – Visualize regional data with spatial overlays  
+- 📈 **Interactive Plotly Charts** – Dynamic graphs for engagement metrics  
+- 🧱 **Modular Django Architecture** – Scalable and maintainable codebase  
+- 📱 **Responsive Design** – Optimized for desktop and mobile  
+- 🔐 **Open Source** – MIT licensed for broad reuse and contribution
+
+---
+
+## 🖼️ Demo
+
+> _Coming soon: Live demo link or hosted preview._
+
+![Dashboard Screenshot](assets/demo.png)  
+*Sample dashboard view with civic tech metrics*
+
+---
+
+## 📁 Project Structure
+
+```bash
 PollicyDashboard/
-├── admin_app/
-├── django_pollicy/
-├── pollicy_app/
-├── locale/sw/LC_MESSAGES/
-├── media/documents/
-├── static/
-├── templates/
-├── machine_script.py
-├── manage.py
-├── requirements.txt
-├── README.txt
-├── web.config
-├── htaccess_example
-└── .gitignore
+├── dashboard/          # Core Django app
+├── templates/          # HTML templates
+├── static/             # CSS, JS, and assets
+├── geojson/            # Regional mapping data
+├── requirements.txt    # Python dependencies
+└── README.md
 ```
 
 ---
 
-### 🚀 Getting Started
+## ⚙️ Setup Instructions
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/frankTheCodeBoy/PollicyDashboard.git
-   cd PollicyDashboard
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/frankTheCodeBoy/PollicyDashboard.git
+cd PollicyDashboard
 
-2. Create a virtual environment and install dependencies:
-   ```bash
-   python -m venv env
-   source env/bin/activate
-   pip install -r requirements.txt
-   ```
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. Run migrations and start the server:
-   ```bash
-   python manage.py migrate
-   python manage.py runserver
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-> ⚠️ Note: Due to JavaScript security, visualizations must be run on a webserver (local or hosted). They may not render correctly if opened directly in a browser.
+# Apply migrations and run server
+python manage.py migrate
+python manage.py runserver
+```
 
 ---
 
-### 🎯 Purpose
+## 🧪 Sample Data
 
-This project was built to:
-- Explore interactive data visualization using native web technologies  
-- Integrate Django with multilingual and modular architecture  
-- Support offline-ready visualizations for ebooks and embedded platforms  
-- Extend the InteractiveVis framework with custom ingestion and deployment logic
+The dashboard uses sample civic tech datasets stored in CSV format.  
+To test locally, place your data files in `dashboard/data/` and ensure they match the expected schema:
+
+```csv
+Region, EngagementScore, AccessRate
+Nairobi, 78, 65
+Mombasa, 64, 58
+Kisumu, 82, 72
+```
 
 ---
 
-### 📜 License
+## 📄 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for full details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Please fork the repo, create a feature branch, and submit a pull request.  
+For major changes, open an issue first to discuss your ideas.
+
+---
+
+## 📬 Contact
+
+Built by [Frank The CodeBoy](https://github.com/frankTheCodeBoy)  
+For inquiries or collaborations, feel free to reach out via GitHub Issues or Discussions.
+
+```
 
 ---
 
