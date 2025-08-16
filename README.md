@@ -58,11 +58,6 @@ python dashboard.py
 
 Then open your browser at `http://localhost:8050` to explore the interactive map and charts.
 
-## 🧪 Demo
-
-![Dashboard Screenshot](https://github.com/frankTheCodeBoy/PollicyDashboard/blob/main/assets/demo.png)  
-*Sample visualization showing regional data mapped via GeoJSON.*
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute with attribution.
