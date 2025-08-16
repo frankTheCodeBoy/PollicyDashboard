@@ -65,6 +65,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Contact
 
 For questions, or feedback:
+
 **Frank** – [GitHub Profile](https://github.com/frankTheCodeBoy)
 
 ---
