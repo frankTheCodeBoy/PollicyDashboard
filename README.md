@@ -64,7 +64,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-For questions, or feedback get in touch with developer:
+For questions or feedback, get in touch with developer:
 
 **Frank** – [GitHub Profile](https://github.com/frankTheCodeBoy)
 
