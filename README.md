@@ -60,15 +60,11 @@ Then open your browser at `http://localhost:8050` to explore the interactive map
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute with attribution.
-
-## 🤝 Contributing
-
-Pull requests are welcome! If you’d like to add new features, improve visuals, or optimize performance, feel free to fork and submit a PR.
+This project is licensed under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-For questions, collaborations, or feedback:
+For questions, or feedback:
 **Frank** – [GitHub Profile](https://github.com/frankTheCodeBoy)
 
 ---
